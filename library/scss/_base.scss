@@ -14,6 +14,14 @@ and will be used across all viewports.
 
 }
 
+/* Words */
+#words-intro {
+	font-style: italic;
+	#rss-what a {
+		color: $main-text;
+	}
+}
+
 /*********************
 GENERAL STYLES
 *********************/
@@ -22,7 +30,7 @@ body {
 	font-family: $serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #565656;
+	color: $main-text;
 }
 
 /********************

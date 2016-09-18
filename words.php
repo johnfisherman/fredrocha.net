@@ -12,15 +12,19 @@ Template Name: Words
 
 					<div id="main" class="eightcol first clearfix" role="main">
 
+						<p id="words-intro">
+							Keep up with my stream of consciousness via <a href="<?php bloginfo('url'); ?>/feed">RSS</a><sup id="rss-what"><a href="http://powertolivemore.com/productivity/rss-explained/" target="_blank">?</a></sup> or on <a href="http://twitter.com/john_fisherman" target="_blank">Twitter</a>.
+						</p>
+
 						<?php
 							
 						$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
-						error_log("Page nr and goats:" . $paged);
+						// error_log("Page nr and goats:" . $paged);
 
 							$args = array( 
-															'posts_per_page'=> 25, 
-						               		'paged' => $paged
+								'posts_per_page'=> 25, 
+             		'paged' => $paged
               );
 
 							$the_query = new WP_Query( $args );

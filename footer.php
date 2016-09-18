@@ -1,7 +1,9 @@
 			<footer class="footer" role="contentinfo">
 
 				<div id="inner-footer" class="wrap clearfix">
-
+				<div id="social">
+					<a href="<?php bloginfo('url'); ?>/feed">RSS</a>
+				</div>
 					<nav role="navigation">
 							<?php bones_footer_links(); ?>
 					</nav>
