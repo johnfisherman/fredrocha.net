@@ -18,8 +18,6 @@ frequent user. I'm always open to contribution. :)
 
 Designed by **Eddie Machado**: http://themble.com/bones
 
+# Contact the Author
 
-## License
-__[WTFPL](http://sam.zoy.org/wtfpl/)__
-
-	Are You Serious? Yes.
+Any remarks you have make sure to drop me a line at john.fisherman@gmail.com.
