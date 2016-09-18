@@ -1652,27 +1652,27 @@ tweeners.
   }
 
   /* line 125, ../scss/_481up.scss */
-  .words-content, .single-content, .generic-page {
+  .words-content, .single-content, .generic-page, .search-content {
     padding: 40px;
     background-color: white;
   }
   /* line 128, ../scss/_481up.scss */
-  .words-content p, .single-content p, .generic-page p {
+  .words-content p, .single-content p, .generic-page p, .search-content p {
     font-family: "Open Sans", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
   }
   /* line 132, ../scss/_481up.scss */
-  .words-content .format-quote .entry-content p, .single-content .format-quote .entry-content p, .generic-page .format-quote .entry-content p {
+  .words-content .format-quote .entry-content p, .single-content .format-quote .entry-content p, .generic-page .format-quote .entry-content p, .search-content .format-quote .entry-content p {
     margin: 10px 0;
     font-size: 30px;
     font-family: "Georgia", Cambria, Times New Roman, Times, serif;
     font-style: italic;
   }
   /* line 139, ../scss/_481up.scss */
-  .words-content .byline, .single-content .byline, .generic-page .byline {
+  .words-content .byline, .single-content .byline, .generic-page .byline, .search-content .byline {
     text-align: right;
   }
   /* line 142, ../scss/_481up.scss */
-  .words-content article, .single-content article, .generic-page article {
+  .words-content article, .single-content article, .generic-page article, .search-content article {
     margin-bottom: 50px;
   }
 
