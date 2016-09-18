@@ -1,0 +1,508 @@
+<!doctype html>
+<!--[if lte IE 8]>     <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="The bin-packing layout library. Packery makes your crazy and clever layout a real thing. Be clever. Get crazy." />
+
+  <title>Packery Appendix</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700,400italic' rel='stylesheet'>
+
+  
+    <!-- DEV MODE - including each .css file -->
+    
+      <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    
+      <link rel="stylesheet" href="css/base.css" />
+    
+      <link rel="stylesheet" href="css/code.css" />
+    
+      <link rel="stylesheet" href="css/demos.css" />
+    
+      <link rel="stylesheet" href="css/footer.css" />
+    
+      <link rel="stylesheet" href="css/hero.css" />
+    
+      <link rel="stylesheet" href="css/icons.css" />
+    
+      <link rel="stylesheet" href="css/index.css" />
+    
+      <link rel="stylesheet" href="css/layout.css" />
+    
+      <link rel="stylesheet" href="css/modules.css" />
+    
+      <link rel="stylesheet" href="css/site-nav.css" />
+    
+  
+
+  
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@metafizzyco" />
+  <meta name="twitter:url" content="http://packery.metafizzy.co/appendix.html" />
+  <meta name="twitter:title" content="Packery Appendix" />
+  <meta name="twitter:description" content="The bin-packing layout library. Packery makes your crazy and clever layout a real thing. Be clever. Get crazy." />
+
+</head>
+<body class="appendix-page" data-page="appendix">
+
+  <div id="site-nav">
+    <h1><a href=".">Packery</a></h1>
+    <ol class="primary-content">
+      <li class="nav-options"><a href="options.html">Options</a></li>
+      <li class="nav-methods"><a href="methods.html">Methods</a></li>
+      <li class="nav-events"><a href="events.html">Events</a></li>
+      <li class="nav-draggable"><a href="draggable.html">Draggable</a></li>
+      <li class="nav-license"><a href="license.html">License</a></li>
+      <li class="nav-appendix"><a href="appendix.html">Appendix</a></li>
+      <li class="nav-faq"><a href="faq.html">FAQ</a></li>
+    </ol>
+  </div>
+
+  
+  
+
+  <div id="content">
+
+    <div class="primary-content">
+      
+        <h1>Appendix</h1>
+        
+
+      
+      
+        <ul id="page-nav">
+          
+            <li><a href="#imagesloaded">imagesLoaded</a></li>
+          
+            <li><a href="#component-libraries">Component libraries</a></li>
+          
+            <li><a href="#web-fonts">Web fonts</a></li>
+          
+            <li><a href="#animating-item-size">Animating item size</a></li>
+          
+            <li><a href="#requirejs">RequireJS</a></li>
+          
+            <li><a href="#submitting-issues">Submitting issues</a></li>
+          
+            <li><a href="#extra-examples">Extra examples</a></li>
+          
+        </ul>
+      
+    </div>
+
+    
+    
+<div class="primary-content">
+
+<h2 id="imagesloaded">imagesLoaded</h2>
+
+<p>Unloaded images can throw off Packery layouts and cause item elements to overlap. <a href="http://desandro.github.io/imagesloaded/">imagesLoaded</a> resolves this issue. imagesLoaded works by triggering a callback after all child images have been loaded.</p>
+
+<pre><code class="js"><span class="keyword">var</span> container = document.querySelector(<span class="string">'#container'</span>);
+<span class="keyword">var</span> pckry;
+<span class="comment">// initialize Packery after all images have loaded</span>
+imagesLoaded( container, <span class="keyword">function</span>() {
+  pckry = <span class="keyword">new</span> Packery( container );
+});</code></pre>
+
+
+<p>Or initialize Packery first, then trigger <a href="methods.html#layout"><code>layout</code></a> after images have loaded.</p>
+
+<pre><code class="js"><span class="comment">// initialize Packery</span>
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+<span class="comment">// layout Packery after all images have loaded</span>
+imagesLoaded( container, <span class="keyword">function</span>() {
+  pckry.layout();
+});</code></pre>
+
+
+</div><div class="primary-content">
+
+<h2 id="component-libraries">Component libraries</h2>
+
+<p>Packery includes several component libraries. You might have seen these used in the example code. You can use these libraries in your own code.</p>
+
+<h3 id="docready">docReady</h3>
+
+<p><a href="https://github.com/desandro/doc-ready">docReady triggers initialization logic when the document is ready,</a> just like jQuery's <code>$(document).ready()</code>. <code>docReady</code> is used to initialize all the demos in these docs.</p>
+
+<pre><code class="js">docReady( <span class="keyword">function</span>() {
+  <span class="comment">// document is ready, let's do some fun stuff!</span>
+  <span class="keyword">var</span> container = document.querySelector(<span class="string">'#container'</span>);
+  <span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+});</code></pre>
+
+
+<h3 id="classie">classie</h3>
+
+<p><a href="https://github.com/desandro/classie">classie has class helper functions.</a></p>
+
+<pre><code class="js">classie.has( element, <span class="string">'my-class'</span> ) <span class="comment">// returns true/false</span>
+classie.add( element, <span class="string">'my-new-class'</span> ) <span class="comment">// add new class</span>
+classie.remove( element, <span class="string">'my-unwanted-class'</span> ) <span class="comment">// remove class</span>
+classie.toggle( element, <span class="string">'my-class'</span> ) <span class="comment">// toggle class</span></code></pre>
+
+
+<h3 id="eventie">eventie</h3>
+
+<p><a href="https://github.com/desandro/eventie">Eventie makes event binding in IE8 legit.</a></p>
+
+<pre><code class="js"><span class="keyword">var</span> elem = document.querySelector(<span class="string">'#my-elem'</span>);
+<span class="function"><span class="keyword">function</span> <span class="title">onElemClick</span><span class="params">( event )</span> {</span>
+  console.log( event.type + <span class="string">' just happened on #'</span> + event.target.id );
+  <span class="comment">// -&gt; click just happened on #my-elem</span>
+}
+<span class="comment">// bind it</span>
+eventie.bind( elem, <span class="string">'click'</span>, onElemClick );
+<span class="comment">// unbind it</span>
+eventie.unbind( elem, <span class="string">'click'</span>, onElemClick );</code></pre>
+
+
+</div><div class="primary-content">
+
+<h2 id="web-fonts">Web fonts</h2>
+
+<p>Like images, unloaded web fonts can throw off Packery. To resolve this, trigger <a href="methods.html#layout"><code>layout</code></a> after fonts have been loaded. Both Typekit and Google WebFont Loader provide font events to control scripts based on how fonts are loaded.</p>
+
+<ul>
+  <li><a href="http://blog.typekit.com/2010/10/18/more-control-with-typekits-font-events/">Typekit font events</a></li>
+  <li><a href="https://developers.google.com/webfonts/docs/webfont_loader#Events">Google WebFont Loader: Events</a></li>
+</ul>
+
+</div><div class="primary-content">
+
+  <h2 id="animating-item-size">Animating item size</h2>
+
+  <p>You cannot transition or animate the size of an item element <em>and</em> properly lay out. But there is a trick &mdash; you can animate a child element of the item element.</p>
+
+  <div class="row example">
+    <div class="cell example-code">
+<pre><code class="html"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"packery"</span>&gt;</span>
+  <span class="comment">&lt;!-- items have item-content children element --&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"item"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"item-content"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  ...</code></pre>
+
+<pre><code class="css"><span class="comment">/* item is invisible, but used for layout
+item-content is visible, and transitions size */</span>
+<span class="id">#animate-item-size</span> <span class="class">.item</span>,
+<span class="id">#animate-item-size</span> <span class="class">.item-content</span> <span class="rules">{
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">60</span>px;</span></span>
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">60</span>px;</span></span>
+<span class="rule">}</span></span>
+<span class="id">#animate-item-size</span> <span class="class">.item-content</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#09D</span>;</span></span>
+  <span class="rule"><span class="attribute">transition</span>:<span class="value"> width <span class="number">0.4</span>s, height <span class="number">0.4</span>s;</span></span>
+  <span class="comment">/* -webkit-transition -moz, etc, too */</span>
+<span class="rule">}</span></span>
+<span class="comment">/* both item and item content change size */</span>
+<span class="id">#animate-item-size</span> <span class="class">.item</span><span class="class">.is-expanded</span>,
+<span class="id">#animate-item-size</span> <span class="class">.item</span><span class="class">.is-expanded</span> <span class="class">.item-content</span> <span class="rules">{
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">180</span>px;</span></span>
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">120</span>px;</span></span>
+<span class="rule">}</span></span></code></pre>
+
+    </div>
+    <div id="animate-item-size" class="cell demo">
+      <p class="instruction">Click to item to toggle size</p>
+<div class="packery clickable">
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+</div>
+
+      <p class="edit"><a href="http://codepen.io/desandro/pen/rIfop">Edit this example</a> or <a href="http://codepen.io/desandro/pen/tfugk">example with jQuery</a>  on CodePen</p>
+    </div>
+  </div>
+
+  <p>This technique works on items with responsive, percentage widths. Although, it does require a bit more JS. <a href="http://codepen.io/desandro/pen/jGJKL">Check out the example on CodePen</a> to see how it&rsquo;s done.</p>
+
+  <div class="row example">
+    <div class="cell example-code">
+<pre><code class="css"><span class="id">#animate-item-size-responsive</span> <span class="class">.item</span> <span class="rules">{
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">20</span>%;</span></span>
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">60</span>px;</span></span>
+<span class="rule">}</span></span>
+
+<span class="id">#animate-item-size-responsive</span> <span class="class">.item-content</span> <span class="rules">{
+  <span class="rule"><span class="attribute">width</span>:<span class="value">  <span class="number">100</span>%;</span></span>
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100</span>%;</span></span>
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#09D</span>;</span></span>
+  <span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> width <span class="number">0.4</span>s, height <span class="number">0.4</span>s;</span></span>
+     <span class="rule"><span class="attribute">-moz-transition</span>:<span class="value"> width <span class="number">0.4</span>s, height <span class="number">0.4</span>s;</span></span>
+       <span class="rule"><span class="attribute">-o-transition</span>:<span class="value"> width <span class="number">0.4</span>s, height <span class="number">0.4</span>s;</span></span>
+          <span class="rule"><span class="attribute">transition</span>:<span class="value"> width <span class="number">0.4</span>s, height <span class="number">0.4</span>s;</span></span>
+<span class="rule">}</span></span>
+<span class="comment">/* item has expanded size */</span>
+<span class="id">#animate-item-size-responsive</span> <span class="class">.item</span><span class="class">.is-expanded</span> <span class="rules">{
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">60</span>%;</span></span>
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">120</span>px;</span></span>
+<span class="rule">}</span></span></code></pre>
+
+    </div>
+    <div id="animate-item-size-responsive" class="cell demo">
+      <p class="instruction">Click to item to toggle size</p>
+<div class="packery clickable">
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+  <div class="item">
+    <div class="item-content"></div>
+  </div>
+</div>
+
+      <p class="edit"><a href="http://codepen.io/desandro/pen/jGJKL">Edit this example on CodePen</a></p>
+    </div>
+
+  </div>
+
+</div><div class="primary-content">
+
+<h2 id="requirejs">RequireJS</h2>
+
+<p>Packery is compatible with <a href="http://requirejs.org">RequireJS</a>. Some configuration is required for its dependencies. All dependencies need to installed. The easiest way to do is by installing Packery with <a href="http://bower.io">Bower</a>.</p>
+
+<p>Set <a href="http://requirejs.org/docs/api.html#config-paths">config paths</a> for Packery and all its dependencies.</p>
+
+<pre><code class="js">requirejs.config({
+  paths: {
+    classie: <span class="string">'bower_components/classie'</span>,
+    eventie: <span class="string">'bower_components/eventie'</span>,
+    <span class="string">'doc-ready'</span>: <span class="string">'bower_components/doc-ready'</span>,
+    eventEmitter: <span class="string">'bower_components/eventEmitter'</span>,
+    <span class="string">'get-style-property'</span>: <span class="string">'bower_components/get-style-property'</span>,
+    <span class="string">'get-size'</span>: <span class="string">'bower_components/get-size'</span>,
+    <span class="string">'matches-selector'</span>: <span class="string">'bower_components/matches-selector'</span>,
+    outlayer: <span class="string">'bower_components/outlayer'</span>,
+    packery: <span class="string">'bower_components/packery'</span>
+  }
+});
+
+requirejs( [ <span class="string">'packery/packery'</span> ], <span class="keyword">function</span>( Packery ) {
+  <span class="keyword">new</span> Packery( <span class="comment">/*...*/</span> )
+});</code></pre>
+
+
+<p>Or, you can set <a href="http://requirejs.org/docs/api.html#config-baseUrl">baseUrl</a> to bower_components and set a path config for all your application code.</p>
+
+<pre><code class="js">requirejs.config({
+  baseUrl: <span class="string">'bower_components/'</span>,
+  paths: {
+    app: <span class="string">'../'</span>
+  }
+});
+
+requirejs( [ <span class="string">'packery/packery'</span>, <span class="string">'app/my-component.js'</span> ], <span class="keyword">function</span>( Packery, myComp ) {
+  <span class="keyword">new</span> Packery( <span class="comment">/*...*/</span> )
+});</code></pre>
+
+
+<h3 id="requirejs-and-jquery">RequireJS and jQuery</h3>
+
+<p>To use Packery with <a href="http://requirejs.org/docs/jquery.html#modulename">jQuery via RequireJS</a>, require <code>jquery.bridget</code>:</p>
+
+<pre><code class="js">requirejs.config({
+  <span class="comment">// change base_path to bower_components</span>
+  baseUrl: <span class="string">'../bower_components/'</span>,
+  <span class="comment">// add path config for jQuery</span>
+  paths: {
+    jquery: <span class="string">'jquery/jquery'</span>
+  }
+});
+
+<span class="comment">// require jQuery bridget, which will enable $.fn.packery</span>
+requirejs( [ <span class="string">'jquery-bridget/jquery.bridget'</span>, <span class="string">'packery/packery'</span> ], <span class="keyword">function</span>() {
+  <span class="keyword">var</span> $ = window.jQuery
+  $(<span class="string">'#basic'</span>).packery();
+});</code></pre>
+
+
+</div><div id="submitting-issues" class="primary-content">
+
+<h2>Submitting issues</h2>
+<h3>Reduced test case required</h3>
+<p>All bug reports and problem issues require a reduced test case. See <a href="http://css-tricks.com/reduced-test-cases/">CSS Tricks - Reduced Test Cases</a> on why they <em>&quot;are the absolute, ... number one way to troubleshoot bugs.&quot;</em></p>
+<ul>
+<li>A reduced test case is an isolated example that demonstrates the bug or issue.</li>
+<li>It contains the bare minimum HTML, CSS, and JavaScript required to demonstrate the bug. No extra functionality or styling.</li>
+<li>Any one of the <a href="http://codepen.io/collection/Ffbeu">CodePen examples</a> in <a href="http://packery.metafizzy.co">the docs</a> may be forked and used to build your reduced test case.</li>
+<li>A link to your site is <strong>not</strong> a reduced test case.</li>
+<li>Until you provide a reduced test case, your issue will be closed.</li>
+</ul>
+<p>I realize this guideline may seem a little harsh, but it dramatically helps both of you and me. Reduced test cases help you identify the issue at hand and understand your own code. On my side, they greatly reduce the amount of time spent resolving the issue.</p>
+
+
+</div><div class="primary-content">
+
+  <h2 id="extra-examples">Extra examples</h2>
+
+  <ul>
+    <li><a href="http://codepen.io/desandro/pen/pBlIw">Fluid grid with gutter</a></li>
+    <li><a href="http://codepen.io/desandro/pen/tjFKl">Ignore item element</a></li>
+    <li><a href="http://codepen.io/desandro/pen/chisC">Centered container</a> See <a href="https://github.com/metafizzy/packery/issues/8#issuecomment-16780631">Issue #8</a></li>
+    <li><a href="http://codepen.io/desandro/pen/mjcGq">Appending items, making them draggable</a> (for infinite scroll). See <a href="https://github.com/metafizzy/packery/issues/50">Issue #50</a></li>
+  </ul>
+
+</div>
+
+<!-- <h2>Additional resources</h2> -->
+
+
+  </div>
+
+  <div id="footer">
+    <div class="footer-content">
+      
+      <a class="metafizzy-logo" href="http://metafizzy.co">M<span class="etafizzy">etafizzy</span></a>
+      <span class="copyright">&copy; 2013</span>
+    </div>
+  </div>
+
+<!-- Packery does NOT require jQuery.  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <!-- jQuery is only used for jQuery UI Draggable
+     and to demonstrate Packery as a jQuery plugin -->
+<script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.js"><\/script>')</script>
+
+
+  <!-- DEV MODE - including each .js file -->
+  
+    <script src="bower_components/classie/classie.js"></script>
+  
+    <script src="bower_components/eventie/eventie.js"></script>
+  
+    <script src="bower_components/doc-ready/doc-ready.js"></script>
+  
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+  
+    <script src="bower_components/get-style-property/get-style-property.js"></script>
+  
+    <script src="bower_components/get-size/get-size.js"></script>
+  
+    <script src="bower_components/draggabilly/draggabilly.js"></script>
+  
+    <script src="bower_components/jquery-ui-draggable/jquery-ui-draggable.js"></script>
+  
+    <script src="bower_components/jquery-bridget/jquery.bridget.js"></script>
+  
+    <script src="bower_components/matches-selector/matches-selector.js"></script>
+  
+    <script src="bower_components/outlayer/item.js"></script>
+  
+    <script src="bower_components/outlayer/outlayer.js"></script>
+  
+    <script src="bower_components/packery/js/rect.js"></script>
+  
+    <script src="bower_components/packery/js/packer.js"></script>
+  
+    <script src="bower_components/packery/js/item.js"></script>
+  
+    <script src="bower_components/packery/js/packery.js"></script>
+  
+    <script src="js/controller.js"></script>
+  
+    <script src="js/pages/appendix.js"></script>
+  
+    <script src="js/pages/draggable.js"></script>
+  
+    <script src="js/pages/events.js"></script>
+  
+    <script src="js/pages/faq.js"></script>
+  
+    <script src="js/pages/index.js"></script>
+  
+    <script src="js/pages/methods.js"></script>
+  
+
+
+
+
+</body>
+</html>

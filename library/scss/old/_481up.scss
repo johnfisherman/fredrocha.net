@@ -1,0 +1,223 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+
+/*********************
+Here i work
+*********************/
+html {
+	// background-color: black;
+	// background: url('../../img/txtrs/broken_noise.png');
+	// background: url('../../img/txtrs/debut_dark.png');
+	background: url('../../img/txtrs/escheresque_ste.png');
+	// background: url('../../img/txtrs/navy_blue.png');
+	// background: url('../../img/txtrs/twinkle_twinkle.png');
+}
+
+.area-title a {
+	color: white;
+	text-decoration: none;
+	&:hover {
+		color: $link-hover;
+	}
+}
+
+#memeoirs {
+	width: 60%;
+	overflow: hidden;
+	color: white;
+}
+#webdev {
+	width: 40%;
+}
+#photo {
+	width: 60%;
+}
+#words {
+	width: 40%;
+}
+#meta {
+	width: 40%;
+	padding: 40px 40px;
+	margin: 0 0 7px 0;
+	background: none repeat scroll 0 0 rgba(42, 81, 120, 0.5);
+	// background-color: #20252A;
+	p {
+		color: white;
+		text-align: center;
+		font-family: $sans-serif;
+		text-shadow: 0 2px rgba(0,0,0, .75);	
+		a {
+			color: white;
+			&:hover {
+				color: $link-hover;
+			}
+		}
+	}
+
+}
+
+.area {
+	text-align: center;
+	img {
+		position: relative;
+		z-index: 1;
+		max-width: 100%;
+	}
+	.area-title {
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		z-index: 20;
+		// font-family: 'Yanone Kaffeesatz', sans-serif;
+		// font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Oswald', sans-serif;
+		color: white;
+		text-transform: uppercase;
+		font-size: 80px;
+		font-weight: bold;
+		text-align: center;
+		text-shadow: 0 2px rgba(0,0,0, .75);
+	}
+}
+
+// Photo
+.photo-content {
+	background: url('../../img/txtrs/broken_noise.png');
+}
+	
+.words-content, .single-content {
+	padding: 20px;
+	background-color: white;
+	p {
+		font-family: $sans-serif;
+	}
+	.format-quote {
+		.entry-content p {
+			margin: 10px 0;
+			font-size: 30px;
+			font-family: $serif;
+			font-style: italic;
+		}
+	}
+	.byline {
+		text-align: right;
+	}
+	article {
+		margin-bottom: 50px;
+	}
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+#post-navigation {
+	margin-bottom: 50px;
+	li {
+		float:left;
+		padding: 20px 20px;
+	}
+}
+.nav {
+
+}
+
+	/* .menu is clearfixed inside mixins.scss */
+	.menu {
+		ul {
+			li {
+				a {
+					
+					/*
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/
+					&:hover, &:focus {
+					
+					}
+				}
+				
+				&:first-child {}
+				&:last-child {}
+				
+				/*
+				plan your menus and drop-downs wisely.
+				*/
+				ul.sub-menu,
+				ul.children {
+					li {
+						a {
+							&:hover,
+							&:focus {}
+							&:link {}
+						}
+						&:first-child {}
+						&:last-child {}
+					}
+				}
+			} /* end .menu ul li */
+			
+			/* highlight current page */
+			li.current-menu-item, 
+			li.current_page_item,
+			li.current-page-ancestor {
+				a {}
+			}  /* end current highlighters */
+		} /* end .menu ul */
+	} /* end .menu */
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+/* entry content */
+.entry-content {
+			
+	
+	/* at this larger size, we can start to align images */
+	.alignleft, img.alignleft { 
+		margin-right: 1.5em; 
+		display: inline; 
+		float: left; 
+	}
+	.alignright, img.alignright { 
+		margin-left: 1.5em; 
+		display: inline; 
+		float: right; 
+	}
+	.aligncenter, img.aligncenter { 
+		margin-right: auto; 
+		margin-left: auto; 
+		display: block; 
+		clear: both; 
+	}
+			
+} /* end .entry-content */
+
+/*********************
+FOOTER STYLES
+*********************/
+	
+/*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+.footer-links {
+	ul {
+		li {}
+	}
+} /* end .footer-links */
+			

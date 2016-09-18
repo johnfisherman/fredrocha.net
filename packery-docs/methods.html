@@ -1,0 +1,1064 @@
+<!doctype html>
+<!--[if lte IE 8]>     <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="The bin-packing layout library. Packery makes your crazy and clever layout a real thing. Be clever. Get crazy." />
+
+  <title>Packery Methods</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700,400italic' rel='stylesheet'>
+
+  
+    <!-- DEV MODE - including each .css file -->
+    
+      <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    
+      <link rel="stylesheet" href="css/base.css" />
+    
+      <link rel="stylesheet" href="css/code.css" />
+    
+      <link rel="stylesheet" href="css/demos.css" />
+    
+      <link rel="stylesheet" href="css/footer.css" />
+    
+      <link rel="stylesheet" href="css/hero.css" />
+    
+      <link rel="stylesheet" href="css/icons.css" />
+    
+      <link rel="stylesheet" href="css/index.css" />
+    
+      <link rel="stylesheet" href="css/layout.css" />
+    
+      <link rel="stylesheet" href="css/modules.css" />
+    
+      <link rel="stylesheet" href="css/site-nav.css" />
+    
+  
+
+  
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@metafizzyco" />
+  <meta name="twitter:url" content="http://packery.metafizzy.co/methods.html" />
+  <meta name="twitter:title" content="Packery Methods" />
+  <meta name="twitter:description" content="The bin-packing layout library. Packery makes your crazy and clever layout a real thing. Be clever. Get crazy." />
+
+</head>
+<body class="methods-page" data-page="methods">
+
+  <div id="site-nav">
+    <h1><a href=".">Packery</a></h1>
+    <ol class="primary-content">
+      <li class="nav-options"><a href="options.html">Options</a></li>
+      <li class="nav-methods"><a href="methods.html">Methods</a></li>
+      <li class="nav-events"><a href="events.html">Events</a></li>
+      <li class="nav-draggable"><a href="draggable.html">Draggable</a></li>
+      <li class="nav-license"><a href="license.html">License</a></li>
+      <li class="nav-appendix"><a href="appendix.html">Appendix</a></li>
+      <li class="nav-faq"><a href="faq.html">FAQ</a></li>
+    </ol>
+  </div>
+
+  
+  
+
+  <div id="content">
+
+    <div class="primary-content">
+      
+        <h1>Methods</h1>
+        
+
+      
+      
+        <ul id="page-nav">
+          
+            <li><a href="#additems">addItems</a></li>
+          
+            <li><a href="#appended">appended</a></li>
+          
+            <li><a href="#binddraggabillyevents">bindDraggabillyEvents</a></li>
+          
+            <li><a href="#bindresize">bindResize</a></li>
+          
+            <li><a href="#binduidraggableevents">bindUIDraggableEvents</a></li>
+          
+            <li><a href="#destroy">destroy</a></li>
+          
+            <li><a href="#fit">fit</a></li>
+          
+            <li><a href="#getitemelements">getItemElements</a></li>
+          
+            <li><a href="#getitem">getItem</a></li>
+          
+            <li><a href="#layout">layout</a></li>
+          
+            <li><a href="#layoutitems">layoutItems</a></li>
+          
+            <li><a href="#off">off</a></li>
+          
+            <li><a href="#on">on</a></li>
+          
+            <li><a href="#packery-data">Packery.data</a></li>
+          
+            <li><a href="#prepended">prepended</a></li>
+          
+            <li><a href="#reloaditems">reloadItems</a></li>
+          
+            <li><a href="#remove">remove</a></li>
+          
+            <li><a href="#stamp">stamp</a></li>
+          
+            <li><a href="#unbindresize">unbindResize</a></li>
+          
+            <li><a href="#unstamp">unstamp</a></li>
+          
+        </ul>
+      
+    </div>
+
+    
+    
+<div class="primary-content">
+
+<p>Methods are actions taken on Packery instances.</p>
+
+<pre><code class="js"><span class="keyword">var</span> container = document.querySelector(<span class="string">'#container'</span>);
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+container.appendChild( elem );
+pckry.appended( elem );
+pckry.layout();</code></pre>
+
+
+<p>If you are using jQuery, methods follow the jQuery UI pattern.</p>
+
+<pre><code class="js">$(<span class="string">'#container'</span>).packery()
+  .append( elem )
+  .packery( <span class="string">'appended'</span>, elem );
+  <span class="comment">// no method is same as layout -&gt; .packery('layout')</span>
+  .packery();</code></pre>
+
+
+<p>jQuery chaining is broken by methods that return values (i.e. 
+  <a href="#getitemelements"><code>getItemElements</code></a>,
+  <a href="#getitem"><code>getItem</code></a>,
+  <a href="#on"><code>on</code></a>, and
+  <a href="#off"><code>off</code></a>).</p>
+
+<pre><code class="js"><span class="comment">// chaining works with 'fit' method</span>
+$container.packery( <span class="string">'fit'</span>, elem ).fadeIn();
+<span class="comment">// 'on' method breaks jQuery chaining</span>
+$container.packery( <span class="string">'on'</span>, <span class="string">'layoutComplete'</span>, <span class="keyword">function</span>() {...} );
+$container.fadeIn();</code></pre>
+
+
+</div><div class="primary-content">
+
+<h2 id="additems">addItems</h2>
+
+<pre><code class="js">pckry.addItems( elements )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'addItems'</span>, elements )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>elements</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b>
+      <span class="value">
+        <i>Element</i>,
+        <i>NodeList</i>, or
+        <i>Array</i> of Elements
+      </span>
+    </p>
+  </li>
+</ul>
+
+<p>Add item elements to the Packery instance.</p>
+
+</div><div class="primary-content">
+
+<h2 id="appended">appended</h2>
+
+<pre><code class="js">pckry.appended( elements )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'appended'</span>, elements )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>elements</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b>
+      <span class="value">
+        <i>Element</i>,
+        <i>NodeList</i>, or
+        <i>Array</i> of Elements
+      </span>
+    </p>
+  </li>
+</ul>
+
+<p>Add and lay out newly appended item elements. See also <a href="#prepended">prepended</a>.</p>
+
+<div class="row example">
+  <div class="cell example-code">
+<pre><code class="js"><span class="keyword">var</span> demo = document.querySelector(<span class="string">'#appended-demo'</span>);
+<span class="keyword">var</span> container = demo.querySelector(<span class="string">'.packery'</span>);
+<span class="keyword">var</span> button = demo.querySelector(<span class="string">'button'</span>);
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+
+eventie.bind( button, <span class="string">'click'</span>, <span class="keyword">function</span>() {
+  <span class="comment">// create new item elements</span>
+  <span class="keyword">var</span> elems = [];
+  <span class="keyword">var</span> fragment = document.createDocumentFragment();
+  <span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++ ) {
+    <span class="keyword">var</span> elem = document.createElement(<span class="string">'div'</span>);
+    elem.className = <span class="string">'.item'</span>;
+    fragment.appendChild( elem );
+    elems.push( elem );
+  }
+  <span class="comment">// append elements to container</span>
+  container.appendChild( fragment );
+  <span class="comment">// add and lay out newly appended elements</span>
+  pckry.appended( elems );
+});</code></pre>
+
+  </div>
+  <div id="appended-demo" class="cell demo">
+    <button class="button">Append items</button>
+    <div class="packery">
+      <div class="item w4"></div>
+      <div class="item h4"></div>
+      <div class="item w2"></div>
+      <div class="item"></div>
+      <div class="item h2"></div>
+    </div>
+    <p class="edit"><a href="http://codepen.io/desandro/pen/ndoxe">Edit example on CodePen</a></p>
+  </div>
+</div>
+
+</div><div class="primary-content">
+
+<h2 id="binddraggabillyevents">bindDraggabillyEvents</h2>
+
+<pre><code class="js">pckry.bindDraggabillyEvents( draggie )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'bindDraggabillyEvents'</span>, draggie )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>draggie</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Draggabilly</i></span>
+    </p>
+  </li>
+</ul>
+
+<p>Bind <a href="http://draggabilly.desandro.com">Draggabilly</a> events, so that the Packery instance will layout around the dragged element.</p>
+
+<p>See <a href="draggable.html#draggabilly">Draggable: Draggabilly</a> for more.</p>
+
+</div><div class="primary-content">
+
+<h2 id="bindresize">bindResize</h2>
+
+<pre><code class="js">pckry.bindResize()
+<span class="comment">// or with jQuery</span>
+$container.packery(<span class="string">'bindResize'</span>)</code></pre>
+
+
+<p>Binds event listener to window <code>resize</code>, so layout is triggered when the browser window is resized.</p>
+
+</div><div class="primary-content">
+
+<h2 id="binduidraggableevents">bindUIDraggableEvents</h2>
+
+<pre><code class="js">pckry.bindUIDraggableEvents( $elements )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'bindDraggabillyEvents'</span>, $elements )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>$element</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>jQuery</i></span>
+    </p>
+  </li>
+</ul>
+
+<p>Bind <a href="http://jqueryui.com/draggable/">jQuery UI Draggable</a> events, so that the Packery instance will layout around the dragged element.</p>
+
+<p>See <a href="draggable.html#jquery-ui-draggable">Draggable: jQuery UI Draggable</a> for more.</p>
+
+</div><div class="primary-content">
+
+<h2 id="destroy">destroy</h2>
+
+<pre><code class="js">pckry.destroy()
+<span class="comment">// or with jQuery</span>
+$container.packery(<span class="string">'destroy'</span>)</code></pre>
+
+
+<p>Removes the Packery functionality completely. This will return the element back to its pre-initialized state.</p>
+
+<div class="row example">
+  <div class="cell example-code">
+<pre><code class="js"><span class="keyword">var</span> demo = document.querySelector(<span class="string">'#destroy-demo'</span>);
+<span class="keyword">var</span> container = demo.querySelector(<span class="string">'.packery'</span>);
+<span class="keyword">var</span> button = demo.querySelector(<span class="string">'button'</span>);
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+<span class="keyword">var</span> isActive = <span class="literal">true</span>;
+
+eventie.bind( button, <span class="string">'click'</span>, <span class="keyword">function</span>() {
+  <span class="keyword">if</span> ( isActive ) {
+    pckry.destroy();
+  } <span class="keyword">else</span> {
+    pckry = <span class="keyword">new</span> Packery( container );
+  }
+  isActive = !isActive;
+});</code></pre>
+
+  </div>
+  <div id="destroy-demo" class="cell demo">
+    <button class="button">Toggle Packery</button>
+    <div class="packery">
+      <div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+
+    </div>
+    <p class="edit"><a href="http://codepen.io/desandro/pen/scKGf">Edit this example on CodePen</a></p>
+  </div>
+</div>
+
+</div><div class="primary-content">
+
+<h2 id="fit">fit</h2>
+
+<pre><code class="js">pckry.fit( element, x, y )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'fit'</span>, element, x, y )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>element</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b>
+      <span class="value"><i>Element</i></span>
+    </p>
+  </li>
+  <li class="param">
+    <h5 class="param-name param-bit"><code>x</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b>
+      <span class="value"><i>Number</i></span>
+    </p>
+    <p class="description param-bit">Horizontal position of element, optional</p>
+  </li>
+  <li class="param">
+    <h5 class="param-name param-bit"><code>y</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b>
+      <span class="value"><i>Number</i></span>
+    </p>
+    <p class="description param-bit">Vertical position of element, optional</p>
+  </li>
+</ul>
+
+<p>Fit an item element within the layout, and have other item elements laid out around it. This method is useful when expanding an element, and keeping it in its same position.</p>
+
+<div class="row example">
+  <div class="cell example-code">
+<pre><code class="js"><span class="keyword">var</span> container = document.querySelector(<span class="string">'#fit-demo .packery'</span>);
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+
+eventie.bind( container, <span class="string">'click'</span>, <span class="keyword">function</span>( event ) {
+  <span class="comment">// don't proceed if item was not clicked on</span>
+  <span class="keyword">var</span> target = event.target;
+  <span class="keyword">if</span> ( !classie.has( target, <span class="string">'item'</span> ) ) {
+    <span class="keyword">return</span>;
+  }
+
+  <span class="keyword">var</span> isGigante = classie.has( target, <span class="string">'gigante'</span> );
+  classie.toggleClass( target, <span class="string">'gigante'</span> );
+
+  <span class="keyword">if</span> ( isGigante ) {
+    <span class="comment">// if shrinking, just layout</span>
+    pckry.layout();
+  } <span class="keyword">else</span> {
+    <span class="comment">// if expanding, fit it</span>
+    pckry.fit( target );
+  }
+});</code></pre>
+
+  </div>
+  <div id="fit-demo" class="cell demo">
+    <p class="instruction">Click item to toggle size</p>
+    <div class="packery clickable">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <p class="edit"><a href="http://codepen.io/desandro/pen/rwhjq">Edit example on CodePen</a></p>
+  </div>
+</div>
+
+<p>You can optionally set a new position of the element. <code>x</code> and <code>y</code> values are relative to the container.</p>
+
+<div class="row example">
+  <div class="cell example-code">
+<pre><code class="js"><span class="keyword">var</span> container = document.querySelector(<span class="string">'#fit-position-demo .packery'</span>);
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+
+eventie.bind( container, <span class="string">'click'</span>, <span class="keyword">function</span>( event ) {
+  <span class="comment">// don't proceed if item was not clicked on</span>
+  <span class="keyword">var</span> target = event.target;
+  <span class="keyword">if</span> ( !classie.has( target, <span class="string">'item'</span> ) ) {
+    <span class="keyword">return</span>;
+  }
+  <span class="comment">// position item at 40, 40</span>
+  pckry.fit( target, <span class="number">40</span>, <span class="number">40</span> );
+});
+</code></pre>
+
+  </div>
+  <div id="fit-position-demo" class="cell demo">
+    <p class="instruction">Click item to fit it at 40, 40</p>
+    <div class="packery clickable">
+      <div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+
+    </div>
+    <p class="edit"><a href="http://codepen.io/desandro/pen/uspgI">Edit this example on CodePen</a></p>
+  </div>
+</div>
+
+</div><div class="primary-content">
+
+<h2 id="getitemelements">getItemElements</h2>
+
+<pre><code class="js"><span class="keyword">var</span> elems = pckry.getItemElements()
+<span class="comment">// or with jQuery</span>
+<span class="keyword">var</span> elems = $container.packery(<span class="string">'getItemElements'</span>)</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit">returns</h5>
+    <h5 class="param-name param-bit"><code>itemElems</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Array</i></span>
+    </p>
+  </li>
+</ul>
+
+<p>Get an array of elements used as the Packery instance's items.</p>
+
+</div><div class="primary-content">
+
+<h2 id="getitem">getItem</h2>
+
+<pre><code class="js"><span class="keyword">var</span> item = pckry.getItem( element )
+<span class="comment">// or with jQuery</span>
+<span class="keyword">var</span> item = $container.packery( <span class="string">'getItem'</span>, element )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>element</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Element</i></span>
+    </p>
+  </li>
+  <li class="param">
+    <h5 class="param-name param-bit">returns</h5>
+    <h5 class="param-name param-bit"><code>item</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Packery.Item</i></span>
+    </p>
+  </li>
+</ul>
+
+<p>Get a <i>Packery.Item</i> from an element.</p>
+
+</div><div class="primary-content">
+
+<h2 id="layout">layout</h2>
+
+<pre><code class="js">pckry.layout()
+<span class="comment">// or with jQuery</span>
+$container.packery()</code></pre>
+
+
+<p>Lay out all item elements.</p>
+
+<div class="row example">
+  <div class="cell example-code">
+<pre><code class="js"><span class="keyword">var</span> container = document.querySelector(<span class="string">'#layout-demo .packery'</span>);
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+
+eventie.bind( container, <span class="string">'click'</span>, <span class="keyword">function</span>( event ) {
+  <span class="comment">// don't proceed if item was not clicked on</span>
+  <span class="keyword">if</span> ( !classie.has( event.target, <span class="string">'item'</span> ) ) {
+    <span class="keyword">return</span>;
+  }
+  <span class="comment">// change size of item via class</span>
+  classie.toggle( event.target, <span class="string">'gigante'</span> );
+  <span class="comment">// trigger layout</span>
+  pckry.layout();
+});</code></pre>
+
+  </div>
+  <div id="layout-demo" class="cell demo">
+    <p class="instruction">Click item to toggle size</p>
+    <div class="packery clickable">
+      <div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+
+    </div>
+    <p class="edit"><a href="http://codepen.io/desandro/pen/dLgKw">Edit this example on CodePen</a></p>
+  </div>
+</div>
+
+</div><div class="primary-content">
+
+<h2 id="layoutitems">layoutItems</h2>
+
+<pre><code class="js">pckry.layoutItems( items, isStill )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'layoutItems'</span>, items, isStill )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>items</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Array</i> of <i>Packery.Item</i>s</span>
+    </p>
+  </li>
+  <li class="param">
+    <h5 class="param-name param-bit"><code>isStill</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Boolean</i>
+    </p>
+    <p class="description param-bit">Disables transitions</p>
+  </li>
+</ul>
+
+<p>Lay out specified items.</p>
+
+</div><div class="primary-content">
+
+<h2 id="off">off</h2>
+
+<pre><code class="js">pckry.off( eventName, listener )
+<span class="comment">// or with jQuery</span>
+<span class="keyword">var</span> pckry = $container.packery( <span class="string">'off'</span>, eventName, listener )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>eventName</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>String</i></span>
+    </p>
+    <p class="description param-bit">name of a <a href="events.html">Packery event</a></p>
+  </li>
+  <li class="param">
+    <h5 class="param-name param-bit"><code>listener</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Function</i>
+    </p>
+  </li>
+  <li class="param">
+    <h5 class="param-name param-bit">returns</h5>
+    <p class="param-name param-bit"><code>pckry</code></p>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Packery</i></span>
+    </p>
+  </li>
+</ul>
+
+<p>Remove an event listener. See <a href="events.html">Events</a>.</p>
+
+</div><div class="primary-content">
+
+<h2 id="on">on</h2>
+
+<pre><code class="js">pckry.on( eventName, listener )
+<span class="comment">// or with jQuery</span>
+<span class="keyword">var</span> pckry = $container.packery( <span class="string">'on'</span>, eventName, listener )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>eventName</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>String</i></span>
+    </p>
+    <p class="description param-bit">name of a <a href="events.html">Packery event</a></p>
+  </li>
+  <li class="param">
+    <h5 class="param-name param-bit"><code>listener</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Function</i>
+    </p>
+  </li>
+  <li class="param">
+    <h5 class="param-name param-bit">returns</h5>
+    <p class="param-name param-bit"><code>pckry</code></p>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Packery</i></span>
+    </p>
+  </li>
+</ul>
+
+<p>Add an event listener for <a href="events.html">certain events</a>.</p>
+
+<p>Unlike jQuery's <code>on</code>, Packery's <code>on</code> only works with the specified events. <code>pckry.on( 'click', function() {...})</code> will not work.</p>
+
+<p>To listen for an event just once, <code>return <span class="literal">true</span></code> in the event listener.</p>
+
+<pre><code class="js">pckry.on( <span class="string">'layoutComplete'</span>, <span class="keyword">function</span>() {
+  console.log(<span class="string">'layout is complete, just once'</span>);
+  <span class="keyword">return</span> <span class="literal">true</span>;
+});</code></pre>
+
+
+</div><div class="primary-content">
+
+<h2 id="packery-data">Packery.data</h2>
+
+<pre><code class="js"><span class="keyword">var</span> pckry = Packery.data( element )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>elements</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Element</i></span>
+    </p>
+  </li>
+  <li class="param">
+    <h5 class="param-name param-bit">returns</h5>
+    <p class="param-name param-bit"><code>pckry</code></p>
+    <p class="type param-bit">
+      <b>Type:</b> <span class="value"><i>Packery</i></span>
+    </p>
+  </li>
+</ul>
+
+<p>Get the Packery instance from an element. Note this method is of <code>Packery</code>, rather than of a Packery instance.</p>
+
+<p>This method is useful to access the Packery instance after it was initialized via HTML.</p>
+
+<pre><code class="html"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span> <span class="attribute">class</span>=<span class="value">"js-packery"</span> <span class="attribute">data-packery-options</span>=<span class="value">'{...}'</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"item"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"item"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+<pre><code class="js"><span class="keyword">var</span> container = document.querySelector(<span class="string">'#container'</span>);
+<span class="keyword">var</span> pckry = Packery.data( container );
+<span class="comment">// do stuff with Packery instance</span>
+pckry.layout();</code></pre>
+
+
+</div><div class="primary-content">
+
+<h2 id="prepended">prepended</h2>
+
+<pre><code class="js">pckry.prepended( elements )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'prepended'</span>, elements )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>elements</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b>
+      <span class="value">
+        <i>Element</i>,
+        <i>NodeList</i>, or
+        <i>Array</i> of Elements
+      </span>
+    </p>
+  </li>
+</ul>
+
+<p>Add and lay out newly prepended item elements at the beginning of layout. Similar to <a href="#appended">appended</a>.</p>
+
+<div class="row example">
+  <div class="cell example-code">
+<pre><code class="js"><span class="keyword">var</span> demo = document.querySelector(<span class="string">'#prepended-demo'</span>);
+<span class="keyword">var</span> container = demo.querySelector(<span class="string">'.packery'</span>);
+<span class="keyword">var</span> button = demo.querySelector(<span class="string">'button'</span>);
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+
+eventie.bind( button, <span class="string">'click'</span>, <span class="keyword">function</span>() {
+  <span class="comment">// create new item elements</span>
+  <span class="keyword">var</span> elems = [];
+  <span class="keyword">var</span> fragment = document.createDocumentFragment();
+  <span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++ ) {
+    <span class="keyword">var</span> elem = document.createElement(<span class="string">'div'</span>);
+    elem.className = <span class="string">'.item'</span>;
+    fragment.appendChild( elem );
+    elems.push( elem );
+  }
+  <span class="comment">// append elements to container</span>
+  container.insertBefore( fragment, container.firstChild );
+  <span class="comment">// add and lay out newly prepended elements</span>
+  pckry.prepended( elems );
+});</code></pre>
+
+  </div>
+  <div id="prepended-demo" class="cell demo">
+    <button class="button">Prepend items</button>
+    <div class="packery">
+      <div class="item w4"></div>
+      <div class="item h4"></div>
+      <div class="item w2"></div>
+      <div class="item"></div>
+      <div class="item h2"></div>
+    </div>
+    <p class="edit"><a href="http://codepen.io/desandro/pen/EhvLy">Edit example on CodePen</a></p>
+  </div>
+</div>
+
+</div><div class="primary-content">
+
+<h2 id="reloaditems">reloadItems</h2>
+
+<pre><code class="js">pckry.reloadItems()
+<span class="comment">// or with jQuery</span>
+$container.packery(<span class="string">'reloadItems'</span>)</code></pre>
+
+
+<p>Recollect all item elements.</p>
+
+</div><div class="primary-content">
+
+<h2 id="remove">remove</h2>
+
+<pre><code class="js">pckry.remove( elements )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'remove'</span>, elements )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>elements</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b>
+      <span class="value">
+        <i>Element</i>,
+        <i>NodeList</i>, or
+        <i>Array</i> of Elements
+      </span>
+    </p>
+  </li>
+</ul>
+
+<p>Remove elements from the Packery instance, then from the DOM.</p>
+
+<div class="row example">
+  <div class="cell example-code">
+<pre><code class="js"><span class="keyword">var</span> container = document.querySelector(<span class="string">'#remove-demo .packery'</span>);
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( container );
+
+eventie.bind( container, <span class="string">'click'</span>, <span class="keyword">function</span>( event ) {
+  <span class="comment">// don't proceed if item was not clicked on</span>
+  <span class="keyword">if</span> ( !classie.has( event.target, <span class="string">'item'</span> ) ) {
+    <span class="keyword">return</span>;
+  }
+  <span class="comment">// remove clicked element</span>
+  pckry.remove( event.target );
+  <span class="comment">// layout remaining item elements</span>
+  pckry.layout();
+});</code></pre>
+
+  </div>
+  <div id="remove-demo" class="cell demo">
+    <p class="instruction">Click items to remove them</p>
+    <div class="packery clickable">
+      <div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+
+    </div>
+    <p class="edit"><a href="http://codepen.io/desandro/pen/akrvC">Edit this example on CodePen</a></p>
+  </div>
+</div>
+
+</div><div class="primary-content">
+
+<h2 id="stamp">stamp</h2>
+
+<pre><code class="js">pckry.stamp( elements )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'stamp'</span>, elements )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>elements</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b>
+      <span class="value">
+        <i>Element</i>,
+        <i>NodeList</i>, or
+        <i>Array</i> of Elements
+      </span>
+    </p>
+  </li>
+</ul>
+
+<p>Stamp the elements in the layout. Packery will lay out item elements <em>around</em> stamped elements.</p>
+
+<div class="row example">
+  <div class="cell example-code">
+<pre><code class="js"><span class="keyword">var</span> demo = document.querySelector(<span class="string">'#stamp-demo'</span>);
+<span class="keyword">var</span> stampElem = demo.querySelector(<span class="string">'.stamp'</span>);
+<span class="keyword">var</span> button = demo.querySelector(<span class="string">'button'</span>);
+<span class="keyword">var</span> pckry = <span class="keyword">new</span> Packery( demo.querySelector(<span class="string">'.packery'</span>), {
+  itemSelector: <span class="string">'.item'</span>
+});
+<span class="keyword">var</span> isStamped = <span class="literal">false</span>;
+
+eventie.bind( button, <span class="string">'click'</span>, <span class="keyword">function</span>() {
+  <span class="comment">// stamp or unstamp element</span>
+  <span class="keyword">if</span> ( isStamped ) {
+    pckry.unstamp( stampElem );
+  } <span class="keyword">else</span> {
+    pckry.stamp( stampElem );
+  }
+  <span class="comment">// trigger layout</span>
+  pckry.layout();
+  isStamped = !isStamped;
+});</code></pre>
+
+  </div>
+  <div id="stamp-demo" class="cell demo">
+    <button class="button">Toggle stamp</button>
+    <div class="packery has-stamp">
+      <div class="stamp"></div>
+      <div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item h4"></div>
+<div class="item w2"></div>
+<div class="item"></div>
+<div class="item h2"></div>
+<div class="item w2 h2"></div>
+<div class="item"></div>
+<div class="item w4"></div>
+<div class="item"></div>
+<div class="item"></div>
+
+    </div>
+    <p class="edit"><a href="http://codepen.io/desandro/pen/pstDE">Edit this example on CodePen</a></p>
+  </div>
+</div>
+
+</div><div class="primary-content">
+
+<h2 id="unbindresize">unbindResize</h2>
+
+<pre><code class="js">pckry.unbindResize()
+<span class="comment">// or with jQuery</span>
+$container.packery(<span class="string">'unbindResize'</span>)</code></pre>
+
+
+<p>Un-bind layout to window <code>resize</code> event.</p>
+
+</div><div class="primary-content">
+
+<h2 id="unstamp">unstamp</h2>
+
+<pre><code class="js">pckry.unstamp( elements )
+<span class="comment">// or with jQuery</span>
+$container.packery( <span class="string">'unstamp'</span>, elements )</code></pre>
+
+
+<ul class="params">
+  <li class="param">
+    <h5 class="param-name param-bit"><code>elements</code></h5>
+    <p class="type param-bit">
+      <b>Type:</b>
+      <span class="value">
+        <i>Element</i>,
+        <i>NodeList</i>, or
+        <i>Array</i> of Elements
+      </span>
+    </p>
+  </li>
+</ul>
+
+<p>Un-<a href="#stamp">stamp</a> the elements, so that Packery will no longer layout item elements around them.</p>
+
+</div>
+
+
+  </div>
+
+  <div id="footer">
+    <div class="footer-content">
+      
+      <a class="metafizzy-logo" href="http://metafizzy.co">M<span class="etafizzy">etafizzy</span></a>
+      <span class="copyright">&copy; 2013</span>
+    </div>
+  </div>
+
+<!-- Packery does NOT require jQuery.  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <!-- jQuery is only used for jQuery UI Draggable
+     and to demonstrate Packery as a jQuery plugin -->
+<script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.js"><\/script>')</script>
+
+
+  <!-- DEV MODE - including each .js file -->
+  
+    <script src="bower_components/classie/classie.js"></script>
+  
+    <script src="bower_components/eventie/eventie.js"></script>
+  
+    <script src="bower_components/doc-ready/doc-ready.js"></script>
+  
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+  
+    <script src="bower_components/get-style-property/get-style-property.js"></script>
+  
+    <script src="bower_components/get-size/get-size.js"></script>
+  
+    <script src="bower_components/draggabilly/draggabilly.js"></script>
+  
+    <script src="bower_components/jquery-ui-draggable/jquery-ui-draggable.js"></script>
+  
+    <script src="bower_components/jquery-bridget/jquery.bridget.js"></script>
+  
+    <script src="bower_components/matches-selector/matches-selector.js"></script>
+  
+    <script src="bower_components/outlayer/item.js"></script>
+  
+    <script src="bower_components/outlayer/outlayer.js"></script>
+  
+    <script src="bower_components/packery/js/rect.js"></script>
+  
+    <script src="bower_components/packery/js/packer.js"></script>
+  
+    <script src="bower_components/packery/js/item.js"></script>
+  
+    <script src="bower_components/packery/js/packery.js"></script>
+  
+    <script src="js/controller.js"></script>
+  
+    <script src="js/pages/appendix.js"></script>
+  
+    <script src="js/pages/draggable.js"></script>
+  
+    <script src="js/pages/events.js"></script>
+  
+    <script src="js/pages/faq.js"></script>
+  
+    <script src="js/pages/index.js"></script>
+  
+    <script src="js/pages/methods.js"></script>
+  
+
+
+
+
+</body>
+</html>
