@@ -1,4 +1,13 @@
-# Bones
+
+# Fred Rocha's personal corner of the web
+
+Source for the website that lives in [fredrocha.net](http://fredrocha.net).
+
+This site hosts different kinds of things that entice me. There is a strong focus on The Word, so the (micro) blogging side of the platform is where the iterations happen more frequently.
+
+The base of this is Wordpress, and what you'll find in this repo is a custom theme based on the minimal and lightweight *Bones*.
+
+# What is Bones
 __A Lightweight Wordpress Development Theme__
 
 Bones is designed to make the life of developers easier. It's built
@@ -9,22 +18,8 @@ frequent user. I'm always open to contribution. :)
 
 Designed by **Eddie Machado**: http://themble.com/bones
 
-Special Thanks to:
-* Paul Irish & the HTML5 Boilerplate
-* Yoast for some WP functions & optimization ideas
-* Andrew Rogers for code optimization
-* David Dellanave for speed & code optimization
-* and several other developers. :)
-
-Submit Bugs & or Fixes:
-https://github.com/eddiemachado/bones/issues
-
 
 ## License
 __[WTFPL](http://sam.zoy.org/wtfpl/)__
 
 	Are You Serious? Yes.
-
-
-## Meta
-* [Changelog](../../blob/master/CHANGELOG.md)
