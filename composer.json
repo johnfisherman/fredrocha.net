@@ -1,0 +1,16 @@
+{
+    "name": "fred/theshinny",
+    "description": "Fred Rocha's personal corner of the web",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fred Rocha",
+            "email": "john.fisherman@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}

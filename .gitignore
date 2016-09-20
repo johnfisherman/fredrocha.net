@@ -1,1 +1,3 @@
-library/scss/.sass-cache/
+/library/scss/.sass-cache/
+/vendor/
+/logs/

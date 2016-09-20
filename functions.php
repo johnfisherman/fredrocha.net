@@ -8,6 +8,11 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
 
+/* Fred */
+/* Composer Autoload init */
+require __DIR__ . '/vendor/autoload.php';
+
+
 /************* INCLUDE NEEDED FILES ***************/
 
 /*

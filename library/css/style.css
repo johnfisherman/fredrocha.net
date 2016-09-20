@@ -1662,27 +1662,27 @@ tweeners.
   }
 
   /* line 125, ../scss/_481up.scss */
-  .words-content, .single-content, .generic-page, .search-content, .archive-content {
+  .words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content {
     padding: 40px;
     background-color: white;
   }
   /* line 128, ../scss/_481up.scss */
-  .words-content p, .single-content p, .generic-page p, .search-content p, .archive-content p {
+  .words-content p, .single-content p, .generic-page p, .search-content p, .archive-content p, .memes-content p {
     font-family: "Open Sans", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
   }
   /* line 132, ../scss/_481up.scss */
-  .words-content .format-quote .entry-content p, .single-content .format-quote .entry-content p, .generic-page .format-quote .entry-content p, .search-content .format-quote .entry-content p, .archive-content .format-quote .entry-content p {
+  .words-content .format-quote .entry-content p, .single-content .format-quote .entry-content p, .generic-page .format-quote .entry-content p, .search-content .format-quote .entry-content p, .archive-content .format-quote .entry-content p, .memes-content .format-quote .entry-content p {
     margin: 10px 0;
     font-size: 30px;
     font-family: "Georgia", Cambria, Times New Roman, Times, serif;
     font-style: italic;
   }
   /* line 139, ../scss/_481up.scss */
-  .words-content .byline, .single-content .byline, .generic-page .byline, .search-content .byline, .archive-content .byline {
+  .words-content .byline, .single-content .byline, .generic-page .byline, .search-content .byline, .archive-content .byline, .memes-content .byline {
     text-align: right;
   }
   /* line 142, ../scss/_481up.scss */
-  .words-content article, .single-content article, .generic-page article, .search-content article, .archive-content article {
+  .words-content article, .single-content article, .generic-page article, .search-content article, .archive-content article, .memes-content article {
     margin-bottom: 50px;
   }
 
@@ -1732,37 +1732,53 @@ tweeners.
     margin-top: 80px;
   }
 
+  /* line 193, ../scss/_481up.scss */
+  #movies li, #books li, #music li {
+    float: left;
+    margin: 0 20px 40px 0;
+  }
+
+  /* line 201, ../scss/_481up.scss */
+  #movies li .movie-wrapper {
+    min-height: 300px;
+  }
+
+  /* line 209, ../scss/_481up.scss */
+  #books li .book-wrapper {
+    min-height: 170px;
+  }
+
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 194, ../scss/_481up.scss */
+  /* line 226, ../scss/_481up.scss */
   #post-navigation {
     margin-bottom: 50px;
   }
-  /* line 196, ../scss/_481up.scss */
+  /* line 228, ../scss/_481up.scss */
   #post-navigation li {
     float: left;
     padding: 20px 20px;
   }
 
   /* .menu is clearfixed inside mixins.scss */
-  /* line 206, ../scss/_481up.scss */
+  /* line 238, ../scss/_481up.scss */
   .menu {
     /* end .menu ul */
   }
-  /* line 207, ../scss/_481up.scss */
+  /* line 239, ../scss/_481up.scss */
   .menu ul {
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 208, ../scss/_481up.scss */
+  /* line 240, ../scss/_481up.scss */
   .menu ul li {
     /*
     plan your menus and drop-downs wisely.
     */
   }
-  /* line 209, ../scss/_481up.scss */
+  /* line 241, ../scss/_481up.scss */
   .menu ul li a {
     /*
     you can use hover styles here even though this size
@@ -1775,23 +1791,23 @@ tweeners.
   POSTS & CONTENT STYLES
   *********************/
   /* entry content */
-  /* line 254, ../scss/_481up.scss */
+  /* line 286, ../scss/_481up.scss */
   .entry-content {
     /* at this larger size, we can start to align images */
   }
-  /* line 258, ../scss/_481up.scss */
+  /* line 290, ../scss/_481up.scss */
   .entry-content .alignleft, .entry-content img.alignleft {
     margin-right: 1.5em;
     display: inline;
     float: left;
   }
-  /* line 263, ../scss/_481up.scss */
+  /* line 295, ../scss/_481up.scss */
   .entry-content .alignright, .entry-content img.alignright {
     margin-left: 1.5em;
     display: inline;
     float: right;
   }
-  /* line 268, ../scss/_481up.scss */
+  /* line 300, ../scss/_481up.scss */
   .entry-content .aligncenter, .entry-content img.aligncenter {
     margin-right: auto;
     margin-left: auto;
