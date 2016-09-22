@@ -1,6 +1,8 @@
 
 # Fred Rocha's personal corner of the web
 
+![Apres moi le deluge](http://www.fredrocha.net/wp-content/themes/theshinny/img/torrent%20of%20thoughts.jpg)
+
 Source for the website that lives in [fredrocha.net](http://fredrocha.net).
 
 This site hosts different kinds of things that entice me. There is a strong focus on The Word, so the (micro) blogging side of the platform is where the iterations happen more frequently.
@@ -13,7 +15,7 @@ This site hosts different kinds of things that entice me. There is a strong focu
 	* Last.fm (for music) :musical_note:
 	* Goodreads.com (for books) :books:
 	* Criticker.com (for movies) :movie_camera:
-* POSSIE to Twitter. Using [IFTTT.com] all my posts labeled with the category "Tweets" are automatically posted to Twitter. Own your data!
+* POSSIE to Twitter. Using the black magic of [IFTTT](http://ifttt.com) all my posts labeled with the category "Tweets" are automatically posted to Twitter. Own your data!
 
 
 The base of this is Wordpress, and what you'll find in this repo is a custom theme based on the minimal and lightweight *Bones*.
