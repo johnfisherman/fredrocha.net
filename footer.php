@@ -1,4 +1,4 @@
-			<?php if(!is_home()):		?>
+			<?php if(!is_home()):	?>
 		
 				<footer class="footer" role="contentinfo">
 
@@ -23,7 +23,7 @@
 
 				</footer> <?php // end footer ?>
 
-			<?php endif ?>
+			<?php endif // /!is_home() ?>
 
 		</div> <?php // end #container ?>
 

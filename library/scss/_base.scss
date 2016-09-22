@@ -50,7 +50,7 @@ and will be used across all viewports.
 .footer {
 
 	min-height: 200px;
-	background: lighten($link-color, 30%);
+	background: none;
 
 	#social {
 
@@ -149,7 +149,12 @@ and will be used across all viewports.
 		.soc-email1:before {
 		    content: '<';
 		}
-		} // /social
+	} // /social
+
+	.copyright {
+		color: $white;
+	}
+
 } // /footer
 
 /*********************
