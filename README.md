@@ -5,9 +5,20 @@ Source for the website that lives in [fredrocha.net](http://fredrocha.net).
 
 This site hosts different kinds of things that entice me. There is a strong focus on The Word, so the (micro) blogging side of the platform is where the iterations happen more frequently.
 
+## Features
+
+* Responsive, collapsible header menu
+* Mosaic home page, where each entry automatically falls into one place of the viewport of the page. Courtesy of [Pakery](http://packery.metafizzy.co/index.html).
+* Memes page features my cultural zeitgeist, feeding from 3 APIs:
+	* Last.fm (for music) :musical_note:
+	* Goodreads.com (for books) :books:
+	* Criticker.com (for movies) :movie_camera:
+* POSSIE to Twitter. Using [IFTTT.com] all my posts labeled with the category "Tweets" are automatically posted to Twitter. Own your data!
+
+
 The base of this is Wordpress, and what you'll find in this repo is a custom theme based on the minimal and lightweight *Bones*.
 
-# What is Bones
+## What is Bones
 __A Lightweight Wordpress Development Theme__
 
 Bones is designed to make the life of developers easier. It's built
@@ -18,6 +29,6 @@ frequent user. I'm always open to contribution. :)
 
 Designed by **Eddie Machado**: http://themble.com/bones
 
-# Contact the Author
+## Contact the Author
 
-Any remarks you have make sure to drop me a line at john.fisherman@gmail.com.
+Any remarks you have make sure to drop me a line at [john.fisherman@gmail.com](mailto:john.fisherman@gmail.com). More touch-points [here](http://www.fredrocha.net/contact).

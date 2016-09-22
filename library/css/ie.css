@@ -735,21 +735,21 @@ NAVIGATION STYLES
   float: left;
   position: relative;
   /*
+  you can use hover styles here even though this size
+  has the possibility of being a mobile device.
+  */
+  /*
   plan your menus and drop-downs wisely.
   */
   /* showing sub-menus */
 }
-/* line 75, ../scss/_768up.scss */
+/* line 79, ../scss/_768up.scss */
+.nav li:hover, .nav li:focus {
+  background-color: #dedede;
+}
+/* line 84, ../scss/_768up.scss */
 .nav li a {
   border-bottom: 0;
-  /*
-  you can use hover styles here even though this size
-  has the possibility of being a mobile device.
-  */
-}
-/* line 82, ../scss/_768up.scss */
-.nav li a:hover, .nav li a:focus {
-  background-color: #dedede;
 }
 /* line 94, ../scss/_768up.scss */
 .nav li ul.sub-menu,
