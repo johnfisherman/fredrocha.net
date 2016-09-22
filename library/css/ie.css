@@ -593,37 +593,42 @@ h3 {
   min-height: 170px;
 }
 
+/* line 218, ../scss/_481up.scss */
+#music li .music-wrapper img {
+  border-radius: 5px;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 226, ../scss/_481up.scss */
+/* line 229, ../scss/_481up.scss */
 #post-navigation {
   margin-bottom: 50px;
 }
-/* line 228, ../scss/_481up.scss */
+/* line 231, ../scss/_481up.scss */
 #post-navigation li {
   float: left;
   padding: 20px 20px;
 }
 
 /* .menu is clearfixed inside mixins.scss */
-/* line 238, ../scss/_481up.scss */
+/* line 241, ../scss/_481up.scss */
 .menu {
   /* end .menu ul */
 }
-/* line 239, ../scss/_481up.scss */
+/* line 242, ../scss/_481up.scss */
 .menu ul {
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 240, ../scss/_481up.scss */
+/* line 243, ../scss/_481up.scss */
 .menu ul li {
   /*
   plan your menus and drop-downs wisely.
   */
 }
-/* line 241, ../scss/_481up.scss */
+/* line 244, ../scss/_481up.scss */
 .menu ul li a {
   /*
   you can use hover styles here even though this size
@@ -636,23 +641,23 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 /* entry content */
-/* line 286, ../scss/_481up.scss */
+/* line 289, ../scss/_481up.scss */
 .entry-content {
   /* at this larger size, we can start to align images */
 }
-/* line 290, ../scss/_481up.scss */
+/* line 293, ../scss/_481up.scss */
 .entry-content .alignleft, .entry-content img.alignleft {
   margin-right: 1.5em;
   display: inline;
   float: left;
 }
-/* line 295, ../scss/_481up.scss */
+/* line 298, ../scss/_481up.scss */
 .entry-content .alignright, .entry-content img.alignright {
   margin-left: 1.5em;
   display: inline;
   float: right;
 }
-/* line 300, ../scss/_481up.scss */
+/* line 303, ../scss/_481up.scss */
 .entry-content .aligncenter, .entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;
