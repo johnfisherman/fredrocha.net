@@ -26,8 +26,10 @@ Template Name: Memes
 	    'timeout'  => 10.0,
 	]);
 
+	$nrOfLovedTracks = 6;
+
 	// Fetch loved tracks from Last.fm using my provate API key
-	$lastfmResponse = $lastfmClient->request('GET', '?method=user.getlovedtracks&user=johnfisherman&api_key=' . LASTFM_KEY . '&format=json&limit=5');
+	$lastfmResponse = $lastfmClient->request('GET', '?method=user.getlovedtracks&user=johnfisherman&api_key=' . LASTFM_KEY . '&format=json&limit=' . $nrOfLovedTracks);
 	$lastfmResponseCode = $lastfmResponse->getStatusCode();
 
 	if ($lastfmResponseCode == 200) {
@@ -182,7 +184,7 @@ Template Name: Memes
 
 							<?php 
 								// Snatch meta for each loved track
-								for ($i = 0; $i < 5; $i++):
+								for ($i = 0; $i < $nrOfLovedTracks; $i++):
 									$lovedTrack = 			$lovedTracksArray[$i];
 									$lovedTrackName =	 	$lovedTrack["name"];
 									$lovedTrackArtist = $lovedTrack["artist"]["name"];
