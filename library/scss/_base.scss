@@ -40,13 +40,13 @@ and will be used across all viewports.
  
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
-    font-family:si;
-    src: url(../../socicon.svg) format(svg);
+    font-family: si;
+    src: url(../../vendor/socicon/socicon.svg) format(svg);
   }
 }
 
 #inner-footer {
-	padding: 40px 0;
+	padding: 40px 20px;
 }
 
 .footer {
@@ -56,12 +56,13 @@ and will be used across all viewports.
 
 	#social {
 
-		height: 80px;
+		height: 70px;
 
 		/* Social Media buttons courtesy of perfecticons.com */
 		.soc {
 		  overflow: visible;
-		  margin:0; padding:0;
+		  margin: 0;
+		  padding: 0;
 		  list-style: none;
 		}
 
@@ -120,36 +121,41 @@ and will be used across all viewports.
 		.soc-icon-last{
 		    margin:0 !important;
 		}
-
 		.soc-twitter {
 		    background-color: #4da7de;
 		}
 		.soc-twitter:before {
-		    content: 'a';
+		    content:'\e040';
 		}
 		.soc-rss {
 		    background-color: #f26109;
 		}
 		.soc-rss:before {
-		    content: ',';
+		    content:'\e00b';
 		}
 		.soc-github {
-		    background-color: #5380c0;
+		    background-color: #221e1b;
 		}
 		.soc-github:before {
-		    content: 'Q';
+		    content:'\e030';
 		}
 		.soc-linkedin {
 		    background-color: #3371b7;
 		}
 		.soc-linkedin:before {
-		    content: 'j';
+		    content:'\e049';
 		}
-		.soc-email1 {
-		    background-color: #578AD6;
+		.soc-mail {
+		    background-color: #000000;
 		}
-		.soc-email1:before {
-		    content: '<';
+		.soc-mail:before {
+		    content:'\e01f';
+		}
+		.soc-stackoverflow {
+		    background-color: #FD9827;
+		}
+		.soc-stackoverflow:before {
+		    content:'\e007';
 		}
 	} // /social
 

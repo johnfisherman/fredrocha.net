@@ -10,7 +10,8 @@
 						    <li><a class="soc-rss" href="<?php bloginfo('url'); ?>/feed" target="_blank"></a></li>
 						    <li><a class="soc-github" href="http://www.github.com/johnfisherman" target="_blank"></a></li>
 						    <li><a class="soc-linkedin" href="http://linkedin.com/in/fredrocha/" target="_blank"></a></li>
-						    <li><a class="soc-email1 soc-icon-last" href="mailto:john.fisherman@gmail.com" target="_blank"></a></li>
+						    <li><a class="soc-stackoverflow" href="http://stackoverflow.com/users/262073/fred-rocha"></a></li>
+						    <li><a class="soc-mail soc-icon-last" href="mailto:john.fisherman@gmail.com" target="_blank"></a></li>
 							</ul>
 						</div>
 						<nav role="navigation">
