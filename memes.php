@@ -123,7 +123,7 @@ Template Name: Memes
 										<img src="<?php echo $recentlyWatchedImg; ?>" />
 									</a>
 								</div>
-								<a href="<?php echo $recentlyWatchedUrl; ?>" target="_blank"><?php echo $recentlyWatchedTitle; ?></a> (<?php echo $recentlyWatchedYear; ?>).
+								<div class="movie-title"><a href="<?php echo $recentlyWatchedUrl; ?>" target="_blank"><?php echo $recentlyWatchedTitle; ?></a> (<?php echo $recentlyWatchedYear; ?>)</div>
 							</li>
 
 							<?php

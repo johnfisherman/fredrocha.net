@@ -583,17 +583,25 @@ h3 {
   margin: 0 20px 40px 0;
 }
 
-/* line 201, ../scss/_481up.scss */
+/* line 200, ../scss/_481up.scss */
+#movies li {
+  max-width: 180px;
+}
+/* line 202, ../scss/_481up.scss */
 #movies li .movie-wrapper {
   min-height: 300px;
 }
+/* line 205, ../scss/_481up.scss */
+#movies li .movie-title {
+  text-align: center;
+}
 
-/* line 209, ../scss/_481up.scss */
+/* line 213, ../scss/_481up.scss */
 #books li .book-wrapper {
   min-height: 170px;
 }
 
-/* line 218, ../scss/_481up.scss */
+/* line 223, ../scss/_481up.scss */
 #music li .music-wrapper img {
   border-radius: 5px;
 }
@@ -601,34 +609,34 @@ h3 {
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 229, ../scss/_481up.scss */
+/* line 234, ../scss/_481up.scss */
 #post-navigation {
   margin-bottom: 50px;
 }
-/* line 231, ../scss/_481up.scss */
+/* line 236, ../scss/_481up.scss */
 #post-navigation li {
   float: left;
   padding: 20px 20px;
 }
 
 /* .menu is clearfixed inside mixins.scss */
-/* line 241, ../scss/_481up.scss */
+/* line 246, ../scss/_481up.scss */
 .menu {
   /* end .menu ul */
 }
-/* line 242, ../scss/_481up.scss */
+/* line 247, ../scss/_481up.scss */
 .menu ul {
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 243, ../scss/_481up.scss */
+/* line 248, ../scss/_481up.scss */
 .menu ul li {
   /*
   plan your menus and drop-downs wisely.
   */
 }
-/* line 244, ../scss/_481up.scss */
+/* line 249, ../scss/_481up.scss */
 .menu ul li a {
   /*
   you can use hover styles here even though this size
@@ -641,23 +649,23 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 /* entry content */
-/* line 289, ../scss/_481up.scss */
+/* line 294, ../scss/_481up.scss */
 .entry-content {
   /* at this larger size, we can start to align images */
 }
-/* line 293, ../scss/_481up.scss */
+/* line 298, ../scss/_481up.scss */
 .entry-content .alignleft, .entry-content img.alignleft {
   margin-right: 1.5em;
   display: inline;
   float: left;
 }
-/* line 298, ../scss/_481up.scss */
+/* line 303, ../scss/_481up.scss */
 .entry-content .alignright, .entry-content img.alignright {
   margin-left: 1.5em;
   display: inline;
   float: right;
 }
-/* line 303, ../scss/_481up.scss */
+/* line 308, ../scss/_481up.scss */
 .entry-content .aligncenter, .entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;

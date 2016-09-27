@@ -198,8 +198,12 @@ h3 {
 
 #movies {
 	li {
+		max-width: 180px;
 		.movie-wrapper {
 			min-height: 300px;
+		}
+		.movie-title {
+			text-align: center;
 		}
 	}
 }
@@ -214,6 +218,7 @@ h3 {
 
 #music {
 	li {
+
 		.music-wrapper {
 			img {
 				border-radius: 5px;
