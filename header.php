@@ -11,7 +11,7 @@
 		<?php // Google Chrome Frame for IE ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title><?php bloginfo('name'); ?><?php wp_title('|', 'before'); ?></title>
+		<title><?php wp_title('|', 'before'); ?></title>
 
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
@@ -49,11 +49,11 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 		
-		<meta name="twitter:card" content="summary" />
+<!-- 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@john_fisherman" />
 		<meta name="twitter:url" content="http://fredrocha.net" />
 		<meta name="twitter:title" content="Fred Rocha, web development star" />
-		<meta name="twitter:description" content="Wwweb, cinema, games, life in general. Stuff that moves me." />
+		<meta name="twitter:description" content="Wwweb, cinema, games, life in general. Stuff that moves me." /> -->
 
 	</head>
 
