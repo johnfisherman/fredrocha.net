@@ -1,3 +1,6 @@
 /library/scss/.sass-cache/
 /vendor/
 /logs/
+.DS_Store
+*.map
+library/css/

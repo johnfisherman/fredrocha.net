@@ -1,13 +1,13 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:
+Author:
 
 Stylesheet: 481px and Up Stylesheet
 
-This stylesheet is loaded for larger devices. It's set to 
+This stylesheet is loaded for larger devices. It's set to
 481px because at 480px it would load on a landscaped iPhone.
 This isn't ideal because then you would be loading all those
-extra styles on that same mobile connection. 
+extra styles on that same mobile connection.
 
 A word of warning. This size COULD be a larger mobile device,
 so you still want to keep it pretty light and simply expand
@@ -18,15 +18,6 @@ upon your base.scss styles.
 /*********************
 Here i work
 *********************/
-html {
-	// background-color: black;
-	// background: url('../../img/txtrs/broken_noise.png');
-	// background: url('../../img/txtrs/debut_dark.png');
-	background: url('../../img/txtrs/escheresque_ste.png');
-	// background: url('../../img/txtrs/navy_blue.png');
-	// background: url('../../img/txtrs/twinkle_twinkle.png');
-}
-
 h1, h2, h3, h4, h5 {
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
@@ -82,7 +73,7 @@ h3 {
 		color: white;
 		text-align: center;
 		font-family: $sans-serif;
-		text-shadow: 0 2px rgba(0,0,0, .75);	
+		text-shadow: 0 2px rgba(0,0,0, .75);
 		a {
 			color: $link-color;
 			&:hover {
@@ -121,7 +112,7 @@ h3 {
 .photo-content {
 	background: url('../../img/txtrs/broken_noise.png');
 }
-	
+
 .words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content {
 	padding: 40px;
 	background-color: white;
@@ -146,7 +137,7 @@ h3 {
 
 // Web Dev
 .webdev-content {
-	padding: 20px 20px 200px 40px; 
+	padding: 20px 20px 200px 40px;
 	background-color: white;
 	p {
 		font-family: $sans-serif;
@@ -247,19 +238,19 @@ NAVIGATION STYLES
 		ul {
 			li {
 				a {
-					
+
 					/*
 					you can use hover styles here even though this size
 					has the possibility of being a mobile device.
 					*/
 					&:hover, &:focus {
-					
+
 					}
 				}
-				
+
 				&:first-child {}
 				&:last-child {}
-				
+
 				/*
 				plan your menus and drop-downs wisely.
 				*/
@@ -276,9 +267,9 @@ NAVIGATION STYLES
 					}
 				}
 			} /* end .menu ul li */
-			
+
 			/* highlight current page */
-			li.current-menu-item, 
+			li.current-menu-item,
 			li.current_page_item,
 			li.current-page-ancestor {
 				a {}
@@ -292,32 +283,32 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-			
-	
+
+
 	/* at this larger size, we can start to align images */
-	.alignleft, img.alignleft { 
-		margin-right: 1.5em; 
-		display: inline; 
-		float: left; 
+	.alignleft, img.alignleft {
+		margin-right: 1.5em;
+		display: inline;
+		float: left;
 	}
-	.alignright, img.alignright { 
-		margin-left: 1.5em; 
-		display: inline; 
-		float: right; 
+	.alignright, img.alignright {
+		margin-left: 1.5em;
+		display: inline;
+		float: right;
 	}
-	.aligncenter, img.aligncenter { 
-		margin-right: auto; 
-		margin-left: auto; 
-		display: block; 
-		clear: both; 
+	.aligncenter, img.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		clear: both;
 	}
-			
+
 } /* end .entry-content */
 
 /*********************
 FOOTER STYLES
 *********************/
-	
+
 /*
 check your menus here. do they look good?
 do they need tweaking?
@@ -327,4 +318,3 @@ do they need tweaking?
 		li {}
 	}
 } /* end .footer-links */
-			

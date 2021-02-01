@@ -5,24 +5,66 @@
 				<div id="inner-content" class="clearfix">
 
 						<div id="main" class="first clearfix packery-container" role="main">
-						
-							<div id="words" class="area blur">
-								<a href="<?php bloginfo(home); ?>/words"><img src="<?php bloginfo('template_url') ?>/img/torrent of thoughts.jpg"></a>
-								<div class="area-title"><a href="<?php bloginfo(home); ?>/words">Words</a></div>
-							</div>
 
-							<div id="webdev" class="area blur">
-								<img src="<?php bloginfo('template_url') ?>/img/webdev-gus.jpg">
-								<div class="area-title"><a href="<?php bloginfo(home); ?>/webdev">WebDev</a></div>
-							</div>
 
-							<div id="photo" class="area blur">
-								<a href="<?php bloginfo(home); ?>/photography"><img src="<?php bloginfo('template_url') ?>/img/overlooking houses HP.jpg"></a>
-								<div class="area-title"><a href="<?php bloginfo(home); ?>/photography">Photo</a></div>
+							<div id="quote" class="area">
+								<p>
+									<?php
+
+										$recent_posts = wp_get_recent_posts(array(
+												'numberposts' => 1, // Number of recent posts thumbnails to display
+												'post_status' => 'publish' // Show only the published posts
+										));
+
+										// var_dump ($recent_posts);
+
+										// if all fails, ie, there is nothing to quote, resort to a Zappa's favorite
+										$default_quote = "Information is not knowledge. Knowledge is not wisdom. Wisdom is not love. Love is not music. Music is <i>everything</i>.";
+										// Is there more text on that quote?
+										$there_is_more_text = FALSE;
+
+										$quote_to_display = $default_quote;
+
+										// get the excerpt from fred's most recent post
+						 				$most_recent_excerpt = $recent_posts[0]['post_excerpt'];
+
+										// Hmmm,... No excerpt. Maybe it's a tweet?
+										if ($most_recent_excerpt == "") {
+											// current post in category "tweets"?
+											$most_recent_cats = wp_get_post_categories($recent_posts[0]['ID']);
+
+											foreach($most_recent_cats as $c){
+											    $cat = get_category( $c );
+											    if ($cat->name == "tweets") {
+														// open with the whole tweet
+														$quote_to_display = $recent_posts[0]['post_content'];
+													}
+											}
+
+										// There's an excerpt, use it and link to whole post
+										} else {
+											$quote_to_display = $most_recent_excerpt;
+											$there_is_more_text = TRUE;
+										}
+
+										echo $quote_to_display;
+
+	 								?>
+								</p>
+								<?php
+
+									if ($there_is_more_text) {
+								?>
+
+									<p><a href="<?php echo $recent_posts[0]['guid'] ?>">Read all about it</a>.</p>
+
+								<?php
+
+									}
+								?>
 							</div>
 
 							<div id="meta" class="area">
-								<div>
 									<p>
 										Welcome to Fred's home on the web. Stay a while.
 									</p>
@@ -30,7 +72,7 @@
 										You can also find me on
 									</p>
 									<p>
-										<a href="http://twitter.com/john_fisherman">Twitter</a> <span class="amp">&</span>  
+										<a href="http://twitter.com/john_fisherman">Twitter</a> <span class="amp">&</span>
 										<a href="http://linkedin.com/in/fredrocha/">LinkedIn</a>
 									</p>
 									<p>
@@ -40,21 +82,11 @@
 										<a href="mailto:john.fisherman@gmail.com">john.fisherman@gmail.com</a>
 									</p>
 
-								</div>
-							</div>	
-
-							<div id="memeoirs" class="area blur">
-								<img src="<?php bloginfo('template_url') ?>/img/memeoirs-xl.png">
-								<div class="area-title">
-									<a href="<?php bloginfo(home); ?>/cv" title="What I've been up to these years.">CV</a>
-								</div>
 							</div>
 
-							<div id="contact-fred" class="area">
-								<img src="<?php bloginfo('template_url') ?>/img/fr_home_3.jpg">
-								<div class="area-title-img">
-									<a href="<?php bloginfo(home); ?>/contact" title="Drop me a line, find me online."><img src="<?php bloginfo('template_url') ?>/img/fr_logo_L.png"></a>
-								</div>
+							<div id="video" class="area">
+									<p>TrYangle's All</p>
+
 							</div>
 
 						</div> <?php // end #main ?>

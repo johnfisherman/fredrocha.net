@@ -8,7 +8,7 @@ Template Name: Words
 
 			<div id="content" class="words-content clearfix">
 
-				<div id="inner-content"> 
+				<div id="inner-content">
 
 					<div id="main" class="eightcol first clearfix" role="main">
 
@@ -17,13 +17,11 @@ Template Name: Words
 						</p>
 
 						<?php
-							
+
 						$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
-						// error_log("Page nr and goats:" . $paged);
-
-							$args = array( 
-								'posts_per_page'=> 25, 
+							$args = array(
+								'posts_per_page'=> 25,
              		'paged' => $paged
               );
 
@@ -34,14 +32,14 @@ Template Name: Words
 						?>
 								<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
 
-									<?php 
+									<?php
 
-										$category = get_the_category(); 
+										$category = get_the_category();
 										$category_name = $category[0]->cat_name;
 
 										if ($category_name != "tweets") {
 
-									?>  
+									?>
 
 										<header class="article-header">
 
@@ -72,7 +70,7 @@ Template Name: Words
 
 							<nav id="post-navigation" class="clearfix">
 							    <ul>
-							        <li><?php previous_posts_link( '&laquo; PREV', $the_query->max_num_pages) ?></li> 
+							        <li><?php previous_posts_link( '&laquo; PREV', $the_query->max_num_pages) ?></li>
 							        <li><?php next_posts_link( 'NEXT &raquo;', $the_query->max_num_pages) ?></li>
 							    </ul>
 							</nav>

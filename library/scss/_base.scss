@@ -9,6 +9,24 @@ and will be used across all viewports.
 ******************************************************************/
 
 /* Custom code by The Man */
+html {
+	// background-color: black;
+	background: url('../../img/txtrs/broken_noise.png');
+	// background: url('../../img/txtrs/debut_dark.png');
+	// background: url('../../img/txtrs/escheresque_ste.png');
+	// background: url('../../img/txtrs/navy_blue.png');
+	// background: url('../../img/txtrs/twinkle_twinkle.png');
+}
+
+.home {
+	color: white;
+	#quote {
+		font-size: 2em;
+		padding: 40px 0;
+		text-align: left;
+	}
+}
+
 .words-content, .single-content, .generic-page {
 	padding: 20px;
 
@@ -35,9 +53,9 @@ and will be used across all viewports.
        url('../../vendor/socicon/socicon.svg#icomoonregular') format('svg');
   font-weight: normal;
   font-style: normal;
- 
+
 }
- 
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: si;
@@ -353,12 +371,12 @@ and more scalable.
 		display: block;
 	}
 }
- 
+
 #navbar-checkbox:checked + .menu {
 	ul {
 		max-height: 300px;
  	}
- 
+
 	li {
 		visibility: visible;
  	}
@@ -411,13 +429,13 @@ and more scalable.
   left: 0;
   right: 0;
   z-index: 100;
-  
+
   .navbar-handle {
     position: absolute;
     font-size: 1.2em;
     top: 30px;
     right: 35px;
-    z-index: 10;    
+    z-index: 10;
   }
 }
 
@@ -694,7 +712,7 @@ PAGE NAVI STYLES
                 	font-weight: bold;
                 }
                 a:hover, a:focus {
-                    
+
                 }
             }
         }
@@ -1042,4 +1060,3 @@ FOOTER STYLES
 
 
 	.copyright {}
-
