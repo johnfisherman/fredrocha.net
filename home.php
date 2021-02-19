@@ -7,7 +7,7 @@
 						<div id="main" class="first clearfix packery-container" role="main">
 
 							<div id="quote">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/torrent-L.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/torrent-L.jpg" alt="A giant wave represents the flow of thoughts that float into the page">
 								<p>
 									<?php
 
@@ -68,28 +68,29 @@
 							</div>
 
 							<div id="meta">
-									<p>
-										Welcome to Fred's home on the web. Stay a while.
-									</p>
-									<p>
-										You can also find me on
-									</p>
-									<p>
+								<p>
+									<h1>Welcome to Fred's home on the web, a place displaying what I do and what I endorse. Sometimes these overlap.</h1>
+									<p>You can also find me on
 										<a href="http://twitter.com/john_fisherman">Twitter</a> <span class="amp">&</span>
-										<a href="http://linkedin.com/in/fredrocha/">LinkedIn</a>
+										<a href="http://linkedin.com/in/fredrocha/">LinkedIn</a>.
 									</p>
-									<p>
-										Drop me a line any time at
-									</p>
-									<p>
-										<a href="mailto:john.fisherman@gmail.com">john.fisherman@gmail.com</a>
-									</p>
-
+								</p>
+								<p>
+									Drop me a line any time at
+									<a href="mailto:john.fisherman@gmail.com">john.fisherman@gmail.com</a>.
+								</p>
 							</div>
 
 							<div id="video">
-									<p>TrYangle's All</p>
+								<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/479891413?color=01d4f&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+								<img id="monkey-island-monkey" src="<?php echo get_template_directory_uri(); ?>/img/hangmonk.gif" alt="This is a monkey hanging from the video, taken from the godfather of all graphic adventure games, Monkey Island.">
+								<p id="more-videos"><a href="/moving-images">Discover more of my videos</a>.</p>
+							</div>
 
+							<div id="photography">
+								<a href="/photography">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/shed-in-sao-tome.jpg" alt="A fisherman's shed in são tomé e príncipe.">
+								</a>
 							</div>
 
 						</div> <?php // end #main ?>

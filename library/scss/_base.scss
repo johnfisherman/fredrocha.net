@@ -10,8 +10,9 @@ and will be used across all viewports.
 
 /* Custom code by The Man */
 html {
-	// background-color: black;
-	background: url('../../img/txtrs/broken_noise.png');
+	background-color: black;
+	// background: url('../../img/txtrs/broken_noise.png');
+
 	// background: url('../../img/txtrs/debut_dark.png');
 	// background: url('../../img/txtrs/escheresque_ste.png');
 	// background: url('../../img/txtrs/navy_blue.png');
@@ -32,39 +33,80 @@ h3 {
 	margin-top: 60px;
 }
 
-.area-title a {
-	color: white;
-	text-decoration: none;
-	&:hover {
-		color: $link-hover;
-	}
-}
-
 .home {
 	#inner-content {
-		// border: 1px solid $debug-color-1;
 		color: white;
 		margin: 0 auto;
 		#quote {
 			position: relative;
 			img {
-				// border: 2px solid $debug-color-2;
 				width: 100%;
 				margin: 0 auto;
 			}
 			p {
 				font-family: 'Playfair Display', serif;
 				font-size: 1em;
-				padding: 0 80px;
+				padding: 0 40px;
 				width: 100%;
 				text-align: left;
 				position: absolute;
 				bottom: 10%;
 				left: 0%;
 				text-shadow: 1px 1px 2px #080808;
-				// border: 1px solid $debug-color-1;
 
 			}
+		}
+	}
+	#meta {
+		width: 100%;
+		padding: 20px 40px;
+		background: none repeat scroll 0 0 rgba(42, 81, 120, 0.5);
+		margin: 0 0 7px 0;
+		h1 {
+			font-family: 'Playfair Display', serif;
+			font-size: 1em;
+			text-transform: none;
+			line-height: inherit;
+		}
+		p {
+			font-family: 'Playfair Display', serif;
+			font-size: 1em;
+			color: white;
+			text-shadow: 0 2px rgba(0,0,0, .75);
+			a {
+				color: $link-color;
+				&:hover {
+					color: $link-hover;
+				}
+			}
+		}
+	}
+	#video {
+		position: relative;
+		img {
+			width: 100%;
+			margin: 0 auto;
+		}
+		p {
+			font-family: 'Playfair Display', serif;
+			font-size: 1em;
+			padding: 0 40px;
+			width: 100%;
+			text-align: left;
+
+		}
+		#monkey-island-monkey {
+			float: right;
+			width: 54px;
+			height: 58px;
+			margin-right: 40px;
+		}
+	}
+	#photography {
+		font-size: 0;
+		img {
+			width: 100%;
+			margin: auto;
 		}
 	}
 }

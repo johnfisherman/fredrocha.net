@@ -10,12 +10,10 @@ be seen on the Desktop.
 ******************************************************************/
 .home {
 	#inner-content {
-		border: 1px solid $debug-color-3;
 		margin: 0 auto;
 		#quote {
 			position: relative;
 			img {
-				// border: 2px solid $debug-color-2;
 				width: 100%;
 				margin: 0 auto;
 			}
@@ -24,10 +22,10 @@ be seen on the Desktop.
 				bottom: 5%;
 				left: 0%;
 				font-size: 2em;
-
-				// border: 1px solid $debug-color-1;
-
 			}
 		}
 	}
+}
+
+#meta {
 }

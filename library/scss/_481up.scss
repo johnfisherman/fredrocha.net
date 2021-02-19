@@ -28,64 +28,6 @@ Here i work
 		top: 30%;
 	}
 }
-#memeoirs {
-	width: 40%;
-	overflow: hidden;
-	color: white;
-}
-#webdev {
-	width: 60%;
-}
-#photo {
-	width: 60%;
-}
-#words {
-	width: 40%;
-}
-#meta {
-	width: 40%;
-	padding: 40px 40px;
-	margin: 0 0 7px 0;
-	background: none repeat scroll 0 0 rgba(42, 81, 120, 0.5);
-	// background-color: #20252A;
-	p {
-		color: white;
-		text-align: center;
-		font-family: $sans-serif;
-		text-shadow: 0 2px rgba(0,0,0, .75);
-		a {
-			color: $link-color;
-			&:hover {
-				color: $link-hover;
-			}
-		}
-	}
-
-}
-
-.area {
-	text-align: center;
-	img {
-		position: relative;
-		z-index: 1;
-		max-width: 100%;
-	}
-	.area-title {
-		position: absolute;
-		top: 20%;
-		left: 15%;
-		z-index: 20;
-		// font-family: 'Yanone Kaffeesatz', sans-serif;
-		// font-family: 'Open Sans Condensed', sans-serif;
-		font-family: 'Oswald', sans-serif;
-		color: white;
-		text-transform: uppercase;
-		font-size: 80px;
-		font-weight: bold;
-		text-align: center;
-		text-shadow: 0 2px rgba(0,0,0, .75);
-	}
-}
 
 // Photo
 .photo-content {

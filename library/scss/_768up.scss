@@ -14,15 +14,30 @@ come into play. Have fun!
 
 .home {
 	#inner-content {
-		border: 1px solid $debug-color-1;
+		border: 6px solid $debug-color-1;
 		#quote {
 			img {
 			}
 			p {
-				text-shadow: none;
 				width: 90%;
+				padding: 0 80px;
 				text-align: left;
 				font-size: 1.1em;
+				text-shadow: none;
+			}
+		}
+	}
+	#meta {
+		padding: 40px 80px;
+		background: none repeat scroll 0 0 rgba(42, 81, 120, 0.5);
+		p {
+			color: white;
+			text-shadow: 0 2px rgba(0,0,0, .75);
+			a {
+				color: $link-color;
+				&:hover {
+					color: $link-hover;
+				}
 			}
 		}
 	}
