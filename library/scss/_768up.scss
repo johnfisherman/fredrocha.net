@@ -12,6 +12,22 @@ come into play. Have fun!
 
 ******************************************************************/
 
+.home {
+	#inner-content {
+		border: 1px solid $debug-color-1;
+		#quote {
+			img {
+			}
+			p {
+				text-shadow: none;
+				width: 90%;
+				text-align: left;
+				font-size: 1.1em;
+			}
+		}
+	}
+}
+
 
 /*********************
 GENERAL STYLES
@@ -39,7 +55,7 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 .menu {
-  
+
 	position: relative;
 
   .navbar-handle {
@@ -52,7 +68,7 @@ NAVIGATION STYLES
 		max-height: 300px;
 		padding-left: 30px;
  	}
- 
+
 	li {
 		visibility: visible;
 		padding: 15px 10px;
@@ -304,4 +320,3 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
-

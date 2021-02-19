@@ -6,8 +6,8 @@
 
 						<div id="main" class="first clearfix packery-container" role="main">
 
-
-							<div id="quote" class="area">
+							<div id="quote">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/torrent-L.jpg" alt="">
 								<p>
 									<?php
 
@@ -50,21 +50,24 @@
 										echo $quote_to_display;
 
 	 								?>
-								</p>
 								<?php
 
 									if ($there_is_more_text) {
 								?>
 
-									<p><a href="<?php echo $recent_posts[0]['guid'] ?>">Read all about it</a>.</p>
+									<a href="<?php echo $recent_posts[0]['guid'] ?>">Read all about it</a>.
 
 								<?php
 
 									}
 								?>
+
+							</p> <!-- end quote paragraph -->
+
+
 							</div>
 
-							<div id="meta" class="area">
+							<div id="meta">
 									<p>
 										Welcome to Fred's home on the web. Stay a while.
 									</p>
@@ -84,7 +87,7 @@
 
 							</div>
 
-							<div id="video" class="area">
+							<div id="video">
 									<p>TrYangle's All</p>
 
 							</div>

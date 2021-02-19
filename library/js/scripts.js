@@ -9,7 +9,7 @@ slow the page load.
 
 */
 
-// IE8 ployfill for GetComputed Style (for Responsive Script below)
+// // IE8 ployfill for GetComputed Style (for Responsive Script below)
 if (!window.getComputedStyle) {
     window.getComputedStyle = function(el, pseudo) {
         this.el = el;
@@ -30,18 +30,18 @@ if (!window.getComputedStyle) {
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
-    $('.fancybox').fancybox({
-        padding: 0,
-
-        openEffect : 'elastic',
-        openSpeed  : 150,
-
-        closeEffect : 'elastic',
-        closeSpeed  : 150,
-
-        closeClick : true
-
-    });
+    // $('.fancybox').fancybox({
+    //     padding: 0,
+    //
+    //     openEffect : 'elastic',
+    //     openSpeed  : 150,
+    //
+    //     closeEffect : 'elastic',
+    //     closeSpeed  : 150,
+    //
+    //     closeClick : true
+    //
+    // });
 
     /*
     Responsive jQuery is a tricky thing.
@@ -49,56 +49,48 @@ jQuery(document).ready(function($) {
     it, so be sure to research and find the one
     that works for you best.
     */
-    
+
     /* getting viewport width */
     var responsive_viewport = $(window).width();
-    
+
     /* if is below 481px */
     if (responsive_viewport < 481) {
-    
+
     } /* end smallest screen */
-    
+
     /* if is larger than 481px */
     if (responsive_viewport > 481) {
-        
+
     } /* end larger than 481px */
-    
+
     /* if is above or equal to 768px */
     if (responsive_viewport >= 768) {
-    
+
         /* load gravatars */
         $('.comment img[data-gravatar]').each(function(){
             $(this).attr('src',$(this).attr('data-gravatar'));
         });
-        
+
     }
-    
+
     /* off the bat large screen actions */
     if (responsive_viewport > 1030) {
-        
+
     }
-    
+
 	// add all your scripts here
 	// $(window).load(function() {
- //        
+ //
  //    });
- 
+
 
 
 /* call when page is fully finished loading */
 $(window).bind("load", function() {
    // console.log("NOW were talking!");
-   var $container = $('.packery-container');
-   // initialize
-   $container.packery({
-     itemSelector: '.area',
-     gutter: 0
-   });
 
-   var pckry = $container.data('packery');
-   pckry.layout();
 
-   $('.blur img').hoverizr({effect:"blur",speedIn:"fast"});
+
 });
 
 }); /* end of as page load scripts */
@@ -137,4 +129,3 @@ $(window).bind("load", function() {
 	w.addEventListener( "orientationchange", restoreZoom, false );
 	w.addEventListener( "devicemotion", checkTilt, false );
 })( this );
-

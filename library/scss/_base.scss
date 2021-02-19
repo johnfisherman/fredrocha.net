@@ -16,14 +16,56 @@ html {
 	// background: url('../../img/txtrs/escheresque_ste.png');
 	// background: url('../../img/txtrs/navy_blue.png');
 	// background: url('../../img/txtrs/twinkle_twinkle.png');
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+h3 {
+	margin-top: 40px;
+}
+
+.row {
+	margin-top: 60px;
+}
+
+.area-title a {
+	color: white;
+	text-decoration: none;
+	&:hover {
+		color: $link-hover;
+	}
 }
 
 .home {
-	color: white;
-	#quote {
-		font-size: 2em;
-		padding: 40px 0;
-		text-align: left;
+	#inner-content {
+		// border: 1px solid $debug-color-1;
+		color: white;
+		margin: 0 auto;
+		#quote {
+			position: relative;
+			img {
+				// border: 2px solid $debug-color-2;
+				width: 100%;
+				margin: 0 auto;
+			}
+			p {
+				font-family: 'Playfair Display', serif;
+				font-size: 1em;
+				padding: 0 80px;
+				width: 100%;
+				text-align: left;
+				position: absolute;
+				bottom: 10%;
+				left: 0%;
+				text-shadow: 1px 1px 2px #080808;
+				// border: 1px solid $debug-color-1;
+
+			}
+		}
 	}
 }
 
@@ -57,10 +99,6 @@ html {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: si;
-    src: url(../../vendor/socicon/socicon.svg) format(svg);
-  }
 }
 
 #inner-footer {

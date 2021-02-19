@@ -1,16 +1,33 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:
+Author:
 
 Stylesheet: Desktop Stylsheet
 
 This is the desktop size. It's larger than an iPad so it will only
-be seen on the Desktop. 
+be seen on the Desktop.
 
 ******************************************************************/
 .home {
 	#inner-content {
-		width: 1050px;
+		border: 1px solid $debug-color-3;
 		margin: 0 auto;
+		#quote {
+			position: relative;
+			img {
+				// border: 2px solid $debug-color-2;
+				width: 100%;
+				margin: 0 auto;
+			}
+			p {
+				position: absolute;
+				bottom: 5%;
+				left: 0%;
+				font-size: 2em;
+
+				// border: 1px solid $debug-color-1;
+
+			}
+		}
 	}
 }

@@ -47,8 +47,10 @@
 			</script>
 		<?php // end analytics ?>
 
-		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-		
+		<!-- <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
 <!-- 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@john_fisherman" />
 		<meta name="twitter:url" content="http://fredrocha.net" />
@@ -75,7 +77,7 @@
 
 					<nav role="navigation" class="menu">
 						<?php if ( !is_home() ) {
-							  bones_main_nav(); 
+							  bones_main_nav();
 							}
 					 	?>
 					 	<label for="navbar-checkbox" class="navbar-handle"></label>
