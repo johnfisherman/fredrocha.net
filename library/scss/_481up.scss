@@ -18,27 +18,6 @@ upon your base.scss styles.
 /*********************
 Here i work
 *********************/
-h1, h2, h3, h4, h5 {
-	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
-}
-
-h3 {
-	margin-top: 40px;
-}
-
-.row {
-	margin-top: 60px;
-}
-
-.area-title a {
-	color: white;
-	text-decoration: none;
-	&:hover {
-		color: $link-hover;
-	}
-}
-
 #contact-fred {
 	width: 40%;
 	overflow: hidden;
