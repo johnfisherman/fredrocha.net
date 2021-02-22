@@ -43,7 +43,7 @@ Template Name: Words
 
 										<header class="article-header">
 
-											<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+											<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 
 										</header> <?php // end article header ?>
 
@@ -77,7 +77,7 @@ Template Name: Words
 
 						</div> <?php // end #main ?>
 
-						<?php // get_sidebar(); ?>
+						<?php get_sidebar(); ?>
 
 				</div> <?php // end #inner-content ?>
 

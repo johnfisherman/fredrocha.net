@@ -37,14 +37,10 @@ Here i work
 .words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content {
 	padding: 40px;
 	background-color: white;
-	p {
-		font-family: $sans-serif;
-	}
 	.format-quote {
 		.entry-content p {
 			margin: 10px 0;
 			font-size: 30px;
-			font-family: $serif;
 			font-style: italic;
 		}
 	}

@@ -21,12 +21,19 @@ html {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+	// font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	// text-transform: uppercase;
 }
 
 h3 {
 	margin-top: 40px;
+}
+
+p {
+	// font-family: 'Playfair Display', serif;
+	font-family: $sans-serif;
 }
 
 .row {
@@ -44,7 +51,7 @@ h3 {
 				margin: 0 auto;
 			}
 			p {
-				font-family: 'Playfair Display', serif;
+				font-family: $serif;
 				font-size: 1em;
 				padding: 0 40px;
 				width: 100%;
@@ -357,9 +364,7 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
