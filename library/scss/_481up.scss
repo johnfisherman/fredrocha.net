@@ -36,7 +36,6 @@ Here i work
 
 .words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content {
 	padding: 40px;
-	background-color: white;
 	.format-quote {
 		.entry-content p {
 			margin: 10px 0;
@@ -45,10 +44,13 @@ Here i work
 		}
 	}
 	.byline {
-		text-align: right;
+		margin-bottom: 40px;
 	}
 	article {
 		margin-bottom: 50px;
+		.wp-caption {
+			margin-bottom: 40px;
+		}
 	}
 }
 

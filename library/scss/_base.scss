@@ -10,7 +10,7 @@ and will be used across all viewports.
 
 /* Custom code by The Man */
 html {
-	background-color: black;
+	background-color: white;
 	// background: url('../../img/txtrs/broken_noise.png');
 
 	// background: url('../../img/txtrs/debut_dark.png');
@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5 {
 	// text-transform: uppercase;
 }
 
+h1 {
+	margin-bottom: 0.2em;
+}
+
 h3 {
 	margin-top: 40px;
 }
@@ -41,6 +45,7 @@ p {
 }
 
 .home {
+	background-color: black;
 	#inner-content {
 		color: white;
 		margin: 0 auto;
@@ -125,11 +130,20 @@ p {
 
 /* Words */
 #words-intro {
+	padding: 10px 20px;
 	font-style: italic;
+	border: 2px dashed #c7c7c7;
+	background-color: #fdffbc;
 	#rss-what a {
 		color: $main-text;
 		position: relative;
 		z-index: 1;
+	}
+}
+
+.sidebar {
+	a, p, li {
+		font-family: "Cabin", sans-serif;
 	}
 }
 
@@ -341,6 +355,7 @@ a, a:visited {
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
+		text-decoration: underline;
 	}
 
 	/* on click */
@@ -1003,7 +1018,7 @@ COMMENT FORM STYLES
 ******************************************************************/
 
 .respond-form {
-	margin: 1.5em 10px;
+	margin: 1.5em 0px;
 	padding-bottom: 2.2em;
 
 	form {

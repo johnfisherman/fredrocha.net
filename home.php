@@ -71,13 +71,13 @@
 								<p>
 									<h1>Welcome to Fred's home on the web, a place displaying what I do and what I endorse. Sometimes these overlap.</h1>
 									<p>You can also find me on
-										<a href="http://twitter.com/john_fisherman">Twitter</a> <span class="amp">&</span>
-										<a href="http://linkedin.com/in/fredrocha/">LinkedIn</a>.
+										<a href="http://twitter.com/john_fisherman" target="_blank">Twitter</a> <span class="amp">&</span>
+										<a href="http://linkedin.com/in/fredrocha/" target="_blank">LinkedIn</a>.
 									</p>
 								</p>
 								<p>
 									Drop me a line any time at
-									<a href="mailto:john.fisherman@gmail.com">john.fisherman@gmail.com</a>.
+									<a href="mailto:john.fisherman@gmail.com"  target="_blank">john.fisherman@gmail.com</a>.
 								</p>
 							</div>
 
