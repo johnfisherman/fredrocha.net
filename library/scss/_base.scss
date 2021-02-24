@@ -147,6 +147,34 @@ p {
 	}
 }
 
+/* Photo */
+.photo-content {
+	position: relative;
+	color: white;
+	background: url('../../img/txtrs/broken_noise.png');
+	#main {
+		padding: 40px 20px;
+	}
+	.freds-photo {
+		display: block;
+		position: relative;
+		max-width: 100%;
+		margin: 0 auto 40px auto;
+		border: 3px solid white;
+		border-radius: 2px;
+	}
+	#photo-colophon {
+		display: flex;
+		text-align-last: center;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 100px;
+			margin-left: 10px;
+		}
+	}
+}
+
 /* Footer */
 
 @font-face {
