@@ -79,9 +79,12 @@
 					<nav role="navigation" class="menu">
 						<?php if ( !is_home() ) {
 							  bones_main_nav();
-							}
 					 	?>
-					 	<label for="navbar-checkbox" class="navbar-handle"></label>
+
+							<label for="navbar-checkbox" class="navbar-handle"></label>
+
+						<?php  } ?>
+						
 					</nav>
 
 				</div> <?php // end #inner-header ?>
