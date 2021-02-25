@@ -93,6 +93,12 @@
 								</a>
 							</div>
 
+							<div id="inverted-mountain">
+								<a href="/photography">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/fr_home_2.jpg" alt="A fisherman's shed in são tomé e príncipe.">
+								</a>
+							</div>
+
 						</div> <?php // end #main ?>
 
 				</div> <?php // end #inner-content ?>
