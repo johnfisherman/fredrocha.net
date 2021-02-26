@@ -157,7 +157,7 @@ p {
 	padding: 10px 20px;
 	font-style: italic;
 	border: 2px dashed #c7c7c7;
-	background-color: #fdffbc;
+	background-color: $calming-lemon;
 	#rss-what a {
 		color: $main-text;
 		position: relative;
@@ -551,7 +551,7 @@ and more scalable.
   display: none;
   cursor: pointer;
   position: relative;
-  font-size:	$height;
+  font-size: $height;
   padding: .5em 0;
   height: 0;
   width: 1em * 75px /	$height;
@@ -597,6 +597,7 @@ and more scalable.
 	background: rgb(0, 204, 153); /* Fall-back for browsers that don't support rgba */
   background: rgba(0, 204, 153, .9);
 	border-bottom: 0;
+	padding-bottom: 20px;
 
 	li {
 
@@ -616,7 +617,8 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+				color: $calming-lemon;
+				background-color: none;
 			}
 		}
 
@@ -640,7 +642,10 @@ and more scalable.
 					/* padding-left: 30px; */
 
 					&:hover,
-					&:focus {}
+					&:focus {
+						color: $calming-lemon;
+						background-color: none;
+					}
 
 					&:link {}
 
@@ -661,7 +666,9 @@ and more scalable.
 	li.current_page_item,
 	li.current-page-ancestor {
 
-		a {}
+		a {
+			color: $calming-lemon;
+		}
 
 	}  /* end current highlighters */
 

@@ -114,6 +114,8 @@ NAVIGATION STYLES
 
 .nav {
 	border-bottom: 7px solid pink;
+	padding-bottom: 0px;
+
 
 	li {
 		float: left;
@@ -124,8 +126,9 @@ NAVIGATION STYLES
 		has the possibility of being a mobile device.
 		*/
 		&:hover, &:focus {
-			background-color: #dedede;
-
+			// background-color: #dedede;
+			a {
+			}
 		}
 
 		a {
@@ -157,7 +160,8 @@ NAVIGATION STYLES
 					border-bottom: 1px solid #ccc;
 
 					&:hover,
-					&:focus {}
+					&:focus {
+					}
 
 					&:link {}
 				}
