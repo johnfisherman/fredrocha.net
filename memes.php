@@ -6,7 +6,7 @@ Template Name: Memes
 
 <?php get_header(); ?>
 
-<?php 
+<?php
 
 	// This is where the (mono)log lives
 	$logPath = get_template_directory() . '/logs/app.log';
@@ -59,7 +59,7 @@ Template Name: Memes
 	$goodreadsBodyArray = json_decode($goodreadsBodyJson, TRUE);
 	// Perusable array containing currently reading books
 	$currentlyReadingBooks = $goodreadsBodyArray["reviews"]["review"];
-	
+
 
 	// Query criticker.com
 	$critickerClient = new Client([
@@ -75,16 +75,18 @@ Template Name: Memes
 	$critickerBodyXml = simplexml_load_string($critickerResponse->getBody(), "SimpleXMLElement", LIBXML_NOCDATA);
 	$critickerBodyJson = json_encode($critickerBodyXml);
 	$critickerBodyArray = json_decode($critickerBodyJson, TRUE);
-	// Perusable array containing recently watched movies 
+	// Perusable array containing recently watched movies
 	$recentlyWatchedMovies = $critickerBodyArray["film"];
 
 ?>
 
 			<div id="content" class="memes-content clearfix">
 
-				<div id="inner-content"> 
+				<div id="inner-content">
 
 					<div id="main" class="eightcol first clearfix" role="main">
+
+						<p>Meme - noun, masculie. Not an internet meme. Basic unit of thought, idea, that is propagated in minds via culture. Link to Wikipedia.</p>
 
 						<h2>Movies</h2>
 						<p>
@@ -93,12 +95,12 @@ Template Name: Memes
 
 						<ul class="clearfix" id="movies">
 
-							<?php 
+							<?php
 
 								$displayedMovies = 0;
 								$i = 0;
 
-								// For a movie to be displayed, I must've liked it. This means its Tier needs to be > 2 
+								// For a movie to be displayed, I must've liked it. This means its Tier needs to be > 2
 								while ($displayedMovies < 6):
 
 									$recentlyWatchedMovie = 			$recentlyWatchedMovies[$i];
@@ -143,7 +145,7 @@ Template Name: Memes
 
 						<ul class="clearfix" id="books">
 
-							<?php 
+							<?php
 
 								$nrOfBooks = count($currentlyReadingBooks);
 
@@ -182,7 +184,7 @@ Template Name: Memes
 
 						<ul class="clearfix" id="music">
 
-							<?php 
+							<?php
 								// Snatch meta for each loved track
 								for ($i = 0; $i < $nrOfLovedTracks; $i++):
 									$lovedTrack = 			$lovedTracksArray[$i];

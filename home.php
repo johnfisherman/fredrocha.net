@@ -94,9 +94,10 @@
 							</div>
 
 							<div id="inverted-mountain">
-								<a href="/photography">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/fr_home_2.jpg" alt="A fisherman's shed in são tomé e príncipe.">
+								<a href="/">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/the-uncounscious-as-an-upside-mountain.jpg" alt="An inverted mountain in fog meant to represent the unconscious that is real, present, strong, influential yet burried underneath.">
 								</a>
+								<p>After having watched Carlos Reygada's "Post Tenebras Lux", I went on to read "The Red House" by Mark Haddon. Since then I can't stop listening to "Fungar Pt. 2" by Tubax. <a href="/">Know what I meme?</a> </p>
 							</div>
 
 						</div> <?php // end #main ?>

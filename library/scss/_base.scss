@@ -125,16 +125,31 @@ p {
 
 	#inverted-mountain {
 		font-size: 0;
+		position: relative;
 		img {
 			width: 100%;
 			margin: auto;
+		}
+		p {
+			font-family: $serif;
+			font-size: 14px;
+			padding: 0 40px;
+			width: 100%;
+			text-align: right;
+			position: absolute;
+			bottom: 2%;
+			color: black;
+			transform: scale(-1, -1);
+			a {
+				color: white;
+			}
+			// text-shadow: 1px 1px 2px #080808;
 		}
 	}
 }
 
 .words-content, .single-content, .generic-page {
 	padding: 20px;
-
 }
 
 /* Words */
