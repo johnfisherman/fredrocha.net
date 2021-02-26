@@ -148,7 +148,7 @@ p {
 	}
 }
 
-.words-content, .single-content, .generic-page {
+.words-content, .single-content, .generic-page, .video-content {
 	padding: 20px;
 }
 
@@ -196,6 +196,20 @@ p {
 			width: 100px;
 			margin-left: 10px;
 		}
+	}
+}
+
+.video-content {
+	background: url('../../img/txtrs/broken_noise.png');
+	h1 {
+		color: white;
+	}
+	.single-video-embed {
+		margin-bottom: 20px;
+	}
+	p#video-colophon {
+		text-align: center;
+		color: white;
 	}
 }
 

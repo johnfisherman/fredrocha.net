@@ -84,7 +84,7 @@
 							<div id="video">
 								<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/479891413?color=01d4f&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 								<img id="monkey-island-monkey" src="<?php echo get_template_directory_uri(); ?>/img/hangmonk.gif" alt="This is a monkey hanging from the video, taken from the godfather of all graphic adventure games, Monkey Island.">
-								<p id="more-videos"><a href="/moving-images">Discover more of my videos</a>.</p>
+								<p id="more-videos"><a href="/videos">Discover more of my videos</a>.</p>
 							</div>
 
 							<div id="photography">
