@@ -71,8 +71,8 @@
 								<p>
 									<h1>Welcome to Fred's home on the web, a place displaying what I do and what I endorse. Sometimes these overlap.</h1>
 									<p>You can also find me on
-										<a href="http://twitter.com/john_fisherman" target="_blank">Twitter</a> <span class="amp">&</span>
-										<a href="http://linkedin.com/in/fredrocha/" target="_blank">LinkedIn</a>.
+										<a href="https://twitter.com/john_fisherman" target="_blank">Twitter</a> <span class="amp">&</span>
+										<a href="https://linkedin.com/in/fredrocha/" target="_blank">LinkedIn</a>.
 									</p>
 								</p>
 								<p>

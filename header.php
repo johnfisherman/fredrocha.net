@@ -34,6 +34,9 @@
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
 
+
+		<meta name="google-site-verification" content="Y98M3P71HxQwGG1JYh6xosZVFo8b2gtOb7FUyX4echQ" />
+
 		<?php // drop Google Analytics Here ?>
 			<script>
 			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -47,9 +50,7 @@
 			</script>
 		<?php // end analytics ?>
 
-		<!-- <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'> -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Cabin,Oswald,Playfair+Display&display=swap" rel="stylesheet"> -->
 		<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 <!-- 		<meta name="twitter:card" content="summary" />
@@ -84,7 +85,7 @@
 							<label for="navbar-checkbox" class="navbar-handle"></label>
 
 						<?php  } ?>
-						
+
 					</nav>
 
 				</div> <?php // end #inner-header ?>
