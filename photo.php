@@ -25,7 +25,7 @@ Template Name: Photo
 
 								// IDs come in a can, they were put there by a man, in a factory downtown
 								// https://www.pexels.com/photo/landscape-red-kitchen-fruit-6876155/
-								$photoIDs = array(6876154, 6768035, 6768036, 6876155);
+								$photoIDs = array(7012612, 6876154, 6768035, 7024938, 7012686, 6768036, 6876155);
 
 								foreach ($photoIDs as $currentPhoto) {
 
@@ -36,12 +36,8 @@ Template Name: Photo
 					 		 <?php } ?>
 
 							 <p id="photo-colophon">
-								 
-								 Photos by Fred Rocha, hosted on
 
-								 <a href="https://www.pexels.com" target="_blank">
-									 <img src="https://images.pexels.com/lib/api/pexels-white.png" />
-								 </a>
+								 Photos by Fred Rocha, hosted on <a href="https://www.pexels.com/@fred-rocha-25734141" target="_blank"><img src="https://images.pexels.com/lib/api/pexels-white.png" /></a>
 
 						 	</p>
 
