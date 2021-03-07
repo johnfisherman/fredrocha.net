@@ -44,6 +44,26 @@ p {
 	margin-top: 60px;
 }
 
+.words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content {
+	padding: 40px;
+	.format-quote {
+		.entry-content p {
+			margin: 10px 0;
+			font-size: 30px;
+			font-style: italic;
+		}
+	}
+	.byline {
+		margin-bottom: 40px;
+	}
+	article {
+		margin-bottom: 50px;
+		.wp-caption {
+			margin-bottom: 40px;
+		}
+	}
+}
+
 .home {
 	background-color: black;
 	#inner-content {
@@ -210,6 +230,19 @@ p {
 	p#video-colophon {
 		text-align: center;
 		color: white;
+	}
+}
+
+/* Memes */
+#movies {
+	li {
+		// max-width: 180px;
+		img {
+			max-width: 100%;
+			margin: auto;
+		}
+		.movie-description {
+		}
 	}
 }
 
