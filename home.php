@@ -27,6 +27,8 @@
 
 										// get the excerpt from fred's most recent post
 						 				$most_recent_excerpt = $recent_posts[0]['post_excerpt'];
+						 				$most_recent_ID = $recent_posts[0]['ID'];
+										$post_permalink = get_permalink($most_recent_ID);
 
 										// Hmmm,... No excerpt. Maybe it's a tweet?
 										if ($most_recent_excerpt == "") {
@@ -55,12 +57,16 @@
 									if ($there_is_more_text) {
 								?>
 
-									<a href="<?php echo $recent_posts[0]['guid'] ?>">Read all about it</a>.
+									<a href="<?php echo $post_permalink; ?>">Read all about it</a>.
 
 								<?php
 
-									}
+							} else {
 								?>
+
+								<a href="/words">Read on</a>.
+
+							<?php } ?>
 
 							</p> <!-- end quote paragraph -->
 
