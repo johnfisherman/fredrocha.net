@@ -8,7 +8,7 @@ Template Name: Photo
 
 			<div id="content" class="photo-content clearfix">
 
-				<div id="inner-content" class="packery-container">
+				<div id="inner-content">
 
 						<div id="main" class="first clearfix" role="main">
 

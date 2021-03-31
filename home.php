@@ -4,11 +4,11 @@
 
 				<div id="inner-content" class="clearfix">
 
-						<div id="main" class="first clearfix packery-container" role="main">
+						<div id="main" class="first clearfix" role="main">
 
 							<div id="quote">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/torrent-L.jpg" alt="A giant wave represents the flow of thoughts that float into the page">
-								<p>
+								<article>
 									<?php
 
 										$recent_posts = wp_get_recent_posts(array(
@@ -68,7 +68,7 @@
 
 							<?php } ?>
 
-							</p> <!-- end quote paragraph -->
+						</article> <!-- end quote paragraph -->
 
 
 							</div>

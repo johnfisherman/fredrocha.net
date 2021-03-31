@@ -8,7 +8,7 @@ Template Name: Video
 
 			<div id="content" class="video-content clearfix">
 
-				<div id="inner-content" class="packery-container">
+				<div id="inner-content">
 
 						<div id="main" class="first clearfix" role="main">
 
