@@ -1,5 +1,5 @@
 			<?php if(!is_home()):	?>
-		
+
 				<footer class="footer" role="contentinfo">
 
 					<div id="inner-footer" class="wrap clearfix">
@@ -18,9 +18,13 @@
 								<?php bones_footer_links(); ?>
 						</nav>
 
-						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+						<div class="source-org copyright"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-logo-s.png" alt="Fred Rocha logo, yeah"></div>
 
 					</div> <?php // end #inner-footer ?>
+
+					<div class="green-disclaimer">
+						🌱 This website is hosted using <a href="https://fredrocha.net/2021/04/20/hosting-fredrocha-net-following-the-wordpress-happy-path/">100% renewable energy</a>, as it should.
+					</div>
 
 				</footer> <?php // end footer ?>
 
@@ -32,5 +36,4 @@
 		<?php wp_footer(); ?>
 
 	</body>
-
 </html> <?php // end page. what a ride! ?>

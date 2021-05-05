@@ -276,7 +276,7 @@ p {
 
 	#social {
 
-		height: 70px;
+		// height: 70px;
 
 		/* Social Media buttons courtesy of perfecticons.com */
 		.soc {
@@ -379,8 +379,23 @@ p {
 		}
 	} // /social
 
+	nav {
+		ul {
+			background: none;
+			li {
+				a {
+					color: $bones-pink;
+					&:hover {
+						color: $bones-pink;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
 	.copyright {
-		color: $white;
+		color: black;
 	}
 
 } // /footer
@@ -710,7 +725,10 @@ and more scalable.
 
 	} /* end .menu li */
 
-	/* highlight current page */
+} /* end .nav */
+
+/* highlight current page */
+header {
 	li.current-menu-item,
 	li.current_page_item,
 	li.current-page-ancestor {
@@ -720,8 +738,29 @@ and more scalable.
 		}
 
 	}  /* end current highlighters */
-
-} /* end .nav */
+}
+footer.footer {
+	margin: 20px 0;
+	border-top: 1px solid $footer-border;
+	nav {
+		text-align: center;
+		li.current-menu-item,
+		li.current_page_item,
+		li.current-page-ancestor {
+			a {
+				color: darken($bones-pink, 20%);
+				&:hover {
+					color: darken($bones-pink, 20%);
+				}
+			}
+		}  /* end current highlighters */
+	}
+	.green-disclaimer {
+		margin: 0 auto;
+		padding: 20px;
+		text-align: center;
+	}
+}
 
 
 /*********************

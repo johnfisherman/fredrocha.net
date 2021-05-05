@@ -111,102 +111,103 @@ NAVIGATION STYLES
 	}
 }
 
+header {
+	.nav {
+		border-bottom: 7px solid pink;
+		padding-bottom: 0px;
 
-.nav {
-	border-bottom: 7px solid pink;
-	padding-bottom: 0px;
 
+		li {
+			float: left;
+			position: relative;
 
-	li {
-		float: left;
-		position: relative;
-
-		/*
-		you can use hover styles here even though this size
-		has the possibility of being a mobile device.
-		*/
-		&:hover, &:focus {
-			// background-color: #dedede;
-			a {
-			}
-		}
-
-		a {
-			border-bottom: 0;
-		}
-
-		&:first-child {}
-		&:last-child {}
-
-		/*
-		plan your menus and drop-downs wisely.
-		*/
-		ul.sub-menu,
-		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
-			position: absolute;
-			display: none;
-			z-index: 8999;
-
-			li {
-
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				// background-color: #dedede;
 				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
-
-					&:hover,
-					&:focus {
-					}
-
-					&:link {}
 				}
+			}
 
-				&:first-child {}
+			a {
+				border-bottom: 0;
+			}
 
-				&:last-child {
+			&:first-child {}
+			&:last-child {}
+
+			/*
+			plan your menus and drop-downs wisely.
+			*/
+			ul.sub-menu,
+			ul.children {
+				margin-top: 0;
+				border: 1px solid #ccc;
+				border-top: 0;
+				position: absolute;
+				display: none;
+				z-index: 8999;
+
+				li {
 
 					a {
-						border-bottom: 0;
+						padding-left: 10px;
+						border-right: 0;
+						display: block;
+						width: 180px;
+						border-bottom: 1px solid #ccc;
+
+						&:hover,
+						&:focus {
+						}
+
+						&:link {}
 					}
+
+					&:first-child {}
+
+					&:last-child {
+
+						a {
+							border-bottom: 0;
+						}
+					}
+
+					/*
+					if you need to go deeper, go nuts
+					just remember deeper menus suck
+					for usability. k, bai.
+					*/
+					ul {}
 				}
 
-				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-				ul {}
+				/* highlight sub-menu current page */
+				li.current-menu-item,
+				li.current_page_item,
+				li.current-page-ancestor {
+					a {}
+				}
 			}
 
-			/* highlight sub-menu current page */
-			li.current-menu-item,
-			li.current_page_item,
-			li.current-page-ancestor {
-				a {}
+			/* showing sub-menus */
+			&:hover ul {
+				top: auto;
+				display: block;
 			}
-		}
 
-		/* showing sub-menus */
-		&:hover ul {
-			top: auto;
-			display: block;
-		}
+		} /* end .menu ul li */
 
-	} /* end .menu ul li */
+		/* highlight current page */
+		li.current-menu-item,
+		li.current_page_item,
+		li.current-page-ancestor {
+			a {}
+		}  /* end current highlighters */
 
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current-page-ancestor {
-		a {}
-	}  /* end current highlighters */
-
-} /* end .nav */
+	} /* end .nav */
+}
 
 /*********************
 SIDEBARS & ASIDES
@@ -340,18 +341,37 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-.footer-links {
-	ul {
-		li {
-			a {
-				&:hover {}
+footer.footer {
+	#social {
+		width: 40%;
+		float: left;
+	}
+	nav {
+		width: 25%;
+		float: left;
+		text-align: left;
+		padding-left: 60px;
+		ul#menu-footer-navigation {
+			margin-top: 0;
+			li {
+				a {
+					&:hover {}
+				}
+				/*
+				be careful with the depth of your menus.
+				it's very rare to have multi-depth menus in
+				the footer.
+				*/
+				ul {}
 			}
-			/*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
 		}
 	}
-} /* end .footer-links */
+	.copyright {
+		width: 33%;
+		float: left;
+		img {
+			float: right;
+			width: 80px;
+		}
+	}
+}
