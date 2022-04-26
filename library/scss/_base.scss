@@ -279,6 +279,8 @@ p {
 		// height: 70px;
 
 		/* Social Media buttons courtesy of perfecticons.com */
+		/* For icons to display, open the font (url('../../vendor/socicon/socicon.ttf')) using your fav font inspector tool and check its UTF code.
+			 Also, grab the corresponding BG color. */
 		.soc {
 		  overflow: visible;
 		  margin: 0;
@@ -341,23 +343,23 @@ p {
 		.soc-icon-last{
 		    margin:0 !important;
 		}
+		.soc-rss {
+			background-color: #f26109;
+		}
+		.soc-rss:before {
+			content:'\e00b';
+		}
 		.soc-twitter {
-		    background-color: #4da7de;
+		    background-color: #1D9BF0;
 		}
 		.soc-twitter:before {
 		    content:'\e040';
 		}
-		.soc-rss {
-		    background-color: #f26109;
+		.soc-youtube {
+		    background-color: red;
 		}
-		.soc-rss:before {
-		    content:'\e00b';
-		}
-		.soc-github {
-		    background-color: #221e1b;
-		}
-		.soc-github:before {
-		    content:'\e030';
+		.soc-youtube:before {
+		    content:'\e051';
 		}
 		.soc-linkedin {
 		    background-color: #3371b7;
@@ -365,17 +367,17 @@ p {
 		.soc-linkedin:before {
 		    content:'\e049';
 		}
+		.soc-vimeo {
+			background-color: #00ADEE;
+		}
+		.soc-vimeo:before {
+			content:'\e052';
+		}
 		.soc-mail {
 		    background-color: #000000;
 		}
 		.soc-mail:before {
 		    content:'\e01f';
-		}
-		.soc-stackoverflow {
-		    background-color: #FD9827;
-		}
-		.soc-stackoverflow:before {
-		    content:'\e007';
 		}
 	} // /social
 
@@ -741,7 +743,6 @@ header {
 }
 footer.footer {
 	margin: 20px 0;
-	border-top: 1px solid $footer-border;
 	nav {
 		text-align: center;
 		li.current-menu-item,
@@ -759,6 +760,13 @@ footer.footer {
 		margin: 0 auto;
 		padding: 20px;
 		text-align: center;
+	}
+}
+
+// Pages with white BG get a border top.
+.page-template-words, .single-post, .error404, .page-template-webdev {
+	footer.footer {
+		border-top: 1px solid $footer-border;
 	}
 }
 
