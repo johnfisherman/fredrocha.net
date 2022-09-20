@@ -6,6 +6,10 @@ loaded by mobile devices. You want to keep it as minimal as
 possible. This is called at the top of the main stylsheet
 and will be used across all viewports.
 
+Run this on the directory of the theme
+sass --watch library/scss/style.scss:library/css/style.css
+
+
 ******************************************************************/
 
 /* Custom code by The Man */
@@ -170,7 +174,7 @@ p {
 	}
 }
 
-.words-content, .single-content, .generic-page, .video-content {
+.words-content, .single-content, .generic-page, .video-content, .webdev-content {
 	padding: 20px;
 }
 
@@ -244,6 +248,26 @@ p {
 			margin: auto;
 		}
 		.movie-description {
+		}
+	}
+}
+
+/* WebDev */
+.webdev-content {
+	.threecol {
+	}
+	p {
+	}
+	.website {
+		img {
+			&:hover {
+			}
+		}
+		.website-url {
+			svg {
+				fill: blue;
+				width: 20px;
+			}
 		}
 	}
 }

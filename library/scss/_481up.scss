@@ -33,17 +33,33 @@ Here i work
 .webdev-content {
 	padding: 20px 20px 200px 40px;
 	background-color: white;
+	.threecol {
+		margin-left: 0;
+		margin-right: 40px;
+	}
 	p {
 		font-family: $sans-serif;
 	}
 	.website {
 		margin-top: 40px;
+		img {
+			max-width: 300px;
+			background-color: black;
+			&:hover {
+				transform: skewY(2deg);
+				transition: all ease-in-out 0.4s;
+			}
+		}
 		.website-url {
 			a {
 				color: $link-color;
 				text-transform: uppercase;
 				font-size: 14px;
 				font-weight: bold;
+			}
+			&:hover {
+				transform: skewY(-2deg);
+				transition: all ease-in-out 0.4s;
 			}
 		}
 		#your-site-here {

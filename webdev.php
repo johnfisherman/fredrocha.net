@@ -6,115 +6,62 @@ Template Name: WebDev
 
 <?php get_header(); ?>
 
-			<div id="content" class="webdev-content clearfix">
+	<div id="content" class="webdev-content clearfix">
 
-				<div id="inner-content"> 
+		<div id="inner-content">
 
-						<div id="main" class="first clearfix" role="main">
+				<div id="main" class="first clearfix" role="main">
 
-							<h1>Web Development</h1>
+					<h1>Web Development</h1>
 
-							<div class="website threecol">
-								<a href="http://gustavociria.co" alt="Gustavo Ciríaco is a multi-faceted artist. Performer, dancer, composer, director. Living between Brazil and Portugal." target="_blank"><img src="<?php bloginfo('template_url') ?>/img/webdev-gus-s.jpg"></a>
-								<p>
-									Gustavo Ciríaco is a multi-faceted artist and his website serves as a display for his work.
-								</p>
-								<p class="website-url"><a href="http://gustavociria.co" alt="Gustavo Ciríaco is a multi-faceted artist. Performer, dancer, composer, director. Living between Brazil and Portugal." target="_blank">http://gustavociria.co</a></p>
-							</div>
+					<p>The websites I build with people are meant to be fast, practical and easy to maintain and update.</p>
 
-							<div class="website threecol">
-								<a href="http://clubenavalpovoense.com" alt="Clube Naval Povoense is a natural part of a coastal town where yours truly comes from, Póvoa de Varzim" target="_blank"><img src="<?php bloginfo('template_url') ?>/img/webdev-cnp-s.jpg"></a>
-								<p>
-									Local Naval Club ordered a refresher on their hub for all different water activities.
-								</p>
-								<p class="website-url"><a href="http://clubenavalpovoense.com" alt="Clube Naval Povoense is a natural part of a coastal town where yours truly comes from, Póvoa de Varzim." target="_blank">http://clubenavalpovoense.com</a></p>
-							</div>
+					<p>This a small selection of projects I have worked on recently.</p>
 
-							<div class="website threecol">
-								<a href="http://tryangletheband.com" alt="The pioneers of Ambient Rock, all the way from Portugal, now UK-based." target="_blank"><img src="<?php bloginfo('template_url') ?>/img/webdev-try-s.jpg"></a>
-								<p>
-									TrYangle is a badass rock band, this is a page to showcase their most recent work, Blue.
-								</p>
-								<p class="website-url"><a href="http://tryangletheband.com" alt="The pioneers of Ambient Rock, all the way from Portugal, now UK-based." target="_blank">http://tryangletheband.com</a></p>
-							</div>
+					<div class="website threecol">
+						<a href="https://madalenamarques.com" rel="external" target="_blank"><img src="<?php bloginfo('template_url') ?>/img/webdev-mmarques-s.jpg" alt="Photo of Leonor, the actress for 'O Homem das Mil Moradas', holding a picture of Gulbenkian to her face, pretending to be him."></a>
+						<p>
+							Madalena's website showcases her work as a document-based theatre creator for young and old audiences, as well as her work as a cultural mediator.
+						</p>
+						<p class="website-url">
+							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
+							<a href="https://madalenamarques.com" rel="external" target="_blank">https://madalenamarques.com</a>
+						</p>
+					</div>
 
-							<div class="website threecol">
-								<a href="http://varzimlazer.com" alt="A broad organization working in the field of health and well-being." target="_blank"><img src="<?php bloginfo('template_url') ?>/img/webdev-vl-s.jpg"></a>
-								<p>
-									Varzim Lazer provides their costumers with state-of-the-art health and wellbeing solutions.
-								</p>
-								<p class="website-url"><a href="http://varzimlazer.com" alt="A broad organization working in the field of health and well-being" target="_blank">http://varzimlazer.com</a></p>
-							</div>
+					<div class="website threecol">
+						<a href="https://fumaca.pt" rel="external" target="_blank"><img src="<?php bloginfo('template_url') ?>/img/webdev-fumaca-s.jpg" alt="Gustavo Ciríaco is a multi-faceted artist. Performer, dancer, composer, director. Living between Brazil and Portugal."></a>
+						<p>
+							Fumaça is a progressive and dissident, community-supported podcast that produces slow-journalism pieces. The website hosts interviews, articles and podcast episodes, besides driving subscriptions and newsletter signups.
+						</p>
+						<p class="website-url">
+							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
+							<a href="https://fumaca.pt" rel="external" target="_blank">https://fumaca.pt</a>
+						</p>
+					</div>
 
-							<div class="website threecol">
-								<a href="http://oficina-arara.org" alt="Hyper-talented, hyper-charged team of print makers and artists." target="_blank"><img src="<?php bloginfo('template_url') ?>/img/webdev-arara-s.jpg"></a>
-								<p>
-									Oficina Arara conjures magic through print and needed a place to show and sell their crafts.
-								</p>
-								<p class="website-url"><a href="http://oficina-arara.org" alt="Hyper-talented, hyper-charged team of print makers and artists." target="_blank">http://oficina-arara.org</a></p>
-							</div>
+					<div class="website threecol">
+						<a href="http://gustavociria.co" target="_blank"><img src="<?php bloginfo('template_url') ?>/img/webdev-gus-s.jpg" alt="Gustavo Ciríaco is a multi-faceted artist. Performer, dancer, composer, director. Living between Brazil and Portugal."></a>
+						<p>
+							Gustavo Ciríaco is a dancer, choreographer and performing artist and his website serves as a display for his work; present, past and future.
+						</p>
+						<p class="website-url">
+							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
+							<a href="http://gustavociria.co" target="_blank">http://gustavociria.co</a>
+						</p>
+					</div>
 
-							<div class="website threecol">
-								<div id="your-site-here">
-									<p><a href="<?php bloginfo(home); ?>/contact">Your Site Here</a></p>
-								</div>
-								<p>
-									Like what you see here and think we could make for a successful team?
-								</p>
-								<p class="website-url"><a href="<?php bloginfo(home); ?>/contact">Let's Talk!</a></p>
-							</div>
-
-						</div> <?php // end #main ?>
-
-						<div>
-						
-							<div id="mm-folio" class="eightcol row">
-
-								<a name=memeoirs><h2>Memeoirs</h2></a>
-
-								<p>
-									I co-founded a startup called Memeoirs and we were <strong>the first people to develop a Email to Book</strong>, fully automatized solution. Anyone who had relevant communications — be it from an intellectual or emotional perspective — could easily go on our website and turn those exchanges into a beautiful book, elegant and ready to be preserved for posterity. Soon Facebook chats and WhatsApp groups ensued, images included.
-								</p>
-								<p>
-									I did most of the work on the front end — from UX / UI to Copy to code implementation —, and these are some examples of how the website used to look like (<strong>all pages were 100% responsive, click leads to image render of html pages</strong>).
-								</p>
-
-								<a name=hp><h3>Homepage</h3>
-
-								<p class="mm-sample-page">
-									<a href="<?php bloginfo(template_url); ?>/img/mm-folio/HP-full.jpg" title="This page welcomed visitors, and peaked at 23% CR."><img src="<?php bloginfo(template_url); ?>/img/mm-folio/HP-detail.jpg" alt="" /></a>
-								</p>
-
-								<a name=lm><h3>Learn More Page</h3>
-
-								<p class="mm-sample-page">
-									<a href="<?php bloginfo(template_url); ?>/img/mm-folio/LM-full.jpg" title="This page served to further showcase our product and reveal the details."><img src="<?php bloginfo(template_url); ?>/img/mm-folio/LM-detail.jpg" alt="" /></a>
-								</p>
+				</div>
 
 
-								<a name=ap><h3>Join Our Affiliate Program</h3>
+				<br/>
+				<br/>
 
-								<p class="mm-sample-page">
-									<a href="<?php bloginfo(template_url); ?>/img/mm-folio/AP-full.jpg" title="Partners could join our affiliate program after visiting this page."><img src="<?php bloginfo(template_url); ?>/img/mm-folio/AP-detail.jpg" alt="" /></a>
-								</p>
+				<p>Take a look at <a href="/cv">my CV</a> to have a better sense of the technologies used.</p>
 
-								<a name=b2b><h3>Partnerships Page</h3>
 
-								<p class="mm-sample-page">
-									<a href="<?php bloginfo(template_url); ?>/img/mm-folio/B2B-full.jpg" title="This page welcomed visitors, and peaked at 23% CR."><img src="<?php bloginfo(template_url); ?>/img/mm-folio/B2B-detail.jpg" alt="" /></a>
-								</p>
+		</div> <?php // end #inner-content ?>
 
-								<br/>
-								<br/>
-
-								<p>Take a look at <a href="<?php bloginfo(home); ?>/cv">my CV</a> to have a better sense of the technologies used.</p>
-
-							</div>
-
-						</div>
-
-				</div> <?php // end #inner-content ?>
-
-			</div> <?php // end #content ?>
+	</div> <?php // end #content ?>
 
 <?php get_footer(); ?>

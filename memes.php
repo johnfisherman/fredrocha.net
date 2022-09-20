@@ -86,7 +86,7 @@ Template Name: Memes
 
 					<div id="main" class="eightcol first clearfix" role="main">
 
-						<p><b>MEME</b> <br/> <i>noun, masculine</i>. <br/><br/>Not an internet meme. Basic unit of thought, idea, that is propagated in minds via culture. Read about it <a href="https://en.wikipedia.org/wiki/Memetics" target="_blank">on Wikipedia</a>, it's fascinatingg stuff.</p>
+						<p><b>MEME</b> <br/> <i>noun, masculine</i>. <br/><br/>Not an internet meme. Basic unit of thought, idea, that is propagated in minds via culture. Read about it <a href="https://en.wikipedia.org/wiki/Memetics" target="_blank">on Wikipedia</a>, it's fascinating stuff.</p>
 
 						<h2>Movies</h2>
 						<p>
