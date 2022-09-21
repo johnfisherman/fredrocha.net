@@ -265,8 +265,9 @@ p {
 		}
 		.website-url {
 			svg {
-				fill: blue;
+				fill: #33ccff;
 				width: 20px;
+				vertical-align: middle;
 			}
 		}
 	}
@@ -432,7 +433,7 @@ GENERAL STYLES
 
 body {
 	font-family: $serif;
-	font-size: 100%;
+	font-size: 0.9em;
 	line-height: 1.5;
 	color: $main-text;
 }
