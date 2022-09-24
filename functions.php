@@ -136,7 +136,7 @@ function bones_comments( $comment, $args, $depth ) {
 				?>
 				<img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=32" class="load-gravatar avatar avatar-48 photo" height="32" width="32" src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
 				<?php // end custom gravatar call ?>
-				<?php 
+				<?php
 					// Replace admin with yours truly
 					$author_link = get_comment_author_link();
 					if ($author_link == "admin") {
@@ -172,5 +172,25 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+
+// This will prepend your WordPress RSS feed content with the featured image
+add_filter('the_content', 'show_featured_image_in_rss_feed');
+function show_featured_image_in_rss_feed( $content ) {
+
+	global $post;
+
+	if( is_feed() ) {
+
+		 if ( has_post_thumbnail( $post->ID ) ){
+
+			$prepend = '<div>' . get_the_post_thumbnail( $post->ID, 'medium', array( 'style' => 'margin-bottom: 10px;' ) ) . '</div>';
+			$content = $prepend . $content;
+
+		}
+	}
+
+	return $content;
+
+}
 
 ?>

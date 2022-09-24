@@ -45,10 +45,14 @@ Here i work
 		img {
 			max-width: 300px;
 			background-color: black;
-			&:hover {
+			&:hover  {
 				transform: skewY(2deg);
 				transition: all ease-in-out 0.4s;
 			}
+		}
+		#your-site-here:hover {
+			transform: skewY(2deg);
+			transition: all ease-in-out 0.4s;
 		}
 		.website-url {
 			a {
