@@ -8,6 +8,7 @@
 							<ul class="soc">
 						    <li><a class="soc-rss" href="<?php bloginfo('url'); ?>/feed" target="_blank"></a></li>
 								<li><a class="soc-twitter" href="http://www.twitter.com/john_fisherman" target="_blank"></a></li>
+								<li><a rel="me" href="https://mastodon.social/@john_fisherman" target="_blank">🐘</a></li>
 						    <!-- <li><a class="soc-github" href="http://www.github.com/johnfisherman" target="_blank"></a></li> -->
 						    <li><a class="soc-youtube" href="http://www.youtube.com/FredRochaNet" target="_blank"></a></li>
 						    <li><a class="soc-linkedin" href="http://linkedin.com/in/fredrocha/" target="_blank"></a></li>
