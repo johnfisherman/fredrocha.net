@@ -191,6 +191,22 @@ p {
 	}
 }
 
+.entry-content {
+	figure {
+		background-color: $alert-blue;
+		img {
+			margin: 0;
+			padding: 0;
+		}
+		figcaption.wp-element-caption {
+			padding: 0 20px 10px 20px;
+			font-family: $sans-serif;
+			font-size: 0.85em;
+			text-align: center;
+		}
+	}
+}
+
 .sidebar {
 	a, p, li {
 		font-family: "Cabin", sans-serif;
