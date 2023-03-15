@@ -7,9 +7,14 @@ Source for the website that lives in [fredrocha.net](http://fredrocha.net).
 
 This site hosts different kinds of things that entice me. There is a strong focus on The Word, so the (micro) blogging side of the platform is where the iterations happen more frequently.
 
-The main quote on the homepage reflects what's going on my mind as we speak, so feel free to bookmark it on your browser, keep coming back, set it as default on open. It's either an excerpt of a longer article, a tweet.
+The main quote on the homepage reflects what's going on my mind as we speak, so feel free to bookmark it on your browser, keep coming back, set it as default on open. It's either an excerpt of a longer article, a micro-blogpost.
 
 Information also gets dynamically pulled from platforms where I log my art consumption (pun), eg Letterboxd and Goodreads.
+
+## Compiling CSS
+Run this on the root of the theme's directory:
+
+`sass --watch library/scss/style.scss:library/css/style.css`
 
 ## Features
 

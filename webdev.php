@@ -85,9 +85,29 @@ Template Name: WebDev
 						</p>
 						<p class="website-url"><a href="/contact">Let's Talk!</a></p>
 					</div>
+					
+					<br/>
+					<br/>
 
+				</div><!-- #main -->
 
-				</div>
+				<div id="personal-projects" class="first clearfix" role="main">
+					
+					<h2>Personal Projects</h2>
+					
+					<div class="website threecol">
+						<a href="https://cadamaca.co" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdev-cada-macaco-s.jpg" alt="Logo and motto for the web application cadamaca.co."></a>
+						<p>
+							A Single Page Web Application for instant wisdom generation, ie, the mashing of two traditional sayings into one.
+						</p>
+						<p class="website-url">
+							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
+							<a href="https://cadamaca.co" target="_blank">https://cadamaca.co</a>
+						</p>
+					</div>	
+				
+				</div><!-- #personal-projects -->
+
 
 				<br/>
 				<br/>
