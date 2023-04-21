@@ -18,7 +18,7 @@ Template Name: Like-minded
 
 				<p class="like-minded-intro">The websites I list here will amuse you and teach you stuff, expand your mind and leave you scratching your head. Visit them, sign-up to their (RSS) feed, keep coming back.</p>
 				
-				<p>And do some linking of your own, why won't ya?</p>
+				<p>The rationale for linking to other sites in 2023 is <a href="https://fredrocha.net/2023/04/21/build-your-own-website-and-they-will-not-come/">expanded on this post</a>. Go ahead and do some linking of your own, why won't ya?</p>
 				
 				<h2>Close friends</h2>
 				
@@ -38,10 +38,10 @@ Template Name: Like-minded
 					
 				</ul>
 				
-				<h2 id="btconf-sites">Beyond Tellerrand Folks</h2>
+				<h2 id="btconf-sites">Beyond Tellerrand Folks <a href="#btconf-sites">#</a></h2>
 				
 				<p>
-					In the year of 2023 I was lucky enough to take part in the Dusseldorf edition of <a href="https://beyondtellerrand.com" target="_blank">Beyond Tellerand</a>. Great conversations were had, and the idea to stimulate discoverabilty of personal content was born. Here are some of them.
+					In the year of 2023 I was lucky enough to take part in the Dusseldorf edition of <a href="https://beyondtellerrand.com" target="_blank">Beyond Tellerrand</a>. Great conversations were had, and the idea to collaboratively stimulate discoverabilty of personal content was born. Here is my humble contribution.
 				</p>
 				
 				<ul>
@@ -50,12 +50,13 @@ Template Name: Like-minded
 					</li>
 					
 					<li>
-						<a href="https://pixeline.be/" target="_blank">Alexandre Plennevaux</a> - multi-folded web builder and a whimsical, fun website.
+						<a href="https://pixeline.be/" target="_blank">Alexandre Plennevaux</a> - multi-folded web builder and a whimsical, fun website. 
 					</li>
 					
 					<li>
-						<a href="https://localghost.dev/" rel="met" target="_blank">Sophie Koonin</a> - has been sharing her interests online since the 90s, and listed many of her finds in the opening talk of the conference. <a href="https://social.lol/@sophie/110224950670782118" target="_blank">She loves this idea</a>.
+						<a href="https://tantek.com" target="_blank">Tantek Çelik</a> - a pioneer of the indie web movement pushing for a better, more resilient and emancipated web for 10+ years. <a href="https://localghost.dev/feed.xml" target="_blank">RSS feed</a>.
 					</li>
+					
 				</ul>
 				
 				<!-- <h2>Webizens</h2> -->
