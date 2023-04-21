@@ -54,7 +54,7 @@ Template Name: Like-minded
 					</li>
 					
 					<li>
-						<a href="https://tantek.com" target="_blank">Tantek Çelik</a> - a pioneer of the indie web movement pushing for a better, more resilient and emancipated web for 10+ years. <a href="https://localghost.dev/feed.xml" target="_blank">RSS feed</a>.
+						<a href="https://tantek.com" target="_blank">Tantek Çelik</a> - a pioneer of the indie web movement pushing for a better, more resilient and emancipated web for 10+ years. <a href="https://tantek.com/updates.atom" target="_blank">RSS feed</a>.
 					</li>
 					
 				</ul>
