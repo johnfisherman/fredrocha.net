@@ -1,0 +1,81 @@
+<?php
+/*
+Template Name: Like-minded
+*/
+?>
+
+<?php get_header(); ?>
+
+<?php $templateURL = get_bloginfo('template_url'); ?>
+
+	<div id="content" class="like-minded-content clearfix">
+
+		<div id="inner-content">
+
+			<div id="main" class="first clearfix eightcol" role="main">
+
+				<h1>Like-minded</h1>
+
+				<p class="like-minded-intro">The websites I list here will amuse you and teach you stuff, expand your mind and leave you scratching your head. Visit them, sign-up to their (RSS) feed, keep coming back.</p>
+				
+				<p>And do some linking of your own, why won't ya?</p>
+				
+				<h2>Close friends</h2>
+				
+				<ul>
+				
+					<li>
+						
+						<a href="https://jamez.it" rel="friend" target="_blank">Giacomo Miceli aka Jamez</a> - an artist displaying some of his wonderfully thoughtful work. You might know him from his <a href="https://infiniteconversation.com/" target="_blank">infinite conversation</a> between Herzog and Žižek. <a href="https://www.jamez.it/feed" target="_blank">RSS feed</a>.
+						
+					</li>
+					
+					<li>
+						
+						<a href="https://tibor.szasz.hu/" rel="friend" target="_blank">Tibor Szasz</a> - a unique perspective on the intersection of technique and art. <a href="https://tibor.szasz.hu/blog/rss.xml" target="_blank">RSS feed</a>.
+						
+					</li>
+					
+				</ul>
+				
+				<h2 id="btconf-sites">Beyond Tellerrand Folks</h2>
+				
+				<p>
+					In the year of 2023 I was lucky enough to take part in the Dusseldorf edition of <a href="https://beyondtellerrand.com" target="_blank">Beyond Tellerand</a>. Great conversations were had, and the idea to stimulate discoverabilty of personal content was born. Here are some of them.
+				</p>
+				
+				<ul>
+					<li>
+						<a href="https://localghost.dev/" rel="met" target="_blank">Sophie Koonin</a> - has been sharing her interests online since the 90s, and shared many of her finds in the opening talk of the conference. <a href="https://social.lol/@sophie/110224950670782118" target="_blank">She loves this idea</a>. <a href="https://localghost.dev/feed.xml" target="_blank">RSS feed</a>.
+					</li>
+					
+					<li>
+						<a href="https://pixeline.be/" target="_blank">Alexandre Plennevaux</a> - multi-folded web builder and a whimsical, fun website.
+					</li>
+					
+					<li>
+						<a href="https://localghost.dev/" rel="met" target="_blank">Sophie Koonin</a> - has been sharing her interests online since the 90s, and listed many of her finds in the opening talk of the conference. <a href="https://social.lol/@sophie/110224950670782118" target="_blank">She loves this idea</a>.
+					</li>
+				</ul>
+				
+				<!-- <h2>Webizens</h2> -->
+			
+				<p>OK, now <a href="https://localghost.dev/blog/building-a-website-like-it-s-1999-in-2022" target="_blank">go build your own</a>. And let me know if you get stuck.</p>
+				
+				<p>Once you're done, <a href="/contact">get in touch</a> and I'll add you here.</p>
+				
+				<br/>
+				<br/>
+
+			</div><!-- #main -->
+
+
+
+			<br/>
+			<br/>
+
+		</div> <?php // end #inner-content ?>
+
+	</div> <?php // end #content ?>
+
+<?php get_footer(); ?>

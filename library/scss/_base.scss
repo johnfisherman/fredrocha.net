@@ -44,11 +44,19 @@ p {
 	font-family: $sans-serif;
 }
 
+ul {
+	font-family: $sans-serif;
+	li {
+		list-style: inherit;
+		list-style-type: circle;
+	}
+}
+
 .row {
 	margin-top: 60px;
 }
 
-.words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content {
+.words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content, .like-minded-content {
 	padding: 40px;
 	.format-quote {
 		.entry-content p {
@@ -826,7 +834,7 @@ footer.footer {
 }
 
 // Pages with white BG get a border top.
-.page-template-words, .single-post, .error404, .page-template-webdev {
+.page-template-words, .single-post, .error404, .page-template-webdev, .page-template-like-minded {
 	footer.footer {
 		border-top: 1px solid $footer-border;
 	}
