@@ -653,9 +653,9 @@ and more scalable.
 
 	li { // nested menu
 		ul {
-		 	margin-top: 0.5em;
-		  border-left: 1px solid #000;
-	 }
+	 		margin-top: 0.5em;
+			border-left: 1px solid #000;
+		}
 	}
 
 	.navbar-handle {
@@ -843,6 +843,17 @@ footer.footer {
 	}
 }
 
+// Setting up ul, overriding post content styles
+#main {
+	#post-navigation {
+		ul {
+			li {
+				list-style: none;
+				list-style-type: none;
+			}
+		}
+	}
+}
 
 /*********************
 POSTS & CONTENT STYLES
