@@ -57,9 +57,21 @@ Template Name: Like-minded
 						<a href="https://tantek.com" target="_blank">Tantek Çelik</a> - a pioneer of the indie web movement pushing for a better, more resilient and emancipated web for 10+ years. <a href="https://tantek.com/updates.atom" target="_blank">RSS feed</a>.
 					</li>
 					
+					<li>
+						<a href="https://kennepohl.de/" target="_blank">Steffen Kennepohl</a> - UX/UI Designer with a slick website and a Mad Men inspired animation. <a href="https://kennepohl.de/feed" target="_blank">RSS feed</a>.
+					</li>
+					
 				</ul>
 				
-				<!-- <h2>Webizens</h2> -->
+				<h2 id="webizens-sites">Webizens <a href="#webizens-sites">#</a></h2>
+				
+				
+				<ul>
+					<li>
+						<a href="https://desmondrivet.com/" target="_blank">Desmond Rivet</a> - Displaying his delicious recipes and sharp photo albums. Check his work out! <a href="https://desmondrivet.com/recipes/feed.xml" target="_blank">Food RSS feed</a>.
+					</li>
+					
+				</ul>
 			
 				<p>OK, now <a href="https://localghost.dev/blog/building-a-website-like-it-s-1999-in-2022" target="_blank">go build your own</a>. And let me know if you get stuck.</p>
 				
