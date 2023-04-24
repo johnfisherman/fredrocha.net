@@ -46,10 +46,6 @@ p {
 
 ul {
 	font-family: $sans-serif;
-	li {
-		list-style: inherit;
-		list-style-type: circle;
-	}
 }
 
 .row {
@@ -210,6 +206,13 @@ ul {
 			font-family: $sans-serif;
 			font-size: 0.85em;
 			text-align: center;
+		}
+	}
+	ul {
+		font-family: $sans-serif;
+		li {
+			list-style: inherit;
+			list-style-type: circle;
 		}
 	}
 }
@@ -844,6 +847,16 @@ footer.footer {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+#inner-content {
+	
+	ul {
+		li {
+			list-style: inherit;
+			list-style-type: circle;
+		}
+	}
+}
 
 #content {
 	// margin-top: 2.2em;
