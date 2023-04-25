@@ -26,7 +26,7 @@ Template Name: Like-minded
 				
 					<li>
 						
-						<a href="https://jamez.it" rel="friend" target="_blank">Giacomo Miceli aka Jamez</a> - an artist displaying some of his wonderfully thoughtful work. You might know him from his <a href="https://infiniteconversation.com/" target="_blank">infinite conversation</a> between Herzog and Žižek. <a href="https://www.jamez.it/feed" target="_blank">RSS feed</a>.
+						<a href="https://jamez.it" rel="friend" target="_blank">Giacomo Miceli aka jamez</a> - an artist displaying some of his wonderfully thoughtful work. You might know him from his <a href="https://infiniteconversation.com/" target="_blank">infinite conversation</a> between Herzog and Žižek. <a href="https://www.jamez.it/blog/feed/" target="_blank">RSS feed</a>.
 						
 					</li>
 					
