@@ -61,6 +61,10 @@ Template Name: Like-minded
 						<a href="https://kennepohl.de/" target="_blank">Steffen Kennepohl</a> - UX/UI Designer with a slick website and a Mad Men inspired animation. <a href="https://kennepohl.de/feed" target="_blank">RSS feed</a>.
 					</li>
 					
+					<li>
+						<a href="https://wentsch.me" target="_blank">Daniel Wentsch</a> - A designer & developer keeping a journal of what he finds while exploring the world. <a href="https://wentsch.me/rss/" target="_blank">RSS feed</a>.
+					</li>
+					
 				</ul>
 				
 				<h2 id="webizens-sites">Webizens <a href="#webizens-sites">#</a></h2>
