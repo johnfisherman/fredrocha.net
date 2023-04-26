@@ -13,7 +13,7 @@ Template Name: Words
 					<div id="main" class="eightcol first clearfix" role="main">
 
 						<p id="words-intro">
-							Keep up with my stream of consciousness via <a href="<?php bloginfo('url'); ?>/feed">RSS</a><sup id="rss-what"><a href="http://powertolivemore.com/productivity/rss-explained/" target="_blank">?</a></sup> or on <a href="http://twitter.com/john_fisherman" target="_blank">Twitter</a>.
+							Keep up with my stream of consciousness via <a href="<?php bloginfo('url'); ?>/feed">RSS</a><sup id="rss-what"><a href="http://powertolivemore.com/productivity/rss-explained/" target="_blank">?</a></sup> or on <a href="http://mastodon.social/@john_fisherman" target="_blank">Mastodon</a>.
 						</p>
 
 						<?php
