@@ -227,12 +227,7 @@ function bones_theme_support() {
 
 /*********************
 MENUS & NAVIGATION
-*********************/
-
-
-
-
-	
+*********************/	
 
 // the main menu
 function bones_main_nav() {
