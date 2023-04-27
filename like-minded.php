@@ -58,6 +58,11 @@ Template Name: Like-minded
 					</li>
 					
 					<li>
+						<a href="https://nilswiere.de/" target="_blank">Nils Wiere</a> - UI/UX Designer &
+						Frontend Developer, speaker, rocking the freelance life and interested in productivity.
+					</li>
+					
+					<li>
 						<a href="https://kennepohl.de/" target="_blank">Steffen Kennepohl</a> - UX/UI Designer with a slick website and a Mad Men inspired animation. <a href="https://kennepohl.de/feed" target="_blank">RSS feed</a>.
 					</li>
 					
