@@ -5,6 +5,8 @@
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 
+<?php $templateURI = get_template_directory_uri(); ?>
+
 	<head>
 		<meta charset="utf-8">
 
@@ -19,14 +21,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-		<!--[if IE]>
-			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-		<![endif]-->
-		<?php // or, set /favicon.ico for IE10 win ?>
-		<meta name="msapplication-TileColor" content="#f01d4f">
-		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
+		<link rel="apple-touch-icon" href="<?php echo $templateURI; ?>/library/images/apple-icon-touch.png">
+		<link rel="icon" href="<?php echo $templateURI; ?>/favicon.png">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $templateURI; ?>/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $templateURI; ?>/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $templateURI; ?>/favicon-16x16.png">
+		<link rel="manifest" href="<?php echo $templateURI; ?>/site.webmanifest">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -42,13 +43,6 @@
 			<meta name="google-site-verification" content="Y98M3P71HxQwGG1JYh6xosZVFo8b2gtOb7FUyX4echQ" />
 
 		<?php } // if user logged in ?>
-
-
-
-
-
-
-
 
 		<?php // drop Google Analytics Here ?>
 			<script>
