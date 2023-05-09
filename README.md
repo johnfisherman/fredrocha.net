@@ -16,6 +16,11 @@ Run this on the root of the theme's directory:
 
 `sass --watch library/scss/style.scss:library/css/style.css`
 
+To create a production ready, compressed stylesheet:
+
+`sass library/scss/style.scss:library/css/style.css --style compressed` 
+
+
 ## Features
 
 * Responsive, collapsible header menu
