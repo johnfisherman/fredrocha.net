@@ -1104,11 +1104,13 @@ COMMENT STYLES
 
 }
 
-.comment-nav {
+#comment-nav {
 
 	ul {
 
-		li {}
+		li {
+			list-style: none;
+		}
 
 	}
 }
