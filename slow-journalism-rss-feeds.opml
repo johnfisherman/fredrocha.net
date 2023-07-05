@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<title>Slow Journalism RSS Feeds - compiled by Fred Rocha</title>
+		<ownerEmail>fred@fredrocha.net</ownerEmail>
+	</head>
+	<body>
+		<outline text="Slow Journalism Feeds" title="Slow Journalism Feeds">
+			<outline type="rss" xmlUrl="https://www.ftm.eu/feed/" htmlUrl="https://www.ftm.eu" text="Follow The Money" title="Follow The Money" />
+			<outline type="rss" xmlUrl="https://forbiddenstories.org/feed/" htmlUrl="https://forbiddenstories.org/" text="Forbidden Stories" title="Forbidden Stories" />
+			<outline type="rss" xmlUrl="http://www.dgquarterly.com/feed" htmlUrl="https://www.slow-journalism.com/" text="Delayed Gratification" title="Delayed Gratification" />
+			<outline type="rss" xmlUrl="https://fumaca.pt/feed/" htmlUrl="https://fumaca.pt" text="Fumaça" title="Fumaça" />
+			<outline type="rss" xmlUrl="https://apublica.org/category/portugues/feed/" htmlUrl="https://apublica.org/" text="Agência Pública" title="Agência Pública" />
+			<outline type="rss" xmlUrl="https://sumauma.com/feed/" htmlUrl="https://sumauma.com" text="Sumaúma" title="Sumaúma" />
+			<outline type="rss" xmlUrl="https://civio.es/feed/" htmlUrl="https://civio.es" text="Civio" title="Civio" />
+			<outline type="rss" xmlUrl="https://disclose.ngo/feed/" htmlUrl="https://disclose.ngo" text="Disclose.ngo" title="Disclose.ngo" />
+		</outline>
+	</body>
+</opml>
