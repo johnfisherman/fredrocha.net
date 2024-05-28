@@ -36,9 +36,6 @@
 
 		<?php if ( !is_user_logged_in() ) { // track visitors only ?>
 
-				<!-- Plausible Analytics -->
-			<script defer data-domain="fredrocha.net" src="https://plausible.io/js/plausible.js"></script>
-
 			<meta name="google-site-verification" content="Y98M3P71HxQwGG1JYh6xosZVFo8b2gtOb7FUyX4echQ" />
 
 		<?php } // if user logged in ?>
