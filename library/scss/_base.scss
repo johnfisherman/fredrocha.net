@@ -52,7 +52,7 @@ ul {
 	margin-top: 60px;
 }
 
-.words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content, .like-minded-content {
+.words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content, .like-minded-content, .speaking-content {
 	padding: 40px;
 	.format-quote {
 		.entry-content p {
@@ -317,6 +317,16 @@ ul {
 				text-align: center;
 				width: 90px;
 			}
+		}
+	}
+}
+
+.speaking-content {
+	img {
+		margin: 0 auto;
+		width: 100%;
+		&:hover {
+			opacity: 0.8;
 		}
 	}
 }
