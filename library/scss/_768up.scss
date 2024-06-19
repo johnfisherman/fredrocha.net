@@ -60,6 +60,11 @@ come into play. Have fun!
 }
 
 .webdev-content {
+	#main {
+		// border: 10px solid $debug-color-1 !important;
+		
+		max-width: 1400px;
+	}
 	.webdev-intro {
 		max-width: 900px;
 	}
