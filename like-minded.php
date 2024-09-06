@@ -25,15 +25,14 @@ Template Name: Like-minded
 				<ul>
 				
 					<li>
-						
 						<a href="https://jamez.it" rel="friend" target="_blank">Giacomo Miceli aka jamez</a> - an artist displaying some of his wonderfully thoughtful work. You might know him from his <a href="https://infiniteconversation.com/" target="_blank">infinite conversation</a> between Herzog and Žižek. <a href="https://www.jamez.it/blog/feed/" target="_blank">RSS feed</a>.
-						
 					</li>
 					
 					<li>
-						
 						<a href="https://tibor.szasz.hu/" rel="friend" target="_blank">Tibor Szasz</a> - a unique perspective on the intersection of technique and art. <a href="https://tibor.szasz.hu/blog/rss.xml" target="_blank">RSS feed</a>.
-						
+					</li>
+					<li>
+						<a href="https://www.arianekensa.com/" rel="friend" target="_blank">Ariane Kensa</a> - she makes outstanding urban art and sleek design.
 					</li>
 					
 				</ul>
@@ -80,7 +79,7 @@ Template Name: Like-minded
 						<a href="https://desmondrivet.com/" target="_blank">Desmond Rivet</a> - Displaying his delicious recipes and sharp photo albums. Check his work out! <a href="https://desmondrivet.com/recipes/feed.xml" target="_blank">Food RSS feed</a>.
 					</li>
 					<li>
-						<a href="https://oldrup.dk/" target="_blank">Bjarne Oldrup</a> - fellow WordPress builder, Bjarne has a strong focus on environmental responsibility and website performance. An extra reason to read all the posts! <a href="https://oldrup.dk/feed/" target="_blank">RSS feed</a>.
+						<a href="https://oldrup.dk/" target="_blank">Bjarne Oldrup</a> - fellow WordPress builder, Bjarne has a strong focus on environmental responsibility and website performance. An extra reason to read all the posts! <a href="https://oldrup.dk/en/feed/" target="_blank">RSS feed</a>.
 					</li>
 					
 				</ul>
