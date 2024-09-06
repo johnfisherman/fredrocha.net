@@ -5,3 +5,6 @@
 *.map
 library/css/
 .nova/
+
+.sass-cache/
+package-lock.json

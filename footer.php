@@ -8,12 +8,12 @@
 							<ul class="soc">
 						    <li><a class="soc-rss" href="<?php bloginfo('url'); ?>/feed" target="_blank"></a></li>
 							<li><a rel="me" href="https://mastodon.social/@john_fisherman" target="_blank">🐘</a></li>
-						    <!-- <li><a class="soc-github" href="http://www.github.com/johnfisherman" target="_blank"></a></li> -->
-						    <li><a class="soc-youtube" href="http://www.youtube.com/FredRochaNet" target="_blank"></a></li>
-						    <li><a class="soc-linkedin" href="http://linkedin.com/in/fredrocha/" target="_blank"></a></li>
-						    <li><a class="soc-vimeo" href="http://vimeo.com/fredrocha/" target="_blank"></a></li>
+						    <li><a class="soc-github" href="https://www.github.com/johnfisherman" target="_blank"></a></li>
+						    <!-- <li><a class="soc-youtube" href="http://www.youtube.com/FredRochaNet" target="_blank"></a></li> -->
+						    <li><a class="soc-linkedin" href="https://linkedin.com/in/fredrocha/" target="_blank"></a></li>
+						    <li><a class="soc-vimeo" href="https://vimeo.com/fredrocha/" target="_blank"></a></li>
 						    <!-- <li><a class="soc-stackoverflow" href="http://stackoverflow.com/users/262073/fred-rocha"></a></li> -->
-							<li><a class="soc-twitter" href="http://www.twitter.com/john_fisherman" target="_blank"></a></li>
+							<li><a rel="me" href="https://bsky.app/profile/johnfisherman.bsky.social" target="_blank">🦋</a></li>
 						    <li><a class="soc-mail soc-icon-last" href="mailto:fred@fredrocha.net" target="_blank"></a></li>
 							</ul>
 						</div>
