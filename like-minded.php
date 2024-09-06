@@ -79,6 +79,9 @@ Template Name: Like-minded
 					<li>
 						<a href="https://desmondrivet.com/" target="_blank">Desmond Rivet</a> - Displaying his delicious recipes and sharp photo albums. Check his work out! <a href="https://desmondrivet.com/recipes/feed.xml" target="_blank">Food RSS feed</a>.
 					</li>
+					<li>
+						<a href="https://oldrup.dk/" target="_blank">Bjarne Oldrup</a> - fellow WordPress builder, Bjarne has a strong focus on environmental responsibility and website performance. An extra reason to read all the posts! <a href="https://oldrup.dk/feed/" target="_blank">RSS feed</a>.
+					</li>
 					
 				</ul>
 			
