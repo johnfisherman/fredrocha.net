@@ -145,7 +145,7 @@ Template Name: WebDev
 				<br/>
 				<br/>
 
-				<p>Take a look at <a href="https://fredrocha.net/wp-content/uploads/2022/09/Fred-Rocha-Web-Engineer-with-Eye-for-Design-September-2022.pdf">my CV</a> to have a better sense of the technologies I use.</p>
+				<p>Take a look at <a href="https://fredrocha.net/wp-content/uploads/2024/09/Fred-Rocha-Web-Engineer-with-Eye-for-Design-July-2024.pdf">my CV</a> to have a better sense of the technologies I use, and the people I have worked with in the past.</p>
 
 
 		</div> <?php // end #inner-content ?>
