@@ -193,4 +193,27 @@ function show_featured_image_in_rss_feed( $content ) {
 
 }
 
+/**
+ * Fix Yoast SEO robots.txt changes.
+ * https://wordpress.org/support/topic/disable-robots-txt-changing-by-yoast-seo/#post-16648736
+ */
+function wpwc_fix_yoast_seo_robots_txt() {
+
+	global $wp_filter;
+
+	if ( isset( $wp_filter['robots_txt']->callbacks ) && is_array( $wp_filter['robots_txt']->callbacks ) ) {
+
+		foreach ( $wp_filter['robots_txt']->callbacks as $callback_priority => $callback ) {
+			foreach ( $callback as $function_key => $function ) {
+
+				if ( 'filter_robots' === $function['function'][1] ) {
+					unset( $wp_filter['robots_txt']->callbacks[ $callback_priority ][ $function_key ] );
+				}
+			}
+		}
+	}
+}
+
+add_action( 'wp_loaded', 'wpwc_fix_yoast_seo_robots_txt' );
+
 ?>
