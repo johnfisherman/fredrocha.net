@@ -70,6 +70,19 @@ come into play. Have fun!
 	}
 }
 
+// Mailerlite form
+#mailerlite-form_1 {
+	#mailerlite-1-field-email {
+		min-width: 300px;
+	}
+	.mailerlite-form-inputs {
+		display: flex;
+		flex-direction: row;
+	}
+	.mailerlite-subscribe-submit {
+	}
+}
+
 /*********************
 GENERAL STYLES
 *********************/
