@@ -8,6 +8,7 @@ and will be used across all viewports.
 
 Run this on the root of the theme's directory
 sass --watch library/scss/style.scss:library/css/style.css
+sass library/scss/style.scss:library/css/style.css --style compressed
 
 
 ******************************************************************/
