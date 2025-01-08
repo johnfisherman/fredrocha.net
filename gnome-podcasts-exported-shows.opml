@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<opml version="2.0">
+  <head>
+    <title>GNOME Podcasts Subscriptions - compiled by Fred Rocha</title>
+		<ownerEmail>fred@fredrocha.net</ownerEmail>
+  </head>
+  <body>
+    <outline text="99% Invisible" title="99% Invisible" type="rss" xmlUrl="https://feeds.99percentinvisible.org/99percentinvisible" htmlUrl="https://www.stitcher.com/" />
+    <outline text="Damn Interesting" title="Damn Interesting" type="rss" xmlUrl="https://feeds.feedburner.com/damn-interesting-podcast" htmlUrl="http://www.damninteresting.com/" />
+    <outline text="Developer Tea" title="Developer Tea" type="rss" xmlUrl="https://feeds.simplecast.com/dLRotFGk" htmlUrl="http://www.developertea.com/" />
+    <outline text="ShopTalk" title="ShopTalk" type="rss" xmlUrl="https://shoptalkshow.com/feed/podcast/" htmlUrl="https://shoptalkshow.com/series/default-podcast/" />
+    <outline text="The 404 Media Podcast" title="The 404 Media Podcast" type="rss" xmlUrl="https://feeds.acast.com/public/shows/64e387653cabbc001153a5a5?ref=404media.co" htmlUrl="https://shows.acast.com/the-404-media-podcast" />
+    <outline text="The Changelog: Software Development, Open Source" title="The Changelog: Software Development, Open Source" type="rss" xmlUrl="https://changelog.fm/rss" htmlUrl="https://changelog.com/podcast" />
+  </body>
+</opml>
