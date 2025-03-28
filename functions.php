@@ -216,4 +216,18 @@ function wpwc_fix_yoast_seo_robots_txt() {
 
 add_action( 'wp_loaded', 'wpwc_fix_yoast_seo_robots_txt' );
 
+
+// Disable YARPP Automatic Display in /words
+function yarpp_disable_words() {
+
+	$current_page_id = get_queried_object_id();
+	$current_page_slug = get_queried_object()->post_name;
+
+	if ( $current_page_slug === "words" ) {
+	  return true;
+	}
+  }
+  
+  add_filter( 'noyarpp', 'yarpp_disable_words' );
+
 ?>
