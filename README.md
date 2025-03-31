@@ -24,11 +24,8 @@ To create a production ready, compressed stylesheet:
 ## Features
 
 * Responsive, collapsible header menu
-* Memes page features my cultural zeitgeist, feeding from 3 APIs:
-	* Last.fm (for music) :musical_note:
-	* Goodreads.com (for books) :books:
-	* Criticker.com (for movies) :movie_camera:
-* POSSIE to Twitter. Using the black magic of [IFTTT](http://ifttt.com) all my posts labeled with the category "Tweets" are automatically posted to Twitter. **Own your data!**
+* Memes page features my cultural zeitgeist
+* POSSIE to Twitter. Using the black magic of [IFTTT](http://ifttt.com) all my posts labeled with the category "Microblog" are automatically posted to Twitter. **Own your data!**
 
 
 The base of this is Wordpress, and what you'll find in this repo is a custom theme based on the minimal and lightweight *Bones*.

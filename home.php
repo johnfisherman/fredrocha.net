@@ -30,14 +30,14 @@
 						 				$most_recent_ID = $recent_posts[0]['ID'];
 										$post_permalink = get_permalink($most_recent_ID);
 
-										// Hmmm,... No excerpt. Maybe it's a tweet?
+										// Hmmm,... No excerpt. Maybe it's a micro post?
 										if ($most_recent_excerpt == "") {
-											// current post in category "tweets"?
+											// current post in category "microblog"?
 											$most_recent_cats = wp_get_post_categories($recent_posts[0]['ID']);
 
-											foreach($most_recent_cats as $c){
+											foreach($most_recent_cats as $c) {
 											    $cat = get_category( $c );
-											    if ($cat->name == "tweets") {
+											    if ($cat->name == "microblog") {
 														// open with the whole tweet
 														$quote_to_display = $recent_posts[0]['post_content'];
 													}

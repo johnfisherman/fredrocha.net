@@ -34,10 +34,25 @@ Template Name: Words
 
 									<?php
 
-										$category = get_the_category();
-										$category_name = $category[0]->cat_name;
+										// Twitter is dead, long live Twitter!
+										// Display different text depending if it's a microblog
+										// current post in category "microblog"?
+										$this_is_a_micropost = false;
+										
+										$post_id = $post->ID;										
 
-										if ($category_name != "tweets") {
+										$all_the_categories = wp_get_post_categories($post_id);
+
+										foreach($all_the_categories as $c) {
+											$category = get_category( $c );
+											if ($category->name == "microblog") {
+													// open with the whole tweet
+													$this_is_a_micropost = true;
+												}
+										}
+
+
+										if (!$this_is_a_micropost) {
 
 									?>
 
@@ -54,7 +69,7 @@ Template Name: Words
 									</section> <?php // end article section ?>
 
 									<p class="byline vcard"><?php
-										printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time>. Filed under %4$s.', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
+										printf( __( '<a href="%5$s"><time class="updated" datetime="%1$s" pubdate>%2$s</time></a>. Filed under %4$s.', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '), get_permalink());
 									?></p>
 
 									<footer class="article-footer">
