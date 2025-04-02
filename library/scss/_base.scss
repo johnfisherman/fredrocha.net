@@ -240,12 +240,13 @@ ul {
 
 
 // Mailerlite form
-#mailerlite-form_1 {
+// Light at the end of the post
+.mailerlite-form {
 	margin: 40px 0;
 	padding: 40px;
 	background-color: #f5f5f5;
 	border-radius: 10px;
-	#mailerlite-1-field-email {
+	#mailerlite-1-field-email, #mailerlite-2-field-email {
 		margin-right: 40px;
 		padding: 10px;
 	}
@@ -263,6 +264,29 @@ ul {
 		font-weight: bold;
 	}
 }
+
+// Sidebar form
+#mailerlite-form_2 {
+	margin: 10px 0;
+	.mailerlite-form {
+		padding: 5px 30px 40px 30px;
+	}
+	.mailerlite-form-field {
+		width: 100%;
+
+		#mailerlite-2-field-email {
+			width: 100%;
+		}
+	}
+	.mailerlite-form-inputs {
+		align-items: center;
+	}
+	.mailerlite-subscribe-submit {
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
 
 // YARPP related posts plugin
 .yarpp-related {
