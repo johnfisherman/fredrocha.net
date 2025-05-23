@@ -71,6 +71,16 @@ ul {
 			margin-bottom: 40px;
 		}
 	}
+
+	// Indenting nested lists
+	ul {
+		padding-left: 15px;
+
+		& ul {
+			padding-left: 40px;
+		}
+	}
+
 }
 
 .home {
@@ -1398,8 +1408,14 @@ COMMENT FORM STYLES
 	form {
 		margin: 0.75em 0;
 
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+
 		li {
-			list-style-type: none;
+			list-style-type: none !important;
+
 			clear: both;
 			margin-bottom: 0.7335em;
 
