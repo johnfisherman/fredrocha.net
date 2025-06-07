@@ -110,12 +110,12 @@ ul {
 			}
 		}
 	}
-	#meta {
+	#meta, #now {
 		width: 100%;
 		padding: 20px 40px;
 		background: none repeat scroll 0 0 rgba(42, 81, 120, 0.5);
 		margin: 0 0 7px 0;
-		h1 {
+		h1, h2 {
 			font-family: 'Playfair Display', serif;
 			font-size: 1em;
 			text-transform: none;
@@ -132,6 +132,14 @@ ul {
 					color: $link-hover;
 				}
 			}
+		}
+	}
+	#now {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		img {
+			max-width: 100%;
 		}
 	}
 	#video {

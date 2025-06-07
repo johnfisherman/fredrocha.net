@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php $templateURL = get_bloginfo('template_url'); ?>
+
 			<div id="content" class="home">
 
 				<div id="inner-content" class="clearfix">
@@ -15,8 +17,6 @@
 												'numberposts' => 1, // Number of recent posts thumbnails to display
 												'post_status' => 'publish' // Show only the published posts
 										));
-
-										// var_dump ($recent_posts);
 
 										// if all fails, ie, there is nothing to quote, resort to a Zappa's favorite
 										$default_quote = "Information is not knowledge. Knowledge is not wisdom. Wisdom is not love. Love is not music. Music is <i>everything</i>.";
@@ -88,9 +88,23 @@
 								</p>
 							</div>
 
+							<div id="now">
+								<div>
+									<p>Currently, I'm reflecting on the role that the <a href="https://fredrocha.net/2025/05/21/small-web-is-beautiful?utm_source=home_now">"small web"</a> can have in our online lives.</p>
+									<p>I am also kindling an <a href="https://openingquot.es?utm_source=fredrocha.net" target="_blank">ever-growing online database with the greatest quotes in the world</a>, aka, epigraphs, called Opening Quotes. You can see how relevant names in literature honour each other.</p>
+								</div>
+								<div>
+									<a href="https://openingquot.es?utm_source=fredrocha.net" target="_blank">
+										<img src="<?php echo $templateURL; ?>/img/webdeb-oqes-s.jpg" alt="Logo for the web application openingquot.es.">
+									</a>
+								</div>
+							</div>
+
 							<div id="video">
 								<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/702529770?color=01d4f&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-								<img id="monkey-island-monkey" src="<?php echo get_template_directory_uri(); ?>/img/hangmonk.gif" alt="This is a monkey hanging from the video, taken from the godfather of all graphic adventure games, Monkey Island.">
+								<a href="/category/games/">
+									<img id="monkey-island-monkey" src="<?php echo get_template_directory_uri(); ?>/img/hangmonk.gif" alt="This is a monkey hanging from the video, taken from the godfather of all graphic adventure games, Monkey Island.">
+								</a>
 								<p id="more-videos"><a href="/videos">Discover more of my videos</a>.</p>
 							</div>
 

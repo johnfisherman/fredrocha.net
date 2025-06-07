@@ -27,7 +27,7 @@ come into play. Have fun!
 			}
 		}
 	}
-	#meta {
+	#meta, #now {
 		padding: 40px 80px;
 		background: none repeat scroll 0 0 rgba(42, 81, 120, 0.5);
 		p {
@@ -38,6 +38,17 @@ come into play. Have fun!
 				&:hover {
 					color: $link-hover;
 				}
+			}
+		}
+	}
+	#now {
+		flex-direction: row;
+		img {
+			margin-left: 80px;
+			&:hover {
+				transition: all ease-in-out 0.1s;
+				transform: translate(-10px, -10px);
+				opacity: 0.7;
 			}
 		}
 	}
