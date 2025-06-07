@@ -70,6 +70,18 @@
 
 			<header class="header" role="banner">
 
+				<?php if ( !is_home() ) { ?>
+
+					<div id="announcement-banner">
+						<a href="https://openingquot.es?utm_source=fredrocha.net" target="_blank">
+							Browse the best quotes in the world, curated by history's most proeminent literary authors.
+						</a>
+					</div>
+
+
+				<?php } ?>
+
+
 				<div id="inner-header" class="clearfix">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>

@@ -53,6 +53,27 @@ ul {
 	margin-top: 60px;
 }
 
+#announcement-banner {
+	background-color: lighten($bones-pink, 10%);
+	/* via https://cssgradient.io/ */
+	background: #F01D4F;
+background: linear-gradient(90deg, rgba(240, 29, 79, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+	padding: 8px 40px 10px 40px;
+	text-align: center;
+	a {
+		color: white;
+		font-family: $sans-serif;
+		font-size: 14px;
+		text-shadow: 0 2px rgba(0,0,0, .15);
+		text-decoration: none;
+
+		&:hover {
+			opacity: 0.8;
+			text-decoration: underline;
+		}
+	}
+}
+
 .words-content, .single-content, .generic-page, .search-content, .archive-content, .memes-content, .like-minded-content, .speaking-content {
 	padding: 40px;
 	.format-quote {
