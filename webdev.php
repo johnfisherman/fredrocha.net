@@ -66,6 +66,17 @@ Template Name: WebDev
 					</div>
 
 					<div class="website threecol">
+						<a href="https://leonorcaldeira.com" rel="external" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdev-leonor-caldeira-s.jpg" alt="Logo for lawyer Leonor Caldeira, featuring a Sun Bird, symbol of palestinian resistance. Top notch design by Joana Batista."></a>
+						<p>
+							A simple web presence and business card page for environment and human rights lawyer Leonor Caldeira.
+						</p>
+						<p class="website-url">
+							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
+							<a href="https://leonorcaldeira.com" rel="external" target="_blank">https://leonorcaldeira.com</a>
+						</p>
+					</div>
+
+					<!-- <div class="website threecol">
 						<a href="https://becabe.ca" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdev-becabeca-s.jpg" alt="The main character of Anete Melece's movie 'The Kiosk' peeks from within a bunch of magazines and books."></a>
 						<p>
 							Quality digital content for kids and families selected by a team of curators, themselves creating for families (illustrators, writers, publishers).
@@ -74,7 +85,7 @@ Template Name: WebDev
 							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
 							<a href="https://becabe.ca" target="_blank">https://becabe.ca</a>
 						</p>
-					</div>
+					</div> -->
 
 					<div class="website threecol">
 						<a href="http://gustavociria.co" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdev-gus-s.jpg" alt="Gustavo Ciríaco is a multi-faceted artist. Performer, dancer, composer, director. Living between Brazil and Portugal."></a>
