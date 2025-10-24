@@ -13,115 +13,178 @@ come into play. Have fun!
 ******************************************************************/
 
 .home {
-	#inner-content {
-		border: 6px solid $debug-color-1;
-		#quote {
-			img {
-			}
-			article {
-				width: 90%;
-				padding: 0 80px;
-				text-align: left;
-				font-size: 1.1em;
-				text-shadow: none;
-			}
-		}
-	}
-	#meta, #now {
-		padding: 40px 80px;
-		background: none repeat scroll 0 0 rgba(42, 81, 120, 0.5);
-		p {
-			color: white;
-			text-shadow: 0 2px rgba(0,0,0, .75);
-			a {
-				color: $link-color;
-				&:hover {
-					color: $link-hover;
-				}
-			}
-		}
-	}
-	#now {
-		flex-direction: row;
-		img {
-			margin-left: 80px;
-			&:hover {
-				transition: all ease-in-out 0.1s;
-				transform: translate(-10px, -10px);
-				opacity: 0.7;
-			}
-		}
-	}
-	#inverted-mountain {
-		img {
-		}
-		p {
-			font-size: 32px;
-			padding: 0 40px;
-			text-align: right;
-			position: absolute;
-			left: 0%;
-			color: black;
-			a {
-				color: white;
-			}
-			// text-shadow: 1px 1px 2px #080808;
-		}
-	}
+  #inner-content {
+    border: 6px solid $debug-color-1;
+    #quote {
+      img {
+      }
+      article {
+        width: 90%;
+        padding: 0 80px;
+        text-align: left;
+        font-size: 1.1em;
+        text-shadow: none;
+      }
+    }
+  }
+  #meta,
+  #now {
+    padding: 40px 80px;
+    background: none repeat scroll 0 0 rgba(42, 81, 120, 0.5);
+    p {
+      color: white;
+      text-shadow: 0 2px rgba(0, 0, 0, 0.75);
+      a {
+        color: $link-color;
+        &:hover {
+          color: $link-hover;
+        }
+      }
+    }
+  }
+  #now {
+    flex-direction: row;
+    img {
+      margin-left: 80px;
+      &:hover {
+        transition: all ease-in-out 0.1s;
+        transform: translate(-10px, -10px);
+        opacity: 0.7;
+      }
+    }
+  }
+  #inverted-mountain {
+    img {
+    }
+    p {
+      font-size: 32px;
+      padding: 0 40px;
+      text-align: right;
+      position: absolute;
+      left: 0%;
+      color: black;
+      a {
+        color: white;
+      }
+      // text-shadow: 1px 1px 2px #080808;
+    }
+  }
 }
 
 .webdev-content {
-	#main {
-		// border: 10px solid $debug-color-1 !important;
-		
-		max-width: 1400px;
-	}
-	.webdev-intro {
-		max-width: 900px;
-	}
+  #main {
+    // border: 10px solid $debug-color-1 !important;
+
+    max-width: 1400px;
+  }
+  .webdev-intro {
+    max-width: 900px;
+  }
+}
+
+/* Ilha da Contera */
+.idc-content {
+  #book-info {
+    flex-direction: row;
+    padding: 80px 80px;
+    #book-cover {
+      margin-right: 80px;
+      img {
+      }
+      #actual-book {
+        left: 0px;
+      }
+      #book-BG {
+        display: block;
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        max-width: 450px;
+        z-index: 5;
+        opacity: 0.3;
+      }
+    }
+  }
+  #ebook-cta {
+    #ebook-form {
+      // Mailerlite form
+      #mailerlite-form_3 {
+        .mailerlite-form-description {
+          max-width: 900px;
+          margin-bottom: 40px;
+        }
+        .mailerlite-form-inputs {
+          display: flex;
+          flex-direction: row;
+          .mailerlite-form-field {
+            width: auto;
+            margin-right: 20px;
+            input {
+            }
+          }
+          label {
+            display: none;
+          }
+          .mailerlite-subscribe-button-container {
+            text-align: center;
+            margin: 2px 0 0 0;
+          }
+          button:hover {
+            transition: all ease-in-out 0.1s;
+            opacity: 0.8;
+          }
+        }
+        .mailerlite-form-response {
+          text-align: left !important;
+        }
+      }
+    }
+  }
 }
 
 // Mailerlite form
 #mailerlite-form_1 {
-	#mailerlite-1-field-email {
-		min-width: 300px;
-	}
-	.mailerlite-form-inputs {
-		display: flex;
-		flex-direction: row;
-	}
-	.mailerlite-subscribe-submit {
-	}
+  #mailerlite-1-field-email {
+    min-width: 300px;
+  }
+  .mailerlite-form-inputs {
+    display: flex;
+    flex-direction: row;
+  }
+  .mailerlite-subscribe-submit {
+  }
 }
 
 /*********************
 GENERAL STYLES
 *********************/
 
-body {}
+body {
+}
 
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	max-width: 1140px;
+  max-width: 1140px;
 }
 
 /*********************
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+}
 
-	#logo {}
+#logo {
+}
 
 /*********************
 NAVIGATION STYLES
 *********************/
 .menu {
-
-	position: relative;
+  position: relative;
 
   .navbar-handle {
     display: none;
@@ -129,118 +192,123 @@ NAVIGATION STYLES
 }
 
 #navbar-checkbox + .menu {
-	ul {
-		max-height: 300px;
-		padding-left: 30px;
- 	}
+  ul {
+    max-height: 300px;
+    padding-left: 30px;
+  }
 
-	li {
-		visibility: visible;
-		padding: 15px 10px;
- 	}
-	.navbar-handle {
-  	&, &:after, &:before {
-    	border-color: $link-color;
-  	}
-	}
+  li {
+    visibility: visible;
+    padding: 15px 10px;
+  }
+  .navbar-handle {
+    &,
+    &:after,
+    &:before {
+      border-color: $link-color;
+    }
+  }
 }
 
 header {
-	.nav {
-		border-bottom: 7px solid pink;
-		padding-bottom: 0px;
+  .nav {
+    border-bottom: 7px solid pink;
+    padding-bottom: 0px;
 
+    li {
+      float: left;
+      position: relative;
 
-		li {
-			float: left;
-			position: relative;
-
-			/*
+      /*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
-			&:hover, &:focus {
-				// background-color: #dedede;
-				a {
-				}
-			}
+      &:hover,
+      &:focus {
+        // background-color: #dedede;
+        a {
+        }
+      }
 
-			a {
-				border-bottom: 0;
-			}
+      a {
+        border-bottom: 0;
+      }
 
-			&:first-child {}
-			&:last-child {}
+      &:first-child {
+      }
+      &:last-child {
+      }
 
-			/*
+      /*
 			plan your menus and drop-downs wisely.
 			*/
-			ul.sub-menu,
-			ul.children {
-				margin-top: 0;
-				border: 1px solid #ccc;
-				border-top: 0;
-				position: absolute;
-				display: none;
-				z-index: 8999;
+      ul.sub-menu,
+      ul.children {
+        margin-top: 0;
+        border: 1px solid #ccc;
+        border-top: 0;
+        position: absolute;
+        display: none;
+        z-index: 8999;
 
-				li {
+        li {
+          a {
+            padding-left: 10px;
+            border-right: 0;
+            display: block;
+            width: 180px;
+            border-bottom: 1px solid #ccc;
 
-					a {
-						padding-left: 10px;
-						border-right: 0;
-						display: block;
-						width: 180px;
-						border-bottom: 1px solid #ccc;
+            &:hover,
+            &:focus {
+            }
 
-						&:hover,
-						&:focus {
-						}
+            &:link {
+            }
+          }
 
-						&:link {}
-					}
+          &:first-child {
+          }
 
-					&:first-child {}
+          &:last-child {
+            a {
+              border-bottom: 0;
+            }
+          }
 
-					&:last-child {
-
-						a {
-							border-bottom: 0;
-						}
-					}
-
-					/*
+          /*
 					if you need to go deeper, go nuts
 					just remember deeper menus suck
 					for usability. k, bai.
 					*/
-					ul {}
-				}
+          ul {
+          }
+        }
 
-				/* highlight sub-menu current page */
-				li.current-menu-item,
-				li.current_page_item,
-				li.current-page-ancestor {
-					a {}
-				}
-			}
+        /* highlight sub-menu current page */
+        li.current-menu-item,
+        li.current_page_item,
+        li.current-page-ancestor {
+          a {
+          }
+        }
+      }
 
-			/* showing sub-menus */
-			&:hover ul {
-				top: auto;
-				display: block;
-			}
+      /* showing sub-menus */
+      &:hover ul {
+        top: auto;
+        display: block;
+      }
+    } /* end .menu ul li */
 
-		} /* end .menu ul li */
-
-		/* highlight current page */
-		li.current-menu-item,
-		li.current_page_item,
-		li.current-page-ancestor {
-			a {}
-		}  /* end current highlighters */
-
-	} /* end .nav */
+    /* highlight current page */
+    li.current-menu-item,
+    li.current_page_item,
+    li.current-page-ancestor {
+      a {
+      }
+    } /* end current highlighters */
+  } /* end .nav */
 }
 
 /*********************
@@ -248,123 +316,189 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 2.2em;
+  margin-top: 2.2em;
 }
 
-	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
-	}
+.widgettitle {
+  border-bottom: 2px solid #444;
+  margin-bottom: 0.75em;
+}
 
-	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
+.widget {
+  padding: 0 10px;
+  margin: 2.2em 0;
 
-		ul {
-			li {
-				margin-bottom: 0.75em;
+  ul {
+    li {
+      margin-bottom: 0.75em;
 
-				&:first-child {}
-				&:last-child {}
-				a {}
-				/* deep nesting */
+      &:first-child {
+      }
+      &:last-child {
+      }
+      a {
+      }
+      /* deep nesting */
 
-				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
-				}
-			}
-		}
-	}
+      ul {
+        margin-top: 0.75em;
+        padding-left: 1em;
+      }
+    }
+  }
+}
 
+/* links widget */
+.widget_links {
+}
+.widget_links ul {
+}
+.widget_links ul li {
+}
+.widget_links ul li a {
+}
 
-	/* links widget */
-	.widget_links {}
-	.widget_links ul {}
-	.widget_links ul li {}
-	.widget_links ul li a {}
+/* meta widget */
+.widget_meta {
+}
+.widget_meta ul {
+}
+.widget_meta ul li {
+}
+.widget_meta ul li a {
+}
 
-	/* meta widget */
-	.widget_meta {}
-	.widget_meta ul {}
-	.widget_meta ul li {}
-	.widget_meta ul li a {}
+/* pages widget */
+.widget_pages {
+}
+.widget_pages ul {
+}
+.widget_pages ul li {
+}
+.widget_pages ul li a {
+}
 
-	/* pages widget */
-	.widget_pages {}
-	.widget_pages ul {}
-	.widget_pages ul li {}
-	.widget_pages ul li a {}
+/* recent-posts widget */
+.widget_recent_entries {
+}
+.widget_recent_entries ul {
+}
+.widget_recent_entries ul li {
+}
+.widget_recent_entries ul li a {
+}
 
-	/* recent-posts widget */
-	.widget_recent_entries {}
-	.widget_recent_entries ul {}
-	.widget_recent_entries ul li {}
-	.widget_recent_entries ul li a {}
+/* archives widget */
+.widget_archive {
+}
+.widget_archive ul {
+}
+.widget_archive ul li {
+}
+.widget_archive ul li a {
+}
+.widget_archive select {
+}
+.widget_archive option {
+}
 
-	/* archives widget */
-	.widget_archive {}
-	.widget_archive ul {}
-	.widget_archive ul li {}
-	.widget_archive ul li a {}
-	.widget_archive select {}
-	.widget_archive option {}
+/* tag-cloud widget */
+.widget_links {
+}
+.widget_links li:after {
+}
+.widget_links li:before {
+}
+.widget_tag_cloud {
+}
+.widget_tag_cloud a {
+}
+.widget_tag_cloud a:after {
+}
+.widget_tag_cloud a:before {
+}
 
-	/* tag-cloud widget */
-	.widget_links {}
-	.widget_links li:after {}
-	.widget_links li:before {}
-	.widget_tag_cloud {}
-	.widget_tag_cloud a {}
-	.widget_tag_cloud a:after {}
-	.widget_tag_cloud a:before {}
+/* calendar widget */
+.widget_calendar {
+}
+#calendar_wrap {
+}
+#calendar_wrap th {
+}
+#calendar_wrap td {
+}
+#wp-calendar tr td {
+}
+#wp-calendar caption {
+}
+#wp-calendar a {
+}
+#wp-calendar #today {
+}
+#wp-calendar #prev {
+}
+#wp-calendar #next {
+}
+#wp-calendar #next a {
+}
+#wp-calendar #prev a {
+}
 
-	/* calendar widget */
-	.widget_calendar {}
-	#calendar_wrap {}
-	#calendar_wrap th {}
-	#calendar_wrap td {}
-	#wp-calendar tr td {}
-	#wp-calendar caption {}
-	#wp-calendar a {}
-	#wp-calendar #today {}
-	#wp-calendar #prev {}
-	#wp-calendar #next {}
-	#wp-calendar #next a {}
-	#wp-calendar #prev a {}
+/* category widget */
+.widget_categories {
+}
+.widget_categories ul {
+}
+.widget_categories ul li {
+}
+.widget_categories ul ul.children {
+}
+.widget_categories a {
+}
+.widget_categories select {
+}
+.widget_categories select#cat {
+}
+.widget_categories select.postform {
+}
+.widget_categories option {
+}
+.widget_categories .level-0 {
+}
+.widget_categories .level-1 {
+}
+.widget_categories .level-2 {
+}
+.widget_categories .level-3 {
+}
 
-	/* category widget */
-	.widget_categories {}
-	.widget_categories ul {}
-	.widget_categories ul li {}
-	.widget_categories ul ul.children {}
-	.widget_categories a {}
-	.widget_categories select{}
-	.widget_categories select#cat {}
-	.widget_categories select.postform {}
-	.widget_categories option {}
-	.widget_categories .level-0 {}
-	.widget_categories .level-1 {}
-	.widget_categories .level-2 {}
-	.widget_categories .level-3 {}
+/* recent-comments widget */
+.recentcomments {
+}
+#recentcomments {
+}
+#recentcomments li {
+}
+#recentcomments li a {
+}
+.widget_recent_comments {
+}
 
-	/* recent-comments widget */
-	.recentcomments {}
-	#recentcomments {}
-	#recentcomments li {}
-	#recentcomments li a {}
-	.widget_recent_comments {}
+/* search widget */
+#searchform {
+}
+.widget_search {
+}
+.screen-reader-text {
+}
 
-	/* search widget */
-	#searchform {}
-	.widget_search {}
-	.screen-reader-text {}
-
-	/* text widget */
-	.textwidget {}
-	.widget_text {}
-	.textwidget p {}
-
+/* text widget */
+.textwidget {
+}
+.widget_text {
+}
+.textwidget p {
+}
 
 /*********************
 FOOTER STYLES
@@ -376,39 +510,41 @@ of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
 footer.footer {
-	#social {
-		width: 40%;
-		float: left;
-		#css-joy-webring {
-			margin: 40px 0 40px 0;
-		}
-	}
-	nav {
-		width: 25%;
-		float: left;
-		text-align: left;
-		padding-left: 60px;
-		ul#menu-footer-navigation {
-			margin-top: 0;
-			li {
-				a {
-					&:hover {}
-				}
-				/*
+  #social {
+    width: 40%;
+    float: left;
+    #css-joy-webring {
+      margin: 40px 0 40px 0;
+    }
+  }
+  nav {
+    width: 25%;
+    float: left;
+    text-align: left;
+    padding-left: 60px;
+    ul#menu-footer-navigation {
+      margin-top: 0;
+      li {
+        a {
+          &:hover {
+          }
+        }
+        /*
 				be careful with the depth of your menus.
 				it's very rare to have multi-depth menus in
 				the footer.
 				*/
-				ul {}
-			}
-		}
-	}
-	.copyright {
-		width: 33%;
-		float: left;
-		img {
-			float: right;
-			width: 80px;
-		}
-	}
+        ul {
+        }
+      }
+    }
+  }
+  .copyright {
+    width: 33%;
+    float: left;
+    img {
+      float: right;
+      width: 80px;
+    }
+  }
 }
