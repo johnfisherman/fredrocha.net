@@ -35,7 +35,6 @@ Template Name: Ilha Da Contera
                 <div id="ebook-cta">
                     <div id="ebook-form">
                         <?php echo do_shortcode('[mailerlite_form form_id="3"]'); ?>
-                        <p>A tua morada não será partilhada com ninguém.</p>
                     </div>
                 </div>
             </div> <?php // end #main ?>
