@@ -73,12 +73,27 @@ come into play. Have fun!
 
 .webdev-content {
   #main {
-    // border: 10px solid $debug-color-1 !important;
-
     max-width: 1400px;
   }
   .webdev-intro {
     max-width: 900px;
+  }
+}
+
+/* Speaking */
+.speaking-content {
+  #speaking-engagements {
+    // max-width: 1200px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    // grid-template-rows: 100px 100px;
+    // grid-template-columns: 100px 100px;
+    padding: 10px;
+  }
+  .speaking-engagement {
+    padding-right: 40px;
+    margin-bottom: 0px;
   }
 }
 
