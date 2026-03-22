@@ -90,7 +90,8 @@ ul {
 .archive-content,
 .memes-content,
 .like-minded-content,
-.speaking-content {
+.speaking-content,
+.world-wild-web-content {
   padding: 40px;
   .format-quote {
     .entry-content p {
@@ -564,8 +565,8 @@ article.category-microblog {
 @font-face {
   font-family: "si";
   src: url("../../vendor/socicon/socicon.eot");
-  src: url("../../vendor/socicon/socicon.eot?#iefix")
-      format("embedded-opentype"),
+  src:
+    url("../../vendor/socicon/socicon.eot?#iefix") format("embedded-opentype"),
     url("../../vendor/socicon/socicon.woff") format("woff"),
     url("../../vendor/socicon/socicon.ttf") format("truetype"),
     url("../../vendor/socicon/socicon.svg#icomoonregular") format("svg");
@@ -1141,7 +1142,8 @@ footer.footer {
 .single-post,
 .error404,
 .page-template-webdev,
-.page-template-like-minded {
+.page-template-like-minded,
+.page-template-world-wild-web-content {
   footer.footer {
     border-top: 1px solid $footer-border;
   }

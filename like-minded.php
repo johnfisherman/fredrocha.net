@@ -16,7 +16,7 @@ Template Name: Like-minded
 
 				<h1>Like-minded</h1>
 
-				<p class="like-minded-intro">The websites I list here will amuse you and teach you stuff, expand your mind and leave you scratching your head. Visit them, sign-up to their (RSS) feed, keep coming back.</p>
+				<p class="like-minded-intro">The personal websites I list here will amuse you and teach you stuff, expand your mind and leave you scratching your head. Visit them, sign-up to their (RSS) feed, keep coming back.</p>
 				
 				<p>The rationale for linking to other sites in 2023 is <a href="https://fredrocha.net/2023/04/21/build-your-own-website-and-they-will-not-come/">expanded on this post</a>. Go ahead and do some linking of your own, why won't ya?</p>
 				
