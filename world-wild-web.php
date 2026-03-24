@@ -29,10 +29,16 @@ Template Name: World Wild Web
 					</li>
 					
 					<li>
-						<a href="https://neal.fun/size-of-life/" target="_blank">Size of Life</a> - Can a chameleon really be that small?! <a href="https://neal.fun" target="_blank">More stuff by Neil.</a>.
+						<a href="https://neal.fun/size-of-life/" target="_blank">Size of Life</a> - Can a chameleon really be that small?! <a href="https://neal.fun" target="_blank">More stuff by Neil</a>.
 					</li>
 					<li>
-						<a href="https://oneminutepark.tv" target="_blank">One Minute Park</a> - Take a break from the online hustle and bustle and relax in a different park around the world for a minute. Via <a href="https://densediscovery.com" taget="_blank">Dense Discovery</a>.
+						<a href="https://oneminutepark.tv" target="_blank">One Minute Park</a> - Take a break from the online hustle and bustle and relax in a different park around the world for a minute. Via <a href="https://densediscovery.com" target="_blank">Dense Discovery</a>.
+					</li>
+					<li>
+						<a href="https://www.placestoread.xyz/" target="_blank">Places to Read</a> - Why not go out with a book and read in a park, public square or sea shore? This website will help you find a suitable spot to read, regardless of where you are in the world. Also, they accept submissions for new ones. You know what to do.
+					</li>
+					<li>
+						<a href="https://portuguesesdebem.pt/" target="_blank">Portugueses de Bem</a> [PT] - A compilation of news articles detailing serious crimes committed by people affiliated with the portuguese extreme-right. A living proof that these guys are criminals, dangerous and full of shit.
 					</li>
 					
 				</ul>
