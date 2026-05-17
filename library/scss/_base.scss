@@ -1432,6 +1432,9 @@ COMMENT STYLES
 }
 
 .commentlist {
+  header {
+    font-family: $sans-serif;
+  }
   li {
     position: relative;
     clear: both;
@@ -1487,12 +1490,16 @@ COMMENT STYLES
   }
 
   li.depth-2 {
+    margin-left: 20px;
   }
   li.depth-3 {
+    margin-left: 40px;
   }
   li.depth-4 {
+    margin-left: 60px;
   }
   li.depth-5 {
+    margin-left: 80px;
   }
 
   /* general comment classes */
@@ -1521,8 +1528,10 @@ COMMENT STYLES
   .thread-alt {
   }
   .thread-odd {
+    border: 2px dashed #a0a0a0;
   }
   .thread-even {
+    border: 2px dashed #d0d0d0;
   }
 
   /* vcard */
@@ -1595,6 +1604,7 @@ COMMENT STYLES
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 0.9em;
+    font-family: $sans-serif;
 
     &:hover,
     &:focus {
