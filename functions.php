@@ -230,4 +230,13 @@ function yarpp_disable_words() {
   
   add_filter( 'noyarpp', 'yarpp_disable_words' );
 
+  // Before you can create and use block template parts, 
+  // your classic theme needs to declare support for this feature.
+	add_action( 'after_setup_theme', 'fredrochadotnet_setup' );
+
+	function fredrochadotnet_setup() {
+		add_theme_support( 'block-template-parts' );
+	}
+
+
 ?>

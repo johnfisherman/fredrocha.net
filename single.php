@@ -25,7 +25,12 @@
 
 						<footer class="article-footer">
 							<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
-
+							
+							<?php
+								if ( is_singular( 'post' ) && function_exists( 'block_template_part' ) ) {
+									block_template_part( 'post-footer' );
+								}
+							?>
 						</footer> <?php // end article footer ?>
 
 						<?php comments_template(); ?>
