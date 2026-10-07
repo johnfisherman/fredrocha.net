@@ -16,6 +16,59 @@ Template Name: WebDev
 
 					<h1>Web Development</h1>
 
+					<div id="personal-projects" class="first clearfix" role="main">
+					
+					<h2>Personal Creations</h2>
+
+					<div class="website threecol">
+						<a href="https://cartazesmil.pt?utm_source=fredrocha.net" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdev-cartazesmil-s.jpg" alt="A woman is holding in her hand a street sign that reads A Poesia Está Na Rua."></a>
+						<p>
+							A database of street signs spotted during the Carnation Revolution rallies in Portugal, for the 25th April. People can vote on their favorites, and explore the community's favorites!
+						</p>
+						<p class="website-url">
+							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
+							<a href="https://cartazesmil.pt?utm_source=fredrocha.net" target="_blank">https://cartazesmil.pt</a>
+						</p>
+					</div>
+
+					
+					<div class="website threecol">
+						<a href="https://openingquot.es?utm_source=fredrocha.net" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdeb-oqes-s.jpg" alt="Logo for the web application openingquot.es."></a>
+						<p>
+							A fully explorable repository of hand-curated epigraphs, ie, quotes that book authors decide to open their own books with.
+						</p>
+						<p class="website-url">
+							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
+							<a href="https://openingquot.es?utm_source=fredrocha.net" target="_blank">https://openingquot.es</a>
+						</p>
+					</div>
+
+					<div class="website threecol">
+						<a href="https://cadamaca.co?utm_source=fredrocha.net" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdev-cada-macaco-s.jpg" alt="Logo and motto for the web application cadamaca.co."></a>
+						<p>
+							A Single Page Web Application for instant wisdom generation, ie, the mashing of two traditional sayings into one.
+						</p>
+						<p class="website-url">
+							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
+							<a href="https://cadamaca.co?utm_source=fredrocha.net" target="_blank">https://cadamaca.co</a>
+						</p>
+					</div>
+					
+					<!-- <div class="website threecol">
+						<a href="http://ghostmusician.com?utm_source=fredrocha.net" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdev-ghost-s.jpg" alt="Logo and motto for the web application ghostmusician.com."></a>
+						<p>
+							An imaginary label for musicians that do not exist yet have millions of streams on Spotify.
+						</p>
+						<p class="website-url">
+							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
+							<a href="http://ghostmusician.com?utm_source=fredrocha.net" target="_blank">http://ghostmusician.com</a>
+						</p>
+					</div>
+				 -->
+				</div><!-- #personal-projects -->
+
+					<h2>Collaborations</h2>
+
 					<p class="webdev-intro">The websites I build with people are meant to be fast, practical and easy to maintain and update. Tapping into the power
 					of the WordPress ecosystem, clients are independent to upload and manage content on their end.</p>
 
@@ -113,44 +166,7 @@ Template Name: WebDev
 
 				</div><!-- #main -->
 
-				<div id="personal-projects" class="first clearfix" role="main">
-					
-					<h2>Personal Creations</h2>
-					
-					<div class="website threecol">
-						<a href="https://openingquot.es?utm_source=fredrocha.net" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdeb-oqes-s.jpg" alt="Logo for the web application openingquot.es."></a>
-						<p>
-							A fully explorable repository of hand-curated epigraphs, ie, quotes that book authors decide to open their own books with.
-						</p>
-						<p class="website-url">
-							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
-							<a href="https://openingquot.es?utm_source=fredrocha.net" target="_blank">https://openingquot.es</a>
-						</p>
-					</div>
 
-					<div class="website threecol">
-						<a href="https://cadamaca.co?utm_source=fredrocha.net" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdev-cada-macaco-s.jpg" alt="Logo and motto for the web application cadamaca.co."></a>
-						<p>
-							A Single Page Web Application for instant wisdom generation, ie, the mashing of two traditional sayings into one.
-						</p>
-						<p class="website-url">
-							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
-							<a href="https://cadamaca.co?utm_source=fredrocha.net" target="_blank">https://cadamaca.co</a>
-						</p>
-					</div>
-					
-					<div class="website threecol">
-						<a href="http://ghostmusician.com?utm_source=fredrocha.net" target="_blank"><img src="<?php echo $templateURL; ?>/img/webdev-ghost-s.jpg" alt="Logo and motto for the web application ghostmusician.com."></a>
-						<p>
-							An imaginary label for musicians that do not exist yet have millions of streams on Spotify.
-						</p>
-						<p class="website-url">
-							<svg viewBox="0 0 24 24"><path d="m0 0h24v24h-24z" opacity="0"/><g><path d="m8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2h-6a1 1 0 0 0 -1 1z"/><path d="m9 16h-1.79a4.13 4.13 0 0 1 -4.21-3.63 4 4 0 0 1 4-4.37h2a1 1 0 0 0 0-2h-1.79a6.15 6.15 0 0 0 -6.16 5.21 6 6 0 0 0 5.95 6.79h2a1 1 0 0 0 0-2z"/><path d="m23 11.24a6.16 6.16 0 0 0 -6.24-5.24h-1.51c-.81 0-1.25.45-1.25 1a1 1 0 0 0 1 1h1.79a4.13 4.13 0 0 1 4.21 3.63 4 4 0 0 1 -4 4.37h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76z"/></g></svg>
-							<a href="http://ghostmusician.com?utm_source=fredrocha.net" target="_blank">http://ghostmusician.com</a>
-						</p>
-					</div>
-				
-				</div><!-- #personal-projects -->
 
 
 				<br/>
