@@ -24,6 +24,10 @@ Template Name: Like-minded
 				
 				<ul>
 					<li>
+						<a href="https://https://tdias.pt/foto/" rel="friend" target="_blank">Tiago Dias</a> - Builder turned photographer, with stunning photos from the 2026 Portuguese acampada, in Rossio, Lisbon.
+					</li>
+
+					<li>
 						<a href="https://sergiosantos.info/" rel="friend" target="_blank">Sérgio Santos</a> - Builder with a focus on Android, running <a href="https://bloco.io" target="_blank">Bloco Studio</a> with Claudia Acabado. <a href="https://sergiosantos.info/index.xml" target="_blank">RSS feed</a>. <a href="https://mastodon.social/@sdsantos" target="_blank">Mastodon</a>.
 					</li>
 
